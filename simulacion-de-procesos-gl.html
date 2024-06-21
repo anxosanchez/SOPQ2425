@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.45">
 
-  <meta name="author" content="A. Sánchez">
-  <title>SOPQ-2324 – Modelización e simulación de procesos químicos</title>
+  <title>SOPQ-2324 – Introdución á Simulación de Procesos</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,11 +29,14 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -320,405 +322,294 @@
       margin-right: 0; 
     }
   </style>
+  <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Modelización e simulación de procesos químicos</h1>
+  <h1 class="title">Introdución á Simulación de Procesos</h1>
+  <p class="subtitle">Aplicación á Enxeñaría Química</p>
 
 <div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-A. Sánchez 
-</div>
-</div>
 </div>
 
 </section>
-<section id="introdución-ó-modelado-e-a-simulación-contidos" class="slide level2">
-<h2>Introdución ó modelado e a simulación: contidos</h2>
-<ul>
-<li>Modelado de sistemas físicos<br>
-</li>
-<li>Simulación estacionaria<br>
-</li>
-<li>Simulación dinámica<br>
-</li>
-<li>Sistemas de parámetros distribuidos<br>
-</li>
-<li>sistemas híbridos</li>
-</ul>
-</section>
-<section id="qué-é-un-sistema." class="slide level2">
-<h2>Qué é un sistema.</h2>
-<p>– Según (B. Ziegler) : <em>“Un sistema é unha fonte potencial de datos”</em> - É un conxunto de compoñentes, pezas ou obxectos, que interactúan entre si dentro dos límites para producir un determinado patrón de comportamento - “A system is defined by its boundary” Según (B. Gaines) : <em>“Un sistema é o que se distingue como sistema”</em></p>
-<p>A definición completa de sistema mediante o seu contorno implica ter en conta: - As especificación da fronteira<br>
-- Os canais do contorno a través dos cuais o sistema interacciona co entorno (entradas e saídas)<br>
-- A estructura interna e o comportamento do sistema</p>
-</section>
-<section id="o-sistema-e-o-seu-entorno" class="slide level2">
-<h2>O sistema e o seu entorno</h2>
-<p>Tipos de variables<br>
-- Entrada: denota o efecto do entorno sobre o proceso<br>
-- Manipuladas: o seus valores pódense axustar libremente por un operador ou unha acción de control<br>
-- Perturbacións: os seus valores non son axustables<br>
-- Saída: denota o efecto do proceso sobre o entorno<br>
-- Medidas: os seus valores son coñecidos polos sistemas de medida<br>
-- Nom medidas: os seus valores non se poden medir de forma directa<br>
-- Internas: Son variables propias do sistema<br>
-- De estado: definen o estado do sistema e necesitan coñecer a historia do mesmo para ser definidas. É o conxunto mínimo de variables internas que define o estado do sistema.</p>
-</section>
-<section id="tipos-de-sistemas-relacións-co-entorno" class="slide level2">
-<h2>Tipos de sistemas (relacións co entorno)</h2>
-<ul>
-<li>Aillado: non intercambia nin materia nin enerxía co entorno
-<ul>
-<li>Reactor batch adiabático<br>
-</li>
-</ul></li>
-<li>Pechado: non intercambia materia pero sí enerxía coentorno
-<ul>
-<li>Reactor batch no adiabático<br>
-</li>
-</ul></li>
-<li>Aberto: intercambia materia e enerxía co entorno
-<ul>
-<li>Reactor CSTR</li>
-</ul></li>
-</ul>
-</section>
-<section id="modeloss" class="slide level2">
-<h2>Modeloss</h2>
-</section>
-<section id="multiscale" class="slide level2">
-<h2>Multiscale</h2>
-</section>
-<section id="modeling" class="slide level2">
-<h2>modeling</h2>
-</section>
-<section id="model-reduction" class="slide level2">
-<h2>Model reduction</h2>
-</section>
-<section id="minimal-models" class="slide level2">
-<h2>Minimal models</h2>
-</section>
-<section id="model-nature" class="slide level2">
-<h2>Model nature</h2>
-</section>
-<section id="functional-models" class="slide level2">
-<h2>Functional models</h2>
-</section>
-<section id="logical-models" class="slide level2">
-<h2>Logical models</h2>
-</section>
-<section id="bioinspired-models" class="slide level2">
-<h2>Bioinspired models</h2>
-</section>
-<section id="model-assumptions-model-use" class="slide level2">
-<h2>Model assumptions Model use</h2>
-</section>
-<section id="model-implementation" class="slide level2">
-<h2>Model implementation</h2>
-</section>
-<section id="model-languages-empirical-models" class="slide level2">
-<h2>Model languages Empirical models</h2>
-</section>
-<section id="qualitative-models" class="slide level2">
-<h2>Qualitative models</h2>
-</section>
-<section id="modeling-hierarchy-model-integration" class="slide level2">
-<h2>Modeling hierarchy Model integration</h2>
-</section>
-<section id="goals-in-models" class="slide level2">
-<h2>Goals in models</h2>
-</section>
-<section id="i-have-been-and-remain-entirely" class="slide level2">
-<h2>! “I have been, and remain, entirely</h2>
-</section>
-<section id="committed-to-the-idea-that-modeling-is-the" class="slide level2">
-<h2>committed to the idea that modeling is the</h2>
-</section>
-<section id="essence-of-science-and-the-habitat-of-all" class="slide level2">
-<h2>essence of science and the habitat of all</h2>
-</section>
-<section id="epistemology." class="slide level2">
-<h2>epistemology.”</h2>
-</section>
-<section id="robert-rosen-essays-on" class="slide level2">
-<h2>- Robert Rosen, Essays on</h2>
-</section>
-<section id="life-itself" class="slide level2">
-<h2>Life Itself</h2>
-</section>
 <section>
-<section id="why-models" class="title-slide slide level1 center">
-<h1>why models</h1>
+<section id="introdución" class="title-slide slide level1 center">
+<h1>Introdución</h1>
 
 </section>
-<h5 id="modelo-m.minsky-un-modelo-m-para-un-sistema-s-y-un-experimento-e">MODELO ( M.Minsky ): Un modelo M para un sistema S y un experimento E,</h5>
-<h5 id="es-cualquier-cosa-a-la-que-se-le-puede-aplicar-e-en-orden-a-obtener-respuestas">es cualquier cosa a la que se le puede aplicar E en orden a obtener respuestas</h5>
-<h5 id="a-preguntas-que-hagamos-sobre-s.">a preguntas que hagamos sobre S.</h5>
-<h5 id="modelo-es-una-representación-simplificada-de-un-sistema-y-está-formado">MODELO: Es una representación simplificada de un sistema y está formado</h5>
-<h5 id="por-un-conjunto-de-variables-y-por-un-conjunto-de-relaciones-entre-ellas.">por un conjunto de variables y por un conjunto de relaciones entre ellas.</h5>
-<h5 id="con-el-se-pretende-mejorar-nuestra-habilidad-de-entender-explicar-cambiar">Con el se pretende mejorar nuestra habilidad de entender, explicar, cambiar,</h5>
-<h5 id="preservar-predecir-y-posiblemente-controlar-el-comportamiento-del-sistema">preservar, predecir y posiblemente controlar el comportamiento del sistema</h5>
-<h5 id="representado.">representado.</h5>
-<h5 id="modelo-actúa-como-el-objeto-real-modelado-en-cuanto-a-la-imitación">MODELO: Actúa como el objeto real modelado en cuanto a la imitación</h5>
-<h5 id="de-ciertas-características-pero-su-uso-evita-experimentos-reales-que-pueden">de ciertas características, pero su uso evita experimentos reales que pueden</h5>
-<h5 id="ser-caros-peligrosos-lentos-o-físicamente-imposibles.">ser caros, peligrosos, lentos o físicamente imposibles.</h5></section>
+<section id="resumo-das-clases-teóricas" class="slide level2">
+<h2>Resumo das clases teóricas</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 88%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Conceptos</th>
+<th>Nivel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fundamentos da simulación de procesos</td>
+<td>Básico</td>
+</tr>
+<tr class="even">
+<td>Introdución á simulación de procesos</td>
+<td>Básico</td>
+</tr>
+<tr class="odd">
+<td>Rexistro de novos compoñentes</td>
+<td>Básico</td>
+</tr>
+<tr class="even">
+<td>Estimación de propiedades físicas para simulación de procesos</td>
+<td>Básico</td>
+</tr>
+<tr class="odd">
+<td>Simulación de correntes de reciclado</td>
+<td>Básico</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="simulación-de-procesos" class="slide level2">
+<h2>Simulación de procesos</h2>
+<p><br> A simulación de procesos é unha técnica computacional empregada en varias industrias para:<br>
+- Modelar<br>
+- Analizar e<br>
+- Optimizar procesos complexos.<br>
+<br> - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións.</p>
+</section>
+<section id="qué-implica-a-simulación-de-procesos" class="slide level2 scrollable">
+<h2>Qué implica a simulación de procesos?</h2>
+<p>A simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A[Inicio] --&gt; B[Modelado]
+  B --&gt; C[Entrada de Datos]
+  C --&gt; D[Simulación]
+  D --&gt; E[Visualización]
+  E --&gt; F[Análise]
+  F --&gt; G[Optimización]
+  G --&gt; H[Aplicación]
+  H --&gt; I[Fin]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section></section>
 <section>
-<section id="qué-es-un-modelo.-tipos." class="title-slide slide level1 center">
-<h1>2. Qué es un modelo. Tipos.</h1>
+<section id="etapas-sa-simulación-de-procesos" class="title-slide slide level1 center">
+<h1>Etapas sa simulación de procesos</h1>
 
 </section>
-<h4 id="un-modelo-es">Un modelo es:</h4>
-<h5 id="la-representación-formal-del-sistema">· La representación formal del sistema</h5>
-<h5 id="las-suposiciones-que-definen-el-contexto-en-el-que-el">· Las suposiciones que definen el contexto en el que el</h5>
-<h5 id="modelo-es-aplicado.">modelo es aplicado.</h5>
-<h5 id="predice-el-modelo-los-aspectos-del-comportamiento-del-sistema-que-nos">¿Predice el modelo los aspectos del comportamiento del sistema que nos</h5>
-<h5 id="interesan-con-suficiente-exactitud-para-nuestra-aplicación">interesan con suficiente exactitud para nuestra aplicación?</h5>
+<section id="modelado" class="slide level2">
+<h2>Modelado</h2>
+<p><br> A simulación de procesos comeza coa creación dun modelo matemático ou computacional que representa:<br>
+<br> - Os compoñentes<br>
+- As variables e<br>
+- As interaccións clave dun proceso físico.<br>
+<br> Este modelo pode basearse en:<br>
+- Ecuacións matemáticas<br>
+- Datos empíricos<br>
+<br> Ou unha combinación de ambos.</p>
+</section>
+<section id="simulación" class="slide level2">
+<h2>Simulación</h2>
+<p>Unha vez que o modelo se desenvolve, impleméntase no software de simulación. O software usa algoritmos para: - Realizar cálculos numéricos - Resolver ecuacións para simular o comportamento do proceso ao longo do tempo.</p>
+</section>
+<section id="parámetros-de-entrada" class="slide level2">
+<h2>Parámetros de entrada</h2>
+<p>Os usuarios poden introducir varios parámetros: - Condicións de funcionamento - Especificacións de equipos - Variables de proceso, etc. <br> <br><br>
+para explorar diferentes escenarios e estudar como os cambios afectan o proceso.</p>
+</section>
+<section id="visualización" class="slide level2">
+<h2>Visualización</h2>
+<p>O software de simulación de procesos adoita proporcionar representacións visuais de: - O proceso simulado, incluíndo - gráficos - animacións. <br> Isto permite aos usuarios obter información sobre o rendemento e o comportamento do sistema.</p>
+</section>
+<section id="análise" class="slide level2">
+<h2>Análise</h2>
+<p>Os usuarios poden analizar os resultados da simulación para avaliar: - A eficiencia - O rendemento - A seguridade do proceso. <br> Esta análise axuda a: - Identificar posibles bloqueos de botella - Optimizar o uso de recursos - Mellorar o deseño xeral do proceso.</p>
+</section>
+<section id="optimización" class="slide level2">
+<h2>Optimización</h2>
+<p>A simulación de procesos pódese usar para atopar o conxunto óptimo de: - parámetros ou -condicións <br> que leven ao resultado desexado, tales como: - Maximizar o rendemento da produción ou - Minimizar o consumo de enerxía. ## Aplicacións:</p>
+<p>A simulación de procesos se utiliza en diversas industrias, incluyendo la ingeniería química, la manufactura, el petróleo y el gas, la farmacéutica y el transporte, para modelar y mejorar procesos como reacciones químicas, líneas de producción, cadenas de suministro, entre otros.</p>
+</section>
+<section id="beneficios" class="slide level2">
+<h2>Beneficios:</h2>
+<p><br> A simulación de procesos pode levar a:<br>
+- Un aforro de custos<br>
+- Unha mellor calidade do produto<br>
+- Unha redución de riscos<br>
+- Unha maior seguridade de produción<br>
+<br> permitindo probas virtuais e optimización antes de implementar cambios nos procesos do mundo real.</p>
+</section>
+<section id="fluxogramas" class="slide level2">
+<h2>Fluxogramas</h2>
+<p><em>Alexander C. Dimian (2003)</em> <br> <br></p>
 <ul>
-<li>El modelo sólo es válido en el contexto y bajo las suposiciones con las</li>
+<li>O diagrama de fluxo é unha descrición sistémica de fluxos de materiais e enerxía en a planta de proceso mediante simulación informática co ámbito de proxectar unha nova planta ou mellorar o rendemento dunha planta existente. <br></li>
+<li>O diagrama de fluxo pode usarse como axuda para implementar un control en toda a planta estratexia, así como para xestionar o funcionamento da planta.</li>
 </ul>
-<h5 id="que-ha-sido-desarrollado.">que ha sido desarrollado.</h5>
-<ul>
-<li>La extrapolación del modelo fuera del contexto es muy peligrosa.</li>
-<li>Se debe verificar el modelo contra el sistema real siempre que sea posible.</li>
-<li>Existen muchos modelos para un mismo sistema, cada uno representa una</li>
-</ul>
-<h5 id="vista-diferente-del-sistema.-es-importante-seleccionar-un-buen-nivel-de-abstracción.">vista diferente del sistema. Es importante seleccionar un buen nivel de abstracción.</h5>
-<h3 id="clasificación">CLASIFICACIÓN</h3>
-<pre><code>F FÍSICOS : Caros, díficiles de construir y usar.!
-Estáticos : Maquetas,..!
-Dinámicos :!
--Analógicos: Circuitos eléctricos!
--Prototipos: Plantas piloto!
-!
-F MENTALES : Heurísticos, intuitivos.!
-Son imprecisos y de difícil comunicación!
-!
- MATEMÁTICOS : (Cuantitativos):!
-Estáticos : No se considera la variable tiempo.!
-Dinámicos : El tiempo es una variable del sistema.!
--Analíticos!
--Numéricos!
-!
-F SIMBÓLICOS :!
-Lingüísiticos : Decripción de hechos!
-Cualitativos!
-Basados en reglas .!</code></pre>
-<pre><code>Estático vs. Dinámico: Transitorios</code></pre>
-<pre><code>Agrupados vs. Distribuidos: Descripción espacial</code></pre>
-<pre><code>Determinísticos vs. Estocásticos: Aleatoriedad</code></pre>
-<pre><code>Contínuos vs. Discretos: Muestreos o eventos</code></pre>
-<pre><code>Lineal vs. No lineal: Comportamiento cualitativo</code></pre>
-<pre><code>Caja Negra vs. Espacio de Estados: Comportamiento interno</code></pre>
-<pre><code>Tiempo vs. Frecuencia: Escala de tiempo</code></pre>
-<h3 id="modelos-matemáticos-cuantitativos">MODELOS MATEMÁTICOS (CUANTITATIVOS)</h3>
-<pre><code>Traslación de las relaciones entre variables físicas a estructuras matemáticas.</code></pre>
-<pre><code>Estático vs. Dinámico: Transitorios</code></pre>
-<pre><code>Agrupados vs. Distribuidos: Descripción espacial</code></pre>
-<pre><code>Determinísticos vs. Estocásticos: Ruido</code></pre>
-<pre><code>Contínuos vs. Discretos: Muestreos o eventos</code></pre>
-<pre><code>Lineal vs. No lineal: Comportamiento cualitativo</code></pre>
-<pre><code>Caja Negra vs. Espacio de Estados: Comportamiento interno</code></pre>
-<pre><code>Tiempo vs. Frecuencia: Escala de tiempo</code></pre>
-<h3 id="modelos-matemáticos-cuantitativos-1">MODELOS MATEMÁTICOS (CUANTITATIVOS)</h3>
-<pre><code>Traslación de las relaciones entre variables físicas a estructuras matemáticas.</code></pre>
-<pre><code>Estático Dinámico</code></pre>
-<pre><code>Agrupados AE ODE
-Distribuidos PDE Eliptica PDE Parabólica</code></pre>
-<pre><code>Determinísticos NLAE ODEs/PDE
-Estocásticos AE y DE ODEs estocásticas y DE</code></pre>
-<pre><code>Contínuos AE ODE
-Discretos DE DE</code></pre>
-<pre><code>Lineal LAE LODE
-No lineal NLAE NLODE</code></pre>
-<h3 id="modelos-matemáticos-cuantitativos-2">MODELOS MATEMÁTICOS (CUANTITATIVOS)</h3>
-<pre><code>Ecuaciones que resultan de los diferentes modelos:</code></pre>
-<pre><code>AE: Ecuaciones algebraicas. LAE: AEs lineales. NLAE: AEs no lineales.
-ODE: Ecuaciones diferenciales ordinarias. LODE: ODEs lineales.
-NLODE: ODES no lineales.
-DE: Ecuaciones en diferencias.
-PDE: Ecuaciones en derivadas parciales.</code></pre>
-<h4 id="estático-vs.-dinámico">Estático vs.&nbsp;dinámico</h4>
-<h4 id="modelo-estático">Modelo estático:</h4>
-<h4 id="relaciona-las-variables-en-un">Relaciona las variables en un</h4>
-<h4 id="estado-de-equilibrio">estado de equilibrio</h4>
-<h4 id="modelo-dinámico">Modelo dinámico:</h4>
-<h4 id="relaciona-las-variables-a">Relaciona las variables a</h4>
-<h4 id="lo-largo-del-tiempo">lo largo del tiempo</h4>
-<pre><code>tiempo</code></pre>
-<pre><code>variable</code></pre>
-<h4 id="agrupado-vs.-distribuido">Agrupado vs.&nbsp;distribuido</h4>
-<h4 id="agrupado-considera-que-todas">Agrupado: Considera que todas</h4>
-<h4 id="las-fuerzas-están-aplicadas-en-el">las fuerzas están aplicadas en el</h4>
-<h4 id="centro-de-gravedad-y-que-el">centro de gravedad y que el</h4>
-<h4 id="sistema-se-puede-reducir-a-dicho">sistema se puede “reducir” a dicho</h4>
-<h4 id="punto.-no-se-considera-el-espacio.">punto. No se considera el espacio.</h4>
-<h4 id="distribuido-se-considera-el">Distribuido: Se considera el</h4>
-<h4 id="espacio-y-por-tanto-el-sistema-hay">espacio y por tanto el sistema hay</h4>
-<h4 id="que-analizarlo-descomponiendolo">que analizarlo descomponiendolo</h4>
-<h4 id="en-elementos.-está-distribuido-en">en elementos. Está distribuido en</h4>
-<h4 id="el-espacio.">el espacio.</h4>
-<h4 id="caja-negra-vs.-espacio-de-estados">Caja negra vs.&nbsp;espacio de estados</h4>
-<h4 id="caja-negra-el-modelo-se-ha">Caja Negra: El modelo se ha</h4>
-<h4 id="hallado-mediante-identificación-a">hallado mediante identificación a</h4>
-<h4 id="través-de-unos-datos-empíricos.-no">través de unos datos empíricos. No</h4>
-<h4 id="se-conoce-el-porqué.">se conoce el porqué.</h4>
-<h4 id="espacio-de-estados-el-modelo">Espacio de estados: El modelo</h4>
-<h4 id="está-basado-en-un-conocimiento">está basado en un conocimiento</h4>
-<h4 id="del-sistema-en-leyes-físicas-y">del sistema, en leyes físicas y</h4>
-<h4 id="químicas-que-rigen-su">químicas que rigen su</h4>
-<h4 id="comportamiento..">comportamiento..</h4>
-<pre><code>22
-System (S)</code></pre>
-<pre><code>Model (M)</code></pre>
-<pre><code>inputs</code></pre>
-<pre><code>inputs</code></pre>
-<pre><code>outputs</code></pre>
-<pre><code>outputs</code></pre>
-<pre><code>u y</code></pre>
-<pre><code>i o</code></pre>
-<pre><code>simplification</code></pre>
-<pre><code>y=S[u]</code></pre>
-<pre><code>x</code></pre>
-<pre><code>ms,p x</code></pre>
-<pre><code>Model (M)
-inputs outputs</code></pre>
-<pre><code>i o
-ms,p x</code></pre>
-<pre><code>Model (M)
-inputs outputs (desired)</code></pre>
-<pre><code>i o
-msp x</code></pre>
-<pre><code>Model (M)
-inputs outputs (measured)</code></pre>
-<pre><code>i o
-ms p x</code></pre>
-<pre><code>Model (M)
-inputs outputs</code></pre>
-<pre><code>i o
-ms,p x</code></pre>
-<pre><code>Model (M)
-inputs outputs (measured)</code></pre>
-<pre><code>i o
-ms p x</code></pre>
-<pre><code>Model (M)
-inputs outputs</code></pre>
-<pre><code>i o
-ms,p x</code></pre>
-<pre><code>Simulation (prediction)</code></pre>
-<pre><code>dynamic
-steady state</code></pre>
-<pre><code>Design specification</code></pre>
-<pre><code>System identification</code></pre>
-<pre><code>Control (regulation) problem. Inverse simulation</code></pre>
-<pre><code>fault detection and diagnosis</code></pre>
-<pre><code>Optimization</code></pre>
-<pre><code>DATA</code></pre>
-<pre><code>RESULT</code></pre>
-<pre><code>!"#
-$%&amp;#''()*
-*%+'</code></pre>
-<pre><code>ms: model structure
-p: model parameters
-x: states</code></pre>
-<pre><code>x: states</code></pre>
-<pre><code>*%+',-./01</code></pre>
-<pre><code>+ objective function</code></pre>
-<h6 id="modos-de-operación">MODOS DE OPERACIÓN</h6>
-<h6 id="de-un-modelo">DE UN MODELO</h6>
-<h6 id="qué-debe-tener-un-buen-modelo">QUÉ DEBE TENER UN BUEN MODELO</h6>
-<h6 id="precisión">PRECISIÓN</h6>
-<pre><code>Ni mucha ni poca
-Cuantitativa y cualitativa</code></pre>
-<h6 id="validez">VALIDEZ</h6>
-<pre><code>Rango de validez
-Condiciones de operación
-Condiciones transitorias
-Propiedades internas</code></pre>
-<h6 id="complejidad">COMPLEJIDAD</h6>
-<pre><code>Simple (macroscópico)
-Detallado (microscópico)</code></pre>
-<h6 id="espectro-del-modelado-y-la-simulación">ESPECTRO DEL MODELADO Y LA SIMULACIÓN</h6></section>
+</section>
+<section id="simulación---deseño---optimización-e-síntese-de-procesos-químicos" class="slide level2">
+<h2>Simulación - Deseño - Optimización e Síntese de Procesos Químicos</h2>
+
+<img data-src="./imaxes/fluxos-genl.png" class="r-stretch quarto-figure-center"><p class="caption">Modelo de Linnhoff</p></section>
+<section id="modelo-de-deseño-de-capas-da-cebola-linnhoff" class="slide level2">
+<h2>Modelo de deseño de capas da cebola (Linnhoff)</h2>
+
+<img data-src="./imaxes/onion-gl.png" width="900" class="r-stretch quarto-figure-center"><p class="caption">Modelo de Linnhoff</p><p>[Modelo de capa d] ::: {.notes} Dentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al.&nbsp;(1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos. ::: ## Resumo</p>
+<p>A simulación de procesos é unha poderosa ferramenta que permite a proba virtual e a análise de procesos complexos, facilitando a decisión e a optimización nunha ampla gama de industrias.</p>
+</section></section>
 <section>
-<section id="qué-es-la-simulación.-fases-y-tipos" class="title-slide slide level1 center">
-<h1>3. Qué es la simulación. Fases y tipos</h1>
+<section id="simuladores-de-procesos" class="title-slide slide level1 center">
+<h1>Simuladores de Procesos</h1>
 
 </section>
-<h5 id="definición-g.korn-una-simulación-es-un-experimento-realizado">DEFINICIÓN: (g.Korn) : “Una simulación es un experimento realizado</h5>
-<h5 id="sobre-un-modelo.">sobre un modelo.”</h5>
-<h5 id="definición-es-la-representación-de-un-sistema-que-intenta">DEFINICIÓN: Es la representación de un sistema que intenta</h5>
-<h5 id="mantener-las-mismas-características-que-el">mantener las mismas características que el</h5>
-<h5 id="objeto-simulado-descrito-por-el-modelo.">objeto simulado, descrito por el modelo.</h5>
-<h5 id="definición-es-la-técnica-de-construir-y-ejecutar-un-modelo">DEFINICIÓN: Es la técnica de construir y ejecutar un modelo</h5>
-<h5 id="de-un-sistema-real-con-el-fin-de-estudiar-su">de un sistema real con el fin de estudiar su</h5>
-<h5 id="comportamiento-sin-intervenir-en-el-ambiente">comportamiento sin intervenir en el ambiente</h5>
-<h5 id="del-sistema-real.">del sistema real.</h5>
-<h5 id="fases-en-la-simulación">FASES EN LA SIMULACIÓN</h5>
-<h5 id="tipos-de-simuladores">TIPOS DE SIMULADORES</h5>
-<p><strong>Régimen</strong> :</p>
-<p><em>Estáticos</em> (régimen permanente o estacionario)</p>
-<p><em>Dinámicos</em> (regimen transitorio)</p>
-<p><strong>Arquitectura</strong> :</p>
-<p><em>Secuenciales-modulares</em></p>
-<p><em>Orientados a ecuaciones</em></p>
-<p><em>Modulares simultáneos</em></p>
-<h5 id="uso-de-los-simuladores-estáticos.">USO DE LOS SIMULADORES ESTÁTICOS.!</h5>
-<h6 id="section">!</h6>
-<h5 id="resolución-rigurosa-de-las-ecuaciones-de-balance-de-materia-y">! Resolución rigurosa de las ecuaciones de balance de materia y</h5>
-<h5 id="energía-para-el-conjunto-de-operaciones-unitarias-de-un-proceso">energía para el conjunto de operaciones unitarias de un proceso</h5>
-<h5 id="continuo.">continuo.</h5>
-<h5 id="proporciona-datos-para-el-dimensionamiento-de-equipos">! Proporciona datos para el dimensionamiento de equipos</h5>
-<h5 id="reducción-de-la-inversión-por-diseño-más-ajustado">! Reducción de la inversión por diseño más ajustado</h5>
-<h5 id="mejora-de-la-calidad">! Mejora de la calidad</h5>
-<h5 id="menos-ensayos-en-planta-piloto-ahorro-de-tiempo-y-dinero">! Menos ensayos en planta piloto: Ahorro de tiempo y dinero</h5>
-<h5 id="eliminación-de-cálculos-repetitivos-y-errores">! Eliminación de cálculos repetitivos y errores</h5>
-<h5 id="ensayo-sin-riesgo-de-nuevas-ideas-de-operación">! Ensayo sin riesgo de nuevas ideas de operación</h5>
-<h5 id="mejor-entendimiento-del-proceso">! Mejor entendimiento del proceso</h5>
-<h5 id="escalado-de-procesos">! Escalado de procesos</h5>
-<h5 id="operación-fuera-de-diseño">! Operación fuera de diseño</h5>
-<h5 id="optimización-de-planta-y-diseño">! Optimización de planta y diseño</h5>
-<h5 id="cuellos-de-botella-revamping-mejora-en-la-producción">! Cuellos de botella, revamping, mejora en la producción</h5>
-<h5 id="uso-de-simuladores-dinámicos">USO DE SIMULADORES DINÁMICOS</h5>
-<h5 id="operación">Operación :</h5>
-<h5 id="respuesta-de-procesos-continuos-ante-perturbaciones">! Respuesta de procesos continuos ante perturbaciones</h5>
-<h5 id="ajuste-de-controladores">! Ajuste de controladores</h5>
-<h5 id="maniobras-y-desviaciones-anormales-en-el-proceso-para">! Maniobras y desviaciones anormales en el proceso, para</h5>
-<h5 id="estudios-de-seguridad-y-de-emisiones">estudios de seguridad y de emisiones</h5>
-<h5 id="análisis-de-operabilidad-y-riesgo">! Análisis de operabilidad y riesgo</h5>
-<h5 id="validación-de-procedimientos-de-emergencia">! Validación de procedimientos de emergencia</h5>
-<h5 id="entrenamiento-de-operadores">! Entrenamiento de operadores</h5>
-<h5 id="diseño">Diseño :</h5>
-<h5 id="sistema-de-control-y-controlabilidad">! Sistema de control y controlabilidad</h5>
-<h5 id="procedimeintos-de-puesta-en-marcha-y-parada">! Procedimeintos de puesta en marcha y parada</h5>
-<h5 id="procesos-discontinuos">! Procesos discontinuos</h5>
+<section id="arquitectura-de-simuladores-de-proceso" class="slide level2">
+<h2>Arquitectura de simuladores de proceso</h2>
+<ul>
+<li>Modular secuencial
+<ul>
+<li>Baseado no concepto de modularidade, que estende o concepto da enxeñaría de <strong>operación unitaria</strong> a un <strong>cálculo da unidades de operación</strong> mediante un o código informático responsable do cálculo das unidades de proceso.<br>
+</li>
+<li>O cálculo de todo o fluxograma se fai unidade a unidade seguindo unha secuencia de cálculo.<br>
+</li>
+</ul></li>
+<li>O orientado á ecuacións (Simultáneameo - Non modular)
+<ul>
+<li>O modelo completo do fluxograma exprésase en forma dun gran sistema disperso de ecuacións alxébricas non lineais, que se solucionan simultaneamente para todas as incógnitas.</li>
+</ul></li>
+<li>Modular Simultáneo Combinación de secuencial-modular e orientado á ecuación enfoques</li>
+</ul>
+</section>
+<section id="simuladores-de-procesos-comerciais-para-estado-estacionario" class="slide level2">
+<h2>Simuladores de procesos Comerciais para Estado Estacionario</h2>
+<ul>
+<li>Sequenciais – Modulares
+<ul>
+<li>Aspen Plus</li>
+<li>Aspen Hysys</li>
+<li>ChemCAD</li>
+<li>PRO II</li>
+<li>UniSim</li>
+</ul></li>
+</ul>
+</section>
+<section id="simuladores-de-procesos-comerciais-para-estado-estacionario-1" class="slide level2">
+<h2>Simuladores de procesos Comerciais para Estado Estacionario</h2>
+<ul>
+<li>Orientados a Ecuación
+<ul>
+<li>gProms</li>
+<li>VMGSim</li>
+<li>Aspen Plus in EO</li>
+<li>Aspen Custom Modeler ::::</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="simuladores-de-procesos-para-estado-estacionaro-gratiutos" class="title-slide slide level1 center">
+<h1>Simuladores de Procesos para Estado Estacionaro Gratiutos</h1>
+<ul>
+<li>Orientados a Ecuacións
+<ul>
+<li>DWSIM</li>
+<li>COCO <br></li>
+</ul></li>
+<li>Secuenciales – Modulares -ASCEND ## Simuladores Secuandiais - Modulares</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A(Interface gráfica de usuario) &lt;--&gt; B[Entrada]
+    B &lt;--&gt; D[Programa Executivo]
+    A &lt;--&gt; C[Saída]
+    A &lt;--&gt; D
+    C &lt;--&gt; D
+    D &lt;--&gt; E[[Biblioteca de Unidades de Operación]] 
+    D &lt;--&gt; F[[Métodos Termodinámicos]]
+    D &lt;--&gt; G[[utinas numéricas]]
+    H(Bases de datos de coste e dimensións) --&gt; E
+I(Bases de datos de Propiedades Físicas) --&gt; E
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="servizos-de-propiedades-físicas" class="slide level2">
+<h2>Servizos de propiedades físicas</h2>
+<ul>
+<li>Subministran estimacións para varias propiedades físicas diferentes mentres a simulación está funcionando.</li>
+<li>O equilibrio de fase representa unha das propiedades físicas máis importantes, xa que moitas simulacións de procesos químicos implican destilación, separación, evaporación ou separación líquido - líquidos.</li>
+<li>Resolven os balances de masa e enerxía para estas operacións que require a predicción:
+<ul>
+<li>Vapor - Equilibrio líquido (VLE)</li>
+<li>Líquido - Equilibrio líquido (LLE)</li>
+</ul></li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>A estimación de propiedades físicas pode consumir ata o 90% do tempo de computación dunha simulación. Os paquetes de propiedades úsanse para predecir o equilibrio de fase e o comportamento de compoñentes puros e sistemas de mestura</li>
+</ul>
+</div>
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
+<p><img src="imaxes/logo-pequeno.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p><a href="https://github.com/anxosanchez/sopq" class="uri">https://github.com/anxosanchez/sopq</a></p>
 </div>
-</div></section>
+</div>
+</section></section>
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -727,12 +618,13 @@ Detallado (microscópico)</code></pre>
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -753,7 +645,7 @@ Detallado (microscópico)</code></pre>
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -858,14 +750,14 @@ Detallado (microscópico)</code></pre>
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'none',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'fade',
+        backgroundTransition: 'none',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
@@ -903,7 +795,7 @@ Detallado (microscópico)</code></pre>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,
