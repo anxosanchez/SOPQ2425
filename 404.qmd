@@ -1,0 +1,19 @@
+---
+title: "Page Not Found"
+format: 
+  html:
+    page-layout: full
+---
+
+<center>
+
+# Oops!
+
+## 404 PAGE NOT FOUND
+
+The page your are looking for might have been removed, have its name changed or is tmporarily unavailable.
+
+A páxina que estás a buscar poido ser eliminada, renomeada ou non está lista.
+
+</center>
+
