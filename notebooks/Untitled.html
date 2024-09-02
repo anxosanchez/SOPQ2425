@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano. – SOPQ-2324</title>
+<title>untitled – SOPQ-2324</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano.</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -271,219 +271,192 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano.</h1>
+
+
+
+<div id="72b0b466-878d-4240-ac16-0aaa2aa91ab5" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">2</span><span class="op">*</span>np.pi, <span class="dv">100</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="kw">lambda</span> x: np.sin(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div id="79053635" class="cell" data-execution_count="19">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="06268d35-382d-442c-85e5-7fed8bbeeda4" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_num_diff(a, b, n, option<span class="op">=</span><span class="st">'central'</span>, x_range<span class="op">=</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>), num_points<span class="op">=</span><span class="dv">1000</span>):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create an array of x values within the specified range</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> np.linspace(x_range[<span class="dv">0</span>], x_range[<span class="dv">1</span>], num_points)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate the step size for differentiation</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    h <span class="op">=</span> (x_range[<span class="dv">1</span>] <span class="op">-</span> x_range[<span class="dv">0</span>]) <span class="op">/</span> (num_points <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize an array to store the differentiated values</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    dy <span class="op">=</span> np.zeros_like(x)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_points):</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        x_val <span class="op">=</span> x[i]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Calculate the difference for the specified option</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> option <span class="op">==</span> <span class="st">'forward'</span>:</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> a(x_val) <span class="op">-</span> b(x_val)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> (a(x_val <span class="op">+</span> h) <span class="op">-</span> b(x_val <span class="op">+</span> h) <span class="op">-</span> a(x_val) <span class="op">+</span> b(x_val)) <span class="op">/</span> (h <span class="op">**</span> n)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> option <span class="op">==</span> <span class="st">'backward'</span>:</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> a(x_val) <span class="op">-</span> b(x_val)</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> (a(x_val) <span class="op">-</span> b(x_val) <span class="op">-</span> a(x_val <span class="op">-</span> h) <span class="op">+</span> b(x_val <span class="op">-</span> h)) <span class="op">/</span> (h <span class="op">**</span> n)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> option <span class="op">==</span> <span class="st">'central'</span>:</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> a(x_val) <span class="op">-</span> b(x_val)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> (a(x_val <span class="op">+</span> h) <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> a(x_val) <span class="op">+</span> a(x_val <span class="op">-</span> h) <span class="op">-</span> b(x_val <span class="op">+</span> h) <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> b(x_val) <span class="op">-</span> b(x_val <span class="op">-</span> h)) <span class="op">/</span> (h <span class="op">**</span> n)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Invalid option. Use 'forward', 'backward', or 'central'."</span>)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [dy, x]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="szkD3qe23I90" class="cell" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Parámetros de Antoine</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># heptano</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>A_heptano <span class="op">=</span> <span class="fl">4.02832</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>B_heptano <span class="op">=</span> <span class="fl">1268.636</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>C_heptano <span class="op">=</span> <span class="op">-</span><span class="fl">56.199</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#Octano</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>A_octano<span class="op">=</span><span class="fl">4.04867</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>B_octano<span class="op">=</span><span class="fl">1355.126</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>C_octano<span class="op">=-</span><span class="fl">63.633</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternativa</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># A = [A_heptano, A_octano]</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># B=[B_heptano, B_octano]</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># A[0] = A del heptano</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Dato: temperatura</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="dv">115</span> <span class="op">+</span> <span class="fl">273.15</span> <span class="co"># K</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="0d963160-b12e-41f9-9267-3a4398e9ce53" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>[dyf, Xf] <span class="op">=</span> my_num_diff(f, <span class="dv">0</span>, <span class="dv">2</span><span class="op">*</span>np.pi, <span class="dv">10</span>, <span class="st">'forward'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg ansi-bold">UFuncTypeError</span>                            Traceback (most recent call last)
+Cell <span class="ansi-green-fg ansi-bold">In[26], line 1</span>
+<span class="ansi-green-fg ansi-bold">----&gt; 1</span> [dyf, Xf] <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">my_num_diff</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">f</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">0</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">2</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">np</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">pi</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">10</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">forward</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
+
+Cell <span class="ansi-green-fg ansi-bold">In[25], line 3</span>, in <span class="ansi-cyan-fg">my_num_diff</span><span class="ansi-blue-fg ansi-bold">(a, b, n, option, x_range, num_points)</span>
+<span class="ansi-green-fg">      1</span> <span style="font-weight:bold;color:rgb(0,135,0)">def</span> <span style="color:rgb(0,0,255)">my_num_diff</span>(a, b, n, option<span style="color:rgb(98,98,98)">=</span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">central</span><span style="color:rgb(175,0,0)">'</span>, x_range<span style="color:rgb(98,98,98)">=</span>(<span style="color:rgb(98,98,98)">-</span><span style="color:rgb(98,98,98)">1</span>, <span style="color:rgb(98,98,98)">1</span>), num_points<span style="color:rgb(98,98,98)">=</span><span style="color:rgb(98,98,98)">1000</span>):
+<span class="ansi-green-fg">      2</span>     <span style="font-style:italic;color:rgb(95,135,135)"># Create an array of x values within the specified range</span>
+<span class="ansi-green-fg ansi-bold">----&gt; 3</span>     x <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">np</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">linspace</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x_range</span><span class="ansi-yellow-bg">[</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">0</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">x_range</span><span class="ansi-yellow-bg">[</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">1</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">num_points</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      5</span>     <span style="font-style:italic;color:rgb(95,135,135)"># Calculate the step size for differentiation</span>
+<span class="ansi-green-fg">      6</span>     h <span style="color:rgb(98,98,98)">=</span> (x_range[<span style="color:rgb(98,98,98)">1</span>] <span style="color:rgb(98,98,98)">-</span> x_range[<span style="color:rgb(98,98,98)">0</span>]) <span style="color:rgb(98,98,98)">/</span> (num_points <span style="color:rgb(98,98,98)">-</span> <span style="color:rgb(98,98,98)">1</span>)
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\core\function_base.py:129</span>, in <span class="ansi-cyan-fg">linspace</span><span class="ansi-blue-fg ansi-bold">(start, stop, num, endpoint, retstep, dtype, axis)</span>
+<span class="ansi-green-fg">    125</span> div <span style="color:rgb(98,98,98)">=</span> (num <span style="color:rgb(98,98,98)">-</span> <span style="color:rgb(98,98,98)">1</span>) <span style="font-weight:bold;color:rgb(0,135,0)">if</span> endpoint <span style="font-weight:bold;color:rgb(0,135,0)">else</span> num
+<span class="ansi-green-fg">    127</span> <span style="font-style:italic;color:rgb(95,135,135)"># Convert float/complex array scalars to float, gh-3504</span>
+<span class="ansi-green-fg">    128</span> <span style="font-style:italic;color:rgb(95,135,135)"># and make sure one can use variables that have an __array_interface__, gh-6634</span>
+<span class="ansi-green-fg ansi-bold">--&gt; 129</span> start <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">asanyarray</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">start</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">1.0</span>
+<span class="ansi-green-fg">    130</span> stop  <span style="color:rgb(98,98,98)">=</span> asanyarray(stop)  <span style="color:rgb(98,98,98)">*</span> <span style="color:rgb(98,98,98)">1.0</span>
+<span class="ansi-green-fg">    132</span> dt <span style="color:rgb(98,98,98)">=</span> result_type(start, stop, <span style="color:rgb(0,135,0)">float</span>(num))
+
+<span class="ansi-red-fg ansi-bold">UFuncTypeError</span>: ufunc 'multiply' did not contain a loop with signature matching types (dtype('&lt;U1'), dtype('float64')) -&gt; None</pre>
 </div>
-<section id="cálculo-da-presión-de-vapor-dos-compoñentes-puros-ecuación-de-antoine" class="level1">
-<h1>Cálculo da presión de vapor dos compoñentes puros (ecuación de Antoine)</h1>
-<div id="2e4357f3" class="cell" data-outputid="b5664cac-21bb-439c-8df9-1581f81c91f4" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pv_heptano <span class="op">=</span> <span class="dv">10</span> <span class="op">**</span> ( A_heptano <span class="op">-</span> B_heptano <span class="op">/</span> ( T <span class="op">+</span> C_heptano ) ) <span class="co"># bar</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pv_octano  <span class="op">=</span> <span class="dv">10</span> <span class="op">**</span> ( A_octano  <span class="op">-</span> B_octano  <span class="op">/</span> ( T <span class="op">+</span> C_octano  ) ) <span class="co"># bar</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'A presión de vapor do heptano puro é de </span><span class="sc">{</span>pv_heptano<span class="sc">:6.4f}</span><span class="ss"> bar.'</span>) <span class="co"># compoñente mais volátil, maior presión de vapor</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print('A presión de vapor do heptano puro é de {:6.4f} bar.'.format(pv_heptano)) #más volátil, mayor presión de vapor</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'A presión de vapor do heptano puro é de </span><span class="sc">{</span>pv_octano<span class="sc">:6.4f}</span><span class="ss"> bar.'</span>) <span class="co"># compoñente mais volátil, maior presión de vapor</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># print('A presión de vapor do octano puro {:6.4f} bar.'.format(pv_octano))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="a1ee2225-5725-43c0-b056-4777aca2d479" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>[dyb, Xb] <span class="op">=</span> np.diff(f, <span class="dv">0</span>, <span class="dv">2</span><span class="op">*</span>np.pi, <span class="dv">10</span>, <span class="st">'backward'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>[dyc, Xc] <span class="op">=</span> np.diff(f, <span class="dv">0</span>, <span class="dv">2</span><span class="op">*</span>np.pi, <span class="dv">10</span>, <span class="st">'central'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">12</span>, <span class="dv">8</span>))</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.cos(x), label <span class="op">=</span> <span class="st">'analytic'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>plt.plot(Xf, dyf, label <span class="op">=</span> <span class="st">'forward'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>plt.plot(Xb, dyb, label <span class="op">=</span> <span class="st">'backward'</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>plt.plot(Xc, dyc, label <span class="op">=</span> <span class="st">'central'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Analytic and Numerical Derivatives of Sine'</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x'</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'y'</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg ansi-bold">In[12], line 1</span>
+<span class="ansi-green-fg ansi-bold">----&gt; 1</span> [dyb, Xb] <span style="color:rgb(98,98,98)">=</span> np<span style="color:rgb(98,98,98)">.</span>diff(f, <span style="color:rgb(98,98,98)">0</span>, <span style="color:rgb(98,98,98)">2</span><span style="color:rgb(98,98,98)">*</span>np<span style="color:rgb(98,98,98)">.</span>pi, <span style="color:rgb(98,98,98)">10</span>, <span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">backward</span><span style="color:rgb(175,0,0)">'</span>)
+<span class="ansi-green-fg">      2</span> [dyc, Xc] <span style="color:rgb(98,98,98)">=</span> np<span style="color:rgb(98,98,98)">.</span>diff(f, <span style="color:rgb(98,98,98)">0</span>, <span style="color:rgb(98,98,98)">2</span><span style="color:rgb(98,98,98)">*</span>np<span style="color:rgb(98,98,98)">.</span>pi, <span style="color:rgb(98,98,98)">10</span>, <span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">central</span><span style="color:rgb(175,0,0)">'</span>)
+<span class="ansi-green-fg">      3</span> plt<span style="color:rgb(98,98,98)">.</span>figure(figsize <span style="color:rgb(98,98,98)">=</span> (<span style="color:rgb(98,98,98)">12</span>, <span style="color:rgb(98,98,98)">8</span>))
+
+<span class="ansi-red-fg ansi-bold">TypeError</span>: cannot unpack non-iterable function object</pre>
+</div>
+</div>
+</div>
+<div id="53ef975f-3132-4f70-a2b3-a2df79603863" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> diff(a, b, n, option<span class="op">=</span><span class="st">'central'</span>, x_range<span class="op">=</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>), num_points<span class="op">=</span><span class="dv">1000</span>):</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create an array of x values within the specified range</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> np.linspace(x_range[<span class="dv">0</span>], x_range[<span class="dv">1</span>], num_points)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate the step size for differentiation</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    h <span class="op">=</span> (x_range[<span class="dv">1</span>] <span class="op">-</span> x_range[<span class="dv">0</span>]) <span class="op">/</span> (num_points <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize an array to store the differentiated values</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    dy <span class="op">=</span> np.zeros_like(x)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_points):</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        x_val <span class="op">=</span> x[i]</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Calculate the difference for the specified option</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> option <span class="op">==</span> <span class="st">'forward'</span>:</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> a(x_val) <span class="op">-</span> b(x_val)</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> (a(x_val <span class="op">+</span> h) <span class="op">-</span> b(x_val <span class="op">+</span> h) <span class="op">-</span> a(x_val) <span class="op">+</span> b(x_val)) <span class="op">/</span> (h <span class="op">**</span> n)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> option <span class="op">==</span> <span class="st">'backward'</span>:</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> a(x_val) <span class="op">-</span> b(x_val)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> (a(x_val) <span class="op">-</span> b(x_val) <span class="op">-</span> a(x_val <span class="op">-</span> h) <span class="op">+</span> b(x_val <span class="op">-</span> h)) <span class="op">/</span> (h <span class="op">**</span> n)</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> option <span class="op">==</span> <span class="st">'central'</span>:</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> a(x_val) <span class="op">-</span> b(x_val)</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>                dy[i] <span class="op">=</span> (a(x_val <span class="op">+</span> h) <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> a(x_val) <span class="op">+</span> a(x_val <span class="op">-</span> h) <span class="op">-</span> b(x_val <span class="op">+</span> h) <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> b(x_val) <span class="op">-</span> b(x_val <span class="op">-</span> h)) <span class="op">/</span> (h <span class="op">**</span> n)</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Invalid option. Use 'forward', 'backward', or 'central'."</span>)</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [dy, x]</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Example usage:</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f(x):</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> g(x):</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.sin(x)</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> diff(f, g, <span class="dv">2</span>, option<span class="op">=</span><span class="st">'central'</span>, x_range<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">2</span> <span class="op">*</span> np.pi), num_points<span class="op">=</span><span class="dv">100</span>)</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>dy, x <span class="op">=</span> result</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dy)</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>A presión de vapor do heptano puro é de 1.6090 bar.
-A presión de vapor do heptano puro é de 0.7462 bar.</code></pre>
-</div>
-</div>
-<div id="067753b1" class="cell" data-outputid="1f4c28f1-f196-4e4a-d51a-9da3dc20fcc4" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector de valores de x</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>x_heptano <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">11</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula a presión total a partires das presións de vapor e as fraccións molares na fase vapor</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>P_total <span class="op">=</span> x_heptano <span class="op">*</span> pv_heptano <span class="op">+</span> ( <span class="dv">1</span> <span class="op">-</span> x_heptano ) <span class="op">*</span> pv_octano</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Cálculo Presións de burbulla</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>P_burbulla <span class="op">=</span> x_heptano <span class="op">*</span> pv_heptano <span class="op">+</span> ( <span class="dv">1</span> <span class="op">-</span> x_heptano ) <span class="op">*</span> pv_octano</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">#Calcular los valores de y</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>y_heptano <span class="op">=</span> pv_heptano <span class="op">*</span> x_heptano <span class="op">/</span> P_burbulla</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">#Presiones de rocío</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>P_orballo <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> ( y_heptano <span class="op">/</span> pv_heptano <span class="op">+</span> ( <span class="dv">1</span> <span class="op">-</span> y_heptano ) <span class="op">/</span> pv_octano )</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co">#Representación del diagrama P-x,y</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>plt.plot(x_heptano, P_burbulla, <span class="st">'yo-'</span>, y_heptano, P_orballo, <span class="st">'go-'</span>)</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>plt.xlim(<span class="dv">0</span>,<span class="dv">1</span>)</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x, y (heptano)'</span>)</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Presión (bar)'</span>)</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Diagrama P-x,y'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="22">
-<pre><code>Text(0.5, 1.0, 'Diagrama P-x,y')</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-5-output-2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<section id="aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada" class="level2">
-<h2 class="anchored" data-anchor-id="aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada">Aparatdo 2 . Diagrama T-xy a partires da presión total dada</h2>
-<div id="af1700d8" class="cell" data-execution_count="23">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> fsolve</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="A16huIJD3YQR" class="cell" data-outputid="ea9582ef-6443-47e3-ff95-080837297ecf" data-execution_count="24">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Datos do exercicio</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>P_t <span class="op">=</span> <span class="fl">1.5</span> <span class="co">#bar</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>x_heptano <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">11</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Suponse unha temperatura de partida</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>T_guess<span class="op">=</span><span class="dv">396</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Créanse dúas listas nas que se almacenarán os datos de temperatura e fraccións molares do heptano, para cada valor de x</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>lista_temperatura<span class="op">=</span>[]</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>lista_y<span class="op">=</span>[]</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Definiranse as funcións para obter as presións de saturación do heptano e o octano</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> p_sat_heptano(T):</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">10</span>  <span class="op">**</span> ( A_heptano <span class="op">-</span> B_heptano <span class="op">/</span> ( T <span class="op">+</span> C_heptano ) )</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> p_sat_octano(T):</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">10</span> <span class="op">**</span> ( A_octano <span class="op">-</span> B_octano <span class="op">/</span> ( T <span class="op">+</span> C_octano ) )</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Créase un lazo que devolve o valor da temperatura e a fracción molar do vapor para cada valor de x</span></span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x_heptano:</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> fmin(T):</span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> i<span class="op">*</span>p_sat_heptano(T)<span class="op">/</span>P_t<span class="op">+</span>(<span class="dv">1</span><span class="op">-</span>i)<span class="op">*</span>p_sat_octano(T)<span class="op">/</span>P_t<span class="op">-</span><span class="dv">1</span></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    solucion<span class="op">=</span>fsolve(fmin,T_guess)</span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    lista_temperatura.append(solucion[<span class="dv">0</span>])</span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    y_heptano<span class="op">=</span>i<span class="op">*</span>p_sat_heptano(solucion)<span class="op">/</span>P_t</span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    lista_y.append(y_heptano[<span class="dv">0</span>])</span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lista_temperatura) <span class="co"># valores de temperatura calculados</span></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lista_y) <span class="co"># valores de y calculados</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[413.5615852273091, 409.77113336473025, 406.2684364969948, 403.0216612183846, 400.00305716655544, 397.18844969691617, 394.55676804690006, 392.0896214256247, 389.77092633460484, 387.58658343897787, 385.52419985536085]
-[0.0, 0.1837276326189331, 0.33830109800891695, 0.4693199994809487, 0.581154434977709, 0.6772413410638028, 0.7603047808262194, 0.832520410718438, 0.895638942399593, 0.9510793956603304, 1.0000000000003693]</code></pre>
-</div>
-</div>
-<div id="94d94b43" class="cell" data-outputid="9ad39563-eb5a-49dc-f72c-b0f43f5e0954" data-execution_count="25">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Representación do diagrama T-xy</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x_heptano, lista_temperatura, <span class="st">'ko-'</span>, lista_y, lista_temperatura, <span class="st">'ro-'</span>)</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>plt.xlim(<span class="dv">0</span>,<span class="dv">1</span>)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x, y (heptano)'</span>)</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Temperatura (K)'</span>)</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Diagrama T-x,y'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="25">
-<pre><code>Text(0.5, 1.0, 'Diagrama T-x,y')</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-8-output-2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div id="f40483b5" class="cell" data-outputid="20a1b2a1-4c31-415f-fea6-0967f6ad307f" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#También se puede realizar con fsolve aplicado a la ecuación de Antoine, y no al sumatorio de y - 1</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>z<span class="op">=</span>np.linspace(<span class="dv">0</span>,<span class="dv">1</span>, num<span class="op">=</span><span class="dv">11</span>) <span class="co">#composición inicial</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Funciónes para determinar as presións de saturación dos dous compoñentes</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> Psat1(T):</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">10</span><span class="op">**</span>(A_heptano<span class="op">-</span>B_heptano<span class="op">/</span>(T<span class="op">+</span>C_heptano))</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> Psat2(T):</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">10</span><span class="op">**</span>(A_octano<span class="op">-</span>B_octano<span class="op">/</span>(T<span class="op">+</span>C_octano))</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co">#Datos do enunciado</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>z</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> <span class="fl">1.5</span> <span class="co">#bar</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> fsolve</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fun1(T):</span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> P <span class="op">-</span> <span class="dv">10</span><span class="op">**</span>(A_heptano<span class="op">-</span>B_heptano<span class="op">/</span>(T<span class="op">+</span>C_heptano)) <span class="co"># a qué temperatura P externa es igual al otro término</span></span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>Tinf<span class="op">=</span>fsolve(fun1, <span class="dv">350</span>) <span class="co"># 350K valor inicial suposto</span></span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>                       <span class="co"># Tinf = temperatura de fervura do heptano</span></span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fun2(T):</span>
-<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> P <span class="op">-</span> <span class="dv">10</span><span class="op">**</span>(A_octano<span class="op">-</span>B_octano<span class="op">/</span>(T<span class="op">+</span>C_octano))</span>
-<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>Tsup<span class="op">=</span>fsolve(fun2, <span class="dv">373</span>) <span class="co"># Tsup = temperatura de fervura do octano</span></span>
-<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A temperatura á que hierve o heptano á presión externa é </span><span class="sc">{:5.2f}</span><span class="st"> K.'</span>.<span class="bu">format</span>(Tinf[<span class="dv">0</span>]))</span>
-<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A temperatura á que hierve o octano  á presión externa é </span><span class="sc">{:5.2f}</span><span class="st"> K.'</span>.<span class="bu">format</span>(Tsup[<span class="dv">0</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>A temperatura á que hierve o heptano á presión externa é 385.52 K.
-A temperatura á que hierve o octano  á presión externa é 413.56 K.</code></pre>
-</div>
-</div>
-<div id="88368e4d" class="cell" data-outputid="f76130b8-b984-48bd-d60b-3155f994f3c3" data-execution_count="27">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>T<span class="op">=</span>np.linspace(Tinf,Tsup, num<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> (P<span class="op">-</span>Psat2(T))<span class="op">/</span>(Psat1(T)<span class="op">-</span>Psat2(T))</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>x<span class="op">*</span>Psat1(T)<span class="op">/</span>P</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, T,<span class="st">'ko-'</span>, y,T,<span class="st">'ro-'</span>)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>plt.xlim(<span class="dv">0</span>,<span class="dv">1</span>)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x, y'</span>)</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'T'</span>)</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Diagrama T-x, y'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="27">
-<pre><code>Text(0.5, 1.0, 'Diagrama T-x, y')</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-10-output-2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
+<pre><code>[2.         2.06340263 2.12654997 2.18918773 2.2510637  2.31192872
+ 2.37153772 2.42965066 2.48603356 2.54045937 2.59270894 2.64257188
+ 2.68984741 2.73434516 2.77588597 2.81430256 2.84944024 2.88115753
+ 2.9093267  2.93383434 2.95458176 2.97148541 2.98447723 2.99350491
+ 2.9985321  2.99953855 2.99652021 2.98948924 2.97847394 2.96351867
+ 2.94468366 2.92204473 2.89569306 2.86573475 2.83229043 2.79549477
+ 2.75549593 2.71245498 2.66654522 2.61795152 2.56686955 2.51350499
+ 2.45807273 2.40079597 2.34190535 2.281638   2.22023659 2.15794837
+ 2.09502414 2.03171728 1.96828272 1.90497586 1.84205163 1.77976341
+ 1.718362   1.65809465 1.59920403 1.54192727 1.48649501 1.43313045
+ 1.38204848 1.33345478 1.28754502 1.24450407 1.20450523 1.16770957
+ 1.13426525 1.10430694 1.07795527 1.05531634 1.03648133 1.02152606
+ 1.01051076 1.00347979 1.00046145 1.0014679  1.00649509 1.01552277
+ 1.02851459 1.04541824 1.06616566 1.0906733  1.11884247 1.15055976
+ 1.18569744 1.22411403 1.26565484 1.31015259 1.35742812 1.40729106
+ 1.45954063 1.51396644 1.57034934 1.62846228 1.68807128 1.7489363
+ 1.81081227 1.87345003 1.93659737 2.        ]
+[0.         0.06346652 0.12693304 0.19039955 0.25386607 0.31733259
+ 0.38079911 0.44426563 0.50773215 0.57119866 0.63466518 0.6981317
+ 0.76159822 0.82506474 0.88853126 0.95199777 1.01546429 1.07893081
+ 1.14239733 1.20586385 1.26933037 1.33279688 1.3962634  1.45972992
+ 1.52319644 1.58666296 1.65012947 1.71359599 1.77706251 1.84052903
+ 1.90399555 1.96746207 2.03092858 2.0943951  2.15786162 2.22132814
+ 2.28479466 2.34826118 2.41172769 2.47519421 2.53866073 2.60212725
+ 2.66559377 2.72906028 2.7925268  2.85599332 2.91945984 2.98292636
+ 3.04639288 3.10985939 3.17332591 3.23679243 3.30025895 3.36372547
+ 3.42719199 3.4906585  3.55412502 3.61759154 3.68105806 3.74452458
+ 3.8079911  3.87145761 3.93492413 3.99839065 4.06185717 4.12532369
+ 4.1887902  4.25225672 4.31572324 4.37918976 4.44265628 4.5061228
+ 4.56958931 4.63305583 4.69652235 4.75998887 4.82345539 4.88692191
+ 4.95038842 5.01385494 5.07732146 5.14078798 5.2042545  5.26772102
+ 5.33118753 5.39465405 5.45812057 5.52158709 5.58505361 5.64852012
+ 5.71198664 5.77545316 5.83891968 5.9023862  5.96585272 6.02931923
+ 6.09278575 6.15625227 6.21971879 6.28318531]</code></pre>
 </div>
 </div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1058,7 +1031,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.dev/anxosanchez/SOPQ-2324/blob/main/qmd/Diagramas_Pxy_Txy.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.dev/anxosanchez/SOPQ-2324/blob/main/notebooks/Untitled.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Este site está inspirado no site STA 210, deseñado por Mine Çetinkaya-Rundel</p>
 </div>
