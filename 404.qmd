@@ -9,7 +9,7 @@ format:
 
 # Oops!
 
-## 404 PAGE NOT FOUND
+# 404 PAGE NOT FOUND
 
 The page your are looking for might have been removed, have its name changed or is tmporarily unavailable.
 
