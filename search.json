@@ -928,7 +928,14 @@
     "href": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
     "title": "Introdución á Simulación de Procesos",
     "section": "Modelo de deseño de capas da cebola (Linnhoff)",
-    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\nModelo de Linnhoff[Modelo de capa d] ::: {.notes} Dentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos. ::: ## Resumo\nA simulación de procesos é unha poderosa ferramenta que permite a proba virtual e a análise de procesos complexos, facilitando a decisión e a optimización nunha ampla gama de industrias."
+    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\nModelo de Linnhoff[Modelo de capa d]\n\nDentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#resumo",
+    "href": "simulacion-de-procesos-gl.html#resumo",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Resumo",
+    "text": "Resumo\nA simulación de procesos é unha poderosa ferramenta que permite a proba virtual e a análise de procesos complexos, facilitando a decisión e a optimización nunha ampla gama de industrias."
   },
   {
     "objectID": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
@@ -949,7 +956,7 @@
     "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
     "title": "Introdución á Simulación de Procesos",
     "section": "Simuladores de procesos Comerciais para Estado Estacionario",
-    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nOrientados a Ecuación\n\ngProms\nVMGSim\nAspen Plus in EO\nAspen Custom Modeler ::::"
+    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nOrientados a Ecuación\n\ngProms\nVMGSim\nAspen Plus in EO\nAspen Custom Modeler"
   },
   {
     "objectID": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
