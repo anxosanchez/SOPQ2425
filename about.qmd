@@ -17,20 +17,21 @@ about:
 
 
 
-Anxo Sánchez: I'm a Full Professor at the **University of Vigo Chemical Engineering Department**. 
+Anxo Sánchez: Son Catedrático de Universidade do Departamento de Enxeñaría Química da **Universidade de Vigo**. 
 
-## Education
+## Educación
 
-University of Vigo:
-- Industrial Engineering School:
+Universidade de Vigo:
+- Escola de Enxeñaría Industriais:
     - Campus Universitario Lagoas-Marcosende, 9 36310 Vigo (SPAIN)
-- Forestry Engineering School
+- Escola de Enxeñar´ia Forestal
     - Campus Universitario Pontevedra
 
-## Research
+## Investigación
 
-My Research Fields are:
-- Biomass Energy
-- Hydrogen Technologies
-- Sustainable Chemical Processes Design and Simulation, specially 
-    - Green Solvents
+Áreas de traballo:
+- Enerxía da biomasa
+- TEcnoloxías do Hidr´xeno e as Pilas de combustible
+- Deseño de Procesos e Prodtos Químicos Sustentables, en especial 
+    - Disolventes verdes
+    - Biocombustibles

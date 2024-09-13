@@ -1,18 +1,17 @@
 ---
-title: "Computing troubleshooting"
+title: "Problemas de computación"
 ---
 
 Se tes dificultades para lanzar unha sesión de **Python** desde o teu usuario reservado, diríxete a [a este email](mailto://asanchez@uvigo.gal).
 
-- Se o estado mostra algo que non sexa "operativo", isto significa que hai un incidente coñecido cos contedores.
-    Volve máis tarde para ver se se resolveu.
-    Se pronto hai un prazo, publique no foro do curso para facernos saber que hai un problema.
-    Podemos examinar a rapidez que se pode resolver e decidir que facer sobre o prazo en consecuencia.
-    Nota: non prevemos que isto suceda regularmente, os sistemas están a operar unha gran maioría do tempo.
+- Se o estado mostra algo que non sexa "operativo", isto significa que hai un incidente coñecido cos contedores. Volve máis tarde para ver se se resolveu.
+- Se non se resolve, publica no foro do curso en **MOOVI** para facernos saber que hai un problema. Intentaremos determinar o problema con rapidez e se é posible resolvelo. En caso contrario, decidiráse que facer e se vos comunicará a través do foro **MOOVI** da materia.
+
+**Nota:** Non prevemos que isto suceda regularmente, os sistemas están a operar unha gran maioría do tempo.
 
 - Se o estado mostra "operativo", isto significa que o sistema está previsto que funcione.
-    Comprobe a súa conexión a Internet, se é necesario, reinicie o ordenador para garantir unha nova conexión nova.
-    Se o teu problema persiste, publique no foro do curso con detalles sobre o que probaches e os erros que ves (incluíndo erros e/ou capturas de pantalla verbatim).
+- Comproba a túa conexión a Internet, se é necesario, reinicie o ordenador para garantir unha nova conexión nova.
+- Se o teu problema persiste, publica no foro do curso detalles sobre o que probaches e os erros que ves (incluíndo erros e/ou capturas de pantalla verbatim).
 
 - De calquera xeito tamén podes cubrir o formulario seguinte:
 

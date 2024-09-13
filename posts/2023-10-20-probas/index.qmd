@@ -5,6 +5,7 @@ format:
   html:
     code-fold: false
 jupyter: python3
+image: "/imaxes/flash.png"
 ---
 
 # Cálculos flash             
@@ -13,8 +14,12 @@ jupyter: python3
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-Tanque de flash
-
+Tanque de separación flash
+  
+<center>
+![](/imaxes/flash.png)
+</center>
+  
 Os cálculos de flash úsanse para procesos de equilibrio vapor/líquido (VLE). Un proceso típico que require cálculos de flash , é aquel no que fluxo de alimentación (F) se separa nun produto vapor (V) e outro líquido (L) como na figura anterior.
 
 En principio, os cálculos de flash son sinxelos e implican combinar as ecuacións de VLE cos balances de materia dos compoñentes e, nalgúns casos, o balance de enerxía . Algúns cálculos de flash son:

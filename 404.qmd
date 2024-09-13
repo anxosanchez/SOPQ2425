@@ -11,9 +11,9 @@ format:
 
 # 404 PAGE NOT FOUND
 
-The page your are looking for might have been removed, have its name changed or is tmporarily unavailable.
+A páxina que estás a buscar pode ser eliminada, cambiar o seu nome ou non está dispoñible.
 
-A páxina que estás a buscar poido ser eliminada, renomeada ou non está lista.
+é osible que fose eliminada, renomeada ou en modificación.
 
 </center>
 

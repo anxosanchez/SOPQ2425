@@ -2,6 +2,7 @@
 title: "Blog de SOPQ-2324"
 listing: 
   contents: posts 
+  fields: [image, date, title, description, categories,author]
 # all Quarto docs in the `posts` directory will be included on your listing page
   type: default # grid or `default` or `table`; each type has its own set of yaml options to include
   sort: "date desc" # can also sort on more than one field
@@ -9,5 +10,5 @@ listing:
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: false
+title-block-banner: true
 ---
