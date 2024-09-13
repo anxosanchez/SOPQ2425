@@ -330,7 +330,10 @@ window.Quarto = {
 <section id="cálculos-flash" class="level1">
 <h1>Cálculos flash</h1>
 <p><a href="https://colab.research.google.com/github/anxosanchez/SOPQ-2324/blob/main/notebooks/Diagramas_Pxy_Txy.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"> </a></p>
-<p>Tanque de flash</p>
+<p>Tanque de separación flash</p>
+<center>
+<img src="../../imaxes/flash.png" class="img-fluid">
+</center>
 <p>Os cálculos de flash úsanse para procesos de equilibrio vapor/líquido (VLE). Un proceso típico que require cálculos de flash , é aquel no que fluxo de alimentación (F) se separa nun produto vapor (V) e outro líquido (L) como na figura anterior.</p>
 <p>En principio, os cálculos de flash son sinxelos e implican combinar as ecuacións de VLE cos balances de materia dos compoñentes e, nalgúns casos, o balance de enerxía . Algúns cálculos de flash son:</p>
 <ol type="1">
@@ -350,7 +353,7 @@ y_i = K_i \cdot x_i
 \]</span></p>
 <p>onde <span class="math inline">\(y_i\)</span> é a fraccións molares de cada compoñente <span class="math inline">\(i\)</span> na fase vapor e <span class="math inline">\(x_i\)</span> as fraccións molares de cada compoñente <span class="math inline">\(i\)</span> na fase líquida. En xeral, valor de <span class="math inline">\(K\)</span> depende da temperatura <span class="math inline">\(T\)</span> , a presión, <span class="math inline">\(p\)</span> e a composición (ambas, <span class="math inline">\(x_i\)</span> e <span class="math inline">\(y_i\)</span>). Supoñemos mestura idal, e usamos a <em>Lei de Raoult</em>. Neste caso, <span class="math inline">\(K_i\)</span> depende de <span class="math inline">\(T\)</span> e <span class="math inline">\(p\)</span> somentes:</p>
 <p><span class="math display">\[
-Lei \; de \; Raoult: K_i = \frac {p^{sat}_i (T)} {p}
+Lei \; de \; Raoult: K_i = \frac {p^{saturación}_i (T)} {p}
 \]</span></p>
 <p>A presión de saturación, <span class="math inline">\(p^{sat} (T)\)</span> utilizando os parámetros de <em>Antoine</em>.</p>
 <section id="cálculos-do-punto-de-burbulla" class="level2">
@@ -370,10 +373,10 @@ Lei \; de \; Raoult: K_i = \frac {p^{sat}_i (T)} {p}
 <section id="solución." class="level3">
 <h3 class="anchored" data-anchor-id="solución.">Solución.</h3>
 <p>Temos que atopar unha <span class="math inline">\(p\)</span> que satisfaga a ecuación anterior. Dado que se dá <span class="math inline">\(T\)</span> , isto é trivial. Podemos simplemente calcular <span class="math inline">\(p\)</span>: Comezamos por calcular as presións de vapor para os tres compoñentes en <span class="math inline">\(T = 400 K\)</span>. Usando os datos da <em>ecuación de Antoine</em>:</p>
-<div class="cell" data-execution_count="1">
+<div id="d6e1016f" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="2">
+<div id="e7226aa3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Datos</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>x_pentano     <span class="op">=</span> <span class="fl">0.5</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x_hexano      <span class="op">=</span> <span class="fl">0.3</span></span>
@@ -399,7 +402,7 @@ Lei \; de \; Raoult: K_i = \frac {p^{sat}_i (T)} {p}
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>p_ciclohexano <span class="op">=</span> x_ciclohexano <span class="op">*</span> p_sat_ciclohexano</span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>p_burbulla    <span class="op">=</span> p_pentano <span class="op">+</span> p_hexano <span class="op">+</span> p_ciclohexano</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="3">
+<div id="a3760534" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Presión de saturación do pentano     '</span>, <span class="st">'('</span>, T, <span class="st">') K = '</span>, p_sat_pentano, <span class="st">'bar'</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Presión de saturación do hexano      '</span>, <span class="st">'('</span>, T, <span class="st">') K = '</span>, p_sat_hexano, <span class="st">'bar'</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Presión de saturación do ciclohexano '</span>, <span class="st">'('</span>, T, <span class="st">') K = '</span>, p_sat_ciclohexano, <span class="st">'bar'</span>)</span>
@@ -429,7 +432,7 @@ p_i = p_{total}* x_i
 <p><span class="math display">\[
 x_i = \frac{p_i}{p_{total}}
 \]</span></p>
-<div class="cell" data-execution_count="4">
+<div id="7979ebf9" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x_pentano     <span class="op">=</span> p_pentano <span class="op">/</span> p_burbulla</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x_hexano      <span class="op">=</span> p_hexano <span class="op">/</span> p_burbulla</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>x_ciclohexano <span class="op">=</span> p_ciclohexano <span class="op">/</span> p_burbulla</span>
@@ -473,7 +476,7 @@ Fracción  molar do ciclohexano no punto de burbulla =  0.09340928408949663</cod
 <section id="solución.-2" class="level3">
 <h3 class="anchored" data-anchor-id="solución.-2">Solución.</h3>
 <p>Atopar o valor de <span class="math inline">\(p\)</span> que satisfai a ecuación anterior. Posto que <span class="math inline">\(T\)</span> ven dada, a solución é trivial; simplementa calculamos <span class="math inline">\(1/p\)</span> a partires dela.</p>
-<div class="cell" data-execution_count="5">
+<div id="17199e1a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>y_pentano     <span class="op">=</span> <span class="fl">0.5</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>y_hexano      <span class="op">=</span> <span class="fl">0.3</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>y_ciclohexano <span class="op">=</span> <span class="fl">0.2</span></span>
@@ -483,7 +486,7 @@ Fracción  molar do ciclohexano no punto de burbulla =  0.09340928408949663</cod
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>x_hexano <span class="op">=</span> y_hexano <span class="op">*</span> p_orballo <span class="op">/</span> p_sat_hexano</span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>x_ciclohexano <span class="op">=</span> y_ciclohexano <span class="op">*</span> p_orballo <span class="op">/</span> p_sat_ciclohexano</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="6">
+<div id="72450109" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print("Presión de orballo a {:5.2f} [K]".format(T))</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Temperatura        = </span><span class="sc">{:5.2f}</span><span class="st"> [bar]"</span>.<span class="bu">format</span>(T))</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Presión de orballo = </span><span class="sc">{:5.2f}</span><span class="st"> [bar]"</span>.<span class="bu">format</span>(p_orballo))</span>
@@ -508,10 +511,10 @@ Presión de orballo =  5.78 [bar]
 <section id="solución" class="level3">
 <h3 class="anchored" data-anchor-id="solución">Solución</h3>
 <p>Neste caso, nos dan <span class="math inline">\(p\)</span> e <span class="math inline">\(y_i\)</span>, e a ecuación de antes convértese nunha ecuación implícita en <span class="math inline">\(T\)</span> que necesita de resolverse numéricamente por un método numérico, por exemplo iteración.</p>
-<div class="cell" data-execution_count="7">
+<div id="2293a13b" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> fsolve</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="8">
+<div id="69858ee6" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>presion <span class="op">=</span> <span class="fl">5.</span> <span class="co"># bar</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>T_gues  <span class="op">=</span> <span class="fl">400.</span> <span class="co"># K </span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -521,23 +524,23 @@ Presión de orballo =  5.78 [bar]
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>T_orballo <span class="op">=</span> fsolve(orballo, T_gues)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="9">
+<div id="99ee6176" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Temperatura de orballo calculada con fsolve = "</span>, T_orballo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Temperatura de orballo calculada con fsolve =  [393.30333147]</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="10">
+<div id="ad0e0b61" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> root</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> root(orballo, [<span class="dv">300</span>,<span class="dv">400</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="11">
+<div id="361fe8bd" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Temperatura de orballo calculada con fsolve = "</span>, T_orballo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Temperatura de orballo calculada con fsolve =  [393.30333147]</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="12">
+<div id="f6f2bf4c" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Táboa 7.2 : Datos para exemplos e exercicios de flash: parámetros de Antoine para p sat ( T ), temperatura normal de ebulición ( T b ) e calor de vaporización ∆ vap H ( T b ) para os compoñentes seleccionados. Datos : Poling, Prausnitz e O'Connell, As propiedades de gases e líquidos , 5 th Ed., McGraw-Hill (2001).</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># log10(psat[bar]) = A - B / ( T [K] + C) Tb [ K ] dv a p H b [ J / m o l ]</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># pentano C5H12</span></span>
