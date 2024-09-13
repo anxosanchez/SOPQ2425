@@ -196,7 +196,6 @@ enfoques
   - VMGSim
   - Aspen Plus in EO
   - Aspen Custom Modeler
-::::
 
 # Simuladores de Procesos para Estado Estacionaro Gratiutos
 - Orientados a Ecuacións
