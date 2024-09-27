@@ -14,22 +14,22 @@
     "objectID": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
     "href": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
     "title": "Introdución á Simulación de Procesos",
-    "section": "Resumo das clases teóricas",
-    "text": "Resumo das clases teóricas\n\n\n\n\n\n\n\nConceptos\nNivel\n\n\n\n\nFundamentos da simulación de procesos\nBásico\n\n\nIntrodución á simulación de procesos\nBásico\n\n\nRexistro de novos compoñentes\nBásico\n\n\nEstimación de propiedades físicas para simulación de procesos\nBásico\n\n\nSimulación de correntes de reciclado\nBásico"
+    "section": "",
+    "text": "Conceptos\nNivel\n\n\n\n\nFundamentos da simulación de procesos\nBásico\n\n\nIntrodución á simulación de procesos\nBásico\n\n\nRexistro de novos compoñentes\nBásico\n\n\nEstimación de propiedades físicas para simulación de procesos\nBásico\n\n\nSimulación de correntes de reciclado\nBásico"
   },
   {
     "objectID": "simulacion-de-procesos-gl.html#simulación-de-procesos",
     "href": "simulacion-de-procesos-gl.html#simulación-de-procesos",
     "title": "Introdución á Simulación de Procesos",
-    "section": "Simulación de procesos",
-    "text": "Simulación de procesos\n A simulación de procesos é unha técnica computacional empregada en varias industrias para:\n- Modelar\n- Analizar e\n- Optimizar procesos complexos.\n - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións."
+    "section": "",
+    "text": "A simulación de procesos é unha técnica computacional empregada en varias industrias para:\n- Modelar\n- Analizar e\n- Optimizar procesos complexos.\n - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións."
   },
   {
     "objectID": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
     "href": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
     "title": "Introdución á Simulación de Procesos",
-    "section": "Qué implica a simulación de procesos?",
-    "text": "Qué implica a simulación de procesos?\nA simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico\n\n\n\n\n\nflowchart TD\n  A[Inicio] --&gt; B[Modelado]\n  B --&gt; C[Entrada de Datos]\n  C --&gt; D[Simulación]\n  D --&gt; E[Visualización]\n  E --&gt; F[Análise]\n  F --&gt; G[Optimización]\n  G --&gt; H[Aplicación]\n  H --&gt; I[Fin]"
+    "section": "",
+    "text": "A simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico\n\n\n\n\n\nflowchart TD\n  A[Inicio] --&gt; B[Modelado]\n  B --&gt; C[Entrada de Datos]\n  C --&gt; D[Simulación]\n  D --&gt; E[Visualización]\n  E --&gt; F[Análise]\n  F --&gt; G[Optimización]\n  G --&gt; H[Aplicación]\n  H --&gt; I[Fin]"
   },
   {
     "objectID": "simulacion-de-procesos-gl.html#modelado",
@@ -92,14 +92,14 @@
     "href": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
     "title": "Introdución á Simulación de Procesos",
     "section": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos",
-    "text": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos\n\nModelo de Linnhoff"
+    "text": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos\n\n\n\nModelo de Linnhoff"
   },
   {
     "objectID": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
     "href": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
     "title": "Introdución á Simulación de Procesos",
     "section": "Modelo de deseño de capas da cebola (Linnhoff)",
-    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\nModelo de Linnhoff[Modelo de capa d]\n\nDentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos."
+    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\n\n\nModelo de Linnhoff\n\n\n[Modelo de capa d]\n\nDentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos."
   },
   {
     "objectID": "simulacion-de-procesos-gl.html#resumo",
@@ -134,7 +134,7 @@
     "href": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
     "title": "Introdución á Simulación de Procesos",
     "section": "Servizos de propiedades físicas",
-    "text": "Servizos de propiedades físicas\n\nSubministran estimacións para varias propiedades físicas diferentes mentres a simulación está funcionando.\nO equilibrio de fase representa unha das propiedades físicas máis importantes, xa que moitas simulacións de procesos químicos implican destilación, separación, evaporación ou separación líquido - líquidos.\nResolven os balances de masa e enerxía para estas operacións que require a predicción:\n\nVapor - Equilibrio líquido (VLE)\nLíquido - Equilibrio líquido (LLE)\n\n\n\n\n\n\n\n\nNote\n\n\n\nA estimación de propiedades físicas pode consumir ata o 90% do tempo de computación dunha simulación. Os paquetes de propiedades úsanse para predecir o equilibrio de fase e o comportamento de compoñentes puros e sistemas de mestura\n\n\n\n\n\n\n\n\nhttps://github.com/anxosanchez/sopq"
+    "text": "Servizos de propiedades físicas\n\nSubministran estimacións para varias propiedades físicas diferentes mentres a simulación está funcionando.\nO equilibrio de fase representa unha das propiedades físicas máis importantes, xa que moitas simulacións de procesos químicos implican destilación, separación, evaporación ou separación líquido - líquidos.\nResolven os balances de masa e enerxía para estas operacións que require a predicción:\n\nVapor - Equilibrio líquido (VLE)\nLíquido - Equilibrio líquido (LLE)\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nA estimación de propiedades físicas pode consumir ata o 90% do tempo de computación dunha simulación. Os paquetes de propiedades úsanse para predecir o equilibrio de fase e o comportamento de compoñentes puros e sistemas de mestura"
   },
   {
     "objectID": "project-tips-resources.html",
@@ -780,8 +780,8 @@
     "objectID": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
     "href": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
     "title": "Modelización e simulación de procesos químicos",
-    "section": "Introdución ó modelado e a simulación: contidos",
-    "text": "Introdución ó modelado e a simulación: contidos\n\nModelado de sistemas físicos\n\nSimulación estacionaria\n\nSimulación dinámica\n\nSistemas de parámetros distribuidos\n\nsistemas híbridos"
+    "section": "",
+    "text": "Modelado de sistemas físicos\n\nSimulación estacionaria\n\nSimulación dinámica\n\nSistemas de parámetros distribuidos\n\nsistemas híbridos"
   },
   {
     "objectID": "slides/tema-01.html#qué-é-un-sistema.",
@@ -950,5 +950,19 @@
     "title": "Modelización e simulación de procesos químicos",
     "section": "Life Itself",
     "text": "Life Itself"
+  },
+  {
+    "objectID": "slides/tema-01.html",
+    "href": "slides/tema-01.html",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "",
+    "text": "Modelado de sistemas físicos\n\nSimulación estacionaria\n\nSimulación dinámica\n\nSistemas de parámetros distribuidos\n\nsistemas híbridos"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html",
+    "href": "simulacion-de-procesos-gl.html",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "",
+    "text": "Conceptos\nNivel\n\n\n\n\nFundamentos da simulación de procesos\nBásico\n\n\nIntrodución á simulación de procesos\nBásico\n\n\nRexistro de novos compoñentes\nBásico\n\n\nEstimación de propiedades físicas para simulación de procesos\nBásico\n\n\nSimulación de correntes de reciclado\nBásico\n\n\n\n\n\n\n A simulación de procesos é unha técnica computacional empregada en varias industrias para:\n- Modelar\n- Analizar e\n- Optimizar procesos complexos.\n - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións.\n\n\n\nA simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico\n\n\n\n\n\nflowchart TD\n  A[Inicio] --&gt; B[Modelado]\n  B --&gt; C[Entrada de Datos]\n  C --&gt; D[Simulación]\n  D --&gt; E[Visualización]\n  E --&gt; F[Análise]\n  F --&gt; G[Optimización]\n  G --&gt; H[Aplicación]\n  H --&gt; I[Fin]"
   }
 ]
