@@ -1,15 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/slides/tema-01.html</loc>
+    <lastmod>2024-09-27T11:42:10.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/qmd/Diagramas_Pxy_Txy.html</loc>
+    <lastmod>2024-09-27T11:42:10.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/project-description.html</loc>
+    <lastmod>2024-09-27T11:42:10.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2023-10-20-probas/index.html</loc>
+    <lastmod>2024-09-27T11:42:10.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/Diagramas_Pxy_Txy.html</loc>
+    <lastmod>2024-09-27T11:46:28.288Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/course-team.html</loc>
+    <lastmod>2024-09-27T11:42:10.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/course-support.html</loc>
+    <lastmod>2024-09-27T11:42:10.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/course-links.html</loc>
+    <lastmod>2024-09-27T11:42:10.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/computing-troubleshooting.html</loc>
+    <lastmod>2024-09-27T11:42:10.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/about.html</loc>
+    <lastmod>2024-09-27T11:42:10.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/Minimización-da-Enerxía-Libre-de-Gibbs.html</loc>
+    <lastmod>2024-09-27T11:42:10.740Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/computing-access.html</loc>
+    <lastmod>2024-09-27T11:42:10.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/course-faq.html</loc>
+    <lastmod>2024-09-27T11:42:10.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/course-overview.html</loc>
+    <lastmod>2024-09-27T11:42:10.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/course-syllabus.html</loc>
+    <lastmod>2024-09-27T11:42:10.823Z</lastmod>
+  </url>
+  <url>
     <loc>https://anxosanchez.github.io/SOPQ-2324/index.html</loc>
     <lastmod>2024-09-27T11:42:10.923Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/simulacion-de-procesos-gl.html</loc>
-    <lastmod>2024-09-27T11:42:10.925Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/project-tips-resources.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/posts.html</loc>
     <lastmod>2024-09-27T11:42:10.924Z</lastmod>
   </url>
   <url>
@@ -17,67 +73,11 @@
     <lastmod>2024-09-27T11:42:10.924Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/posts.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/project-tips-resources.html</loc>
     <lastmod>2024-09-27T11:42:10.924Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/course-team.html</loc>
-    <lastmod>2024-09-13T10:05:41.268Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/course-support.html</loc>
-    <lastmod>2024-09-13T08:13:07.154Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/course-links.html</loc>
-    <lastmod>2024-09-02T10:48:31.455Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/computing-troubleshooting.html</loc>
-    <lastmod>2024-09-13T07:19:10.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/about.html</loc>
-    <lastmod>2024-09-13T07:13:41.835Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/Minimización-da-Enerxía-Libre-de-Gibbs.html</loc>
-    <lastmod>2024-09-02T09:22:42.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/computing-access.html</loc>
-    <lastmod>2024-09-13T08:13:15.151Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/course-faq.html</loc>
-    <lastmod>2024-09-13T07:19:26.472Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/course-overview.html</loc>
-    <lastmod>2024-09-02T09:22:42.885Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/course-syllabus.html</loc>
-    <lastmod>2024-09-13T08:24:05.081Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/Diagramas_Pxy_Txy.html</loc>
-    <lastmod>2024-09-27T11:45:44.029Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2023-10-20-probas/index.html</loc>
-    <lastmod>2024-09-27T11:42:10.924Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/project-description.html</loc>
-    <lastmod>2024-09-27T11:42:10.924Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/qmd/Diagramas_Pxy_Txy.html</loc>
-    <lastmod>2024-09-27T11:42:10.925Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/slides/tema-01.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/simulacion-de-procesos-gl.html</loc>
     <lastmod>2024-09-27T11:42:10.925Z</lastmod>
   </url>
 </urlset>
