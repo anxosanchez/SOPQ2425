@@ -4,14 +4,13 @@ language: custom.yml
 format: 
   html:
     page-layout: full
-
 ---
 
 ## Liña de tempo
 
-[Ideas para o proxecto](#topic-ideas) ata Venres, 27 de Outubro  
-[Borrador de informe](#draft-report) ata Venres, 1 de Decembro  
-[Informe Final](#written-report) ata Venres, 8 de Decembro   
+[Ideas para o proxecto](#topic-ideas) ata Venres, 25 de Outubro  
+[Borrador de informe](#draft-report) ata Domingo, 22 de Novembro  
+[Informe Final](#written-report) ata Venres, 11 de Decembro   
 [Presentación en vídeo + diapositivas](#video-presentation-slides) Venres, 15 de Decembro   
 
 ## Introdución
