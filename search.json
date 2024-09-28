@@ -1,5 +1,174 @@
 [
   {
+    "objectID": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
+    "href": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Resumo das clases teóricas",
+    "text": "Resumo das clases teóricas\n\n\n\n\n\n\n\nConceptos\nNivel\n\n\n\n\nFundamentos da simulación de procesos\nBásico\n\n\nIntrodución á simulación de procesos\nBásico\n\n\nRexistro de novos compoñentes\nBásico\n\n\nEstimación de propiedades físicas para simulación de procesos\nBásico\n\n\nSimulación de correntes de reciclado\nBásico"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#simulación-de-procesos",
+    "href": "simulacion-de-procesos-gl.html#simulación-de-procesos",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simulación de procesos",
+    "text": "Simulación de procesos\n A simulación de procesos é unha técnica computacional empregada en varias industrias para:\n- Modelar\n- Analizar e\n- Optimizar procesos complexos.\n - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
+    "href": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Qué implica a simulación de procesos?",
+    "text": "Qué implica a simulación de procesos?\nA simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico\n\n\n\n\n\nflowchart TD\n  A[Inicio] --&gt; B[Modelado]\n  B --&gt; C[Entrada de Datos]\n  C --&gt; D[Simulación]\n  D --&gt; E[Visualización]\n  E --&gt; F[Análise]\n  F --&gt; G[Optimización]\n  G --&gt; H[Aplicación]\n  H --&gt; I[Fin]"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#modelado",
+    "href": "simulacion-de-procesos-gl.html#modelado",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Modelado",
+    "text": "Modelado\n A simulación de procesos comeza coa creación dun modelo matemático ou computacional que representa:\n - Os compoñentes\n- As variables e\n- As interaccións clave dun proceso físico.\n Este modelo pode basearse en:\n- Ecuacións matemáticas\n- Datos empíricos\n Ou unha combinación de ambos."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#simulación",
+    "href": "simulacion-de-procesos-gl.html#simulación",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simulación",
+    "text": "Simulación\nUnha vez que o modelo se desenvolve, impleméntase no software de simulación. O software usa algoritmos para: - Realizar cálculos numéricos - Resolver ecuacións para simular o comportamento do proceso ao longo do tempo."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
+    "href": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Parámetros de entrada",
+    "text": "Parámetros de entrada\nOs usuarios poden introducir varios parámetros: - Condicións de funcionamento - Especificacións de equipos - Variables de proceso, etc.  \npara explorar diferentes escenarios e estudar como os cambios afectan o proceso."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#visualización",
+    "href": "simulacion-de-procesos-gl.html#visualización",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Visualización",
+    "text": "Visualización\nO software de simulación de procesos adoita proporcionar representacións visuais de: - O proceso simulado, incluíndo - gráficos - animacións.  Isto permite aos usuarios obter información sobre o rendemento e o comportamento do sistema."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#análise",
+    "href": "simulacion-de-procesos-gl.html#análise",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Análise",
+    "text": "Análise\nOs usuarios poden analizar os resultados da simulación para avaliar: - A eficiencia - O rendemento - A seguridade do proceso.  Esta análise axuda a: - Identificar posibles bloqueos de botella - Optimizar o uso de recursos - Mellorar o deseño xeral do proceso."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#optimización",
+    "href": "simulacion-de-procesos-gl.html#optimización",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Optimización",
+    "text": "Optimización\nA simulación de procesos pódese usar para atopar o conxunto óptimo de: - parámetros ou -condicións  que leven ao resultado desexado, tales como: - Maximizar o rendemento da produción ou - Minimizar o consumo de enerxía. ## Aplicacións:\nA simulación de procesos se utiliza en diversas industrias, incluyendo la ingeniería química, la manufactura, el petróleo y el gas, la farmacéutica y el transporte, para modelar y mejorar procesos como reacciones químicas, líneas de producción, cadenas de suministro, entre otros."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#beneficios",
+    "href": "simulacion-de-procesos-gl.html#beneficios",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Beneficios:",
+    "text": "Beneficios:\n A simulación de procesos pode levar a:\n- Un aforro de custos\n- Unha mellor calidade do produto\n- Unha redución de riscos\n- Unha maior seguridade de produción\n permitindo probas virtuais e optimización antes de implementar cambios nos procesos do mundo real."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#fluxogramas",
+    "href": "simulacion-de-procesos-gl.html#fluxogramas",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Fluxogramas",
+    "text": "Fluxogramas\nAlexander C. Dimian (2003)  \n\nO diagrama de fluxo é unha descrición sistémica de fluxos de materiais e enerxía en a planta de proceso mediante simulación informática co ámbito de proxectar unha nova planta ou mellorar o rendemento dunha planta existente. \nO diagrama de fluxo pode usarse como axuda para implementar un control en toda a planta estratexia, así como para xestionar o funcionamento da planta."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
+    "href": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos",
+    "text": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos\n\nModelo de Linnhoff"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
+    "href": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Modelo de deseño de capas da cebola (Linnhoff)",
+    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\nModelo de Linnhoff[Modelo de capa d]\n\nDentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#resumo",
+    "href": "simulacion-de-procesos-gl.html#resumo",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Resumo",
+    "text": "Resumo\nA simulación de procesos é unha poderosa ferramenta que permite a proba virtual e a análise de procesos complexos, facilitando a decisión e a optimización nunha ampla gama de industrias."
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
+    "href": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Arquitectura de simuladores de proceso",
+    "text": "Arquitectura de simuladores de proceso\n\nModular secuencial\n\nBaseado no concepto de modularidade, que estende o concepto da enxeñaría de operación unitaria a un cálculo da unidades de operación mediante un o código informático responsable do cálculo das unidades de proceso.\n\nO cálculo de todo o fluxograma se fai unidade a unidade seguindo unha secuencia de cálculo.\n\n\nO orientado á ecuacións (Simultáneameo - Non modular)\n\nO modelo completo do fluxograma exprésase en forma dun gran sistema disperso de ecuacións alxébricas non lineais, que se solucionan simultaneamente para todas as incógnitas.\n\nModular Simultáneo Combinación de secuencial-modular e orientado á ecuación enfoques"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
+    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
+    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nSequenciais – Modulares\n\nAspen Plus\nAspen Hysys\nChemCAD\nPRO II\nUniSim"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
+    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
+    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nOrientados a Ecuación\n\ngProms\nVMGSim\nAspen Plus in EO\nAspen Custom Modeler"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
+    "href": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Servizos de propiedades físicas",
+    "text": "Servizos de propiedades físicas\n\nSubministran estimacións para varias propiedades físicas diferentes mentres a simulación está funcionando.\nO equilibrio de fase representa unha das propiedades físicas máis importantes, xa que moitas simulacións de procesos químicos implican destilación, separación, evaporación ou separación líquido - líquidos.\nResolven os balances de masa e enerxía para estas operacións que require a predicción:\n\nVapor - Equilibrio líquido (VLE)\nLíquido - Equilibrio líquido (LLE)\n\n\n\n\n\n\n\n\nNote\n\n\n\nA estimación de propiedades físicas pode consumir ata o 90% do tempo de computación dunha simulación. Os paquetes de propiedades úsanse para predecir o equilibrio de fase e o comportamento de compoñentes puros e sistemas de mestura\n\n\n\n\n\n\n\n\nhttps://github.com/anxosanchez/sopq"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SOPQ 23-24: Simulación e Optimización de Procesos Químicos",
+    "section": "",
+    "text": "Introdución\nEsta páxina contén un esquema dos temas, contido e tarefas para o semestre. Ten en conta que este horario actualizarase a medida que avanza o semestre, con todos os cambios documentados aquí.\n\n\nClases presenciais\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSemán\nData\nTema\nPreparación\nPresentacións\nEA\nLaboratorio\nTraballo individual\nAvaliación\nProxecto\n\n\n\n\n1\nMér, 11 Set\nTema 0 - Benvida + Presentación\n\n\n\n\n\n\n\n\n\n\nMér, 19 Set\nTema 1 - Introdución\n\n🖥️\n\n💻\n\n\n\n\n\n2\nXov, 11 Set\nPráctica Simuladores 1 - Introducción\n\n🖥️\n\n\n\n\n\n\n\n3\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\n\n\n\n\n\n\n\n\n\n8",
+    "crumbs": [
+      "Información xeral",
+      "Programación"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html",
+    "href": "computing-troubleshooting.html",
+    "title": "Problemas de computación",
+    "section": "",
+    "text": "Se tes dificultades para lanzar unha sesión de Python desde o teu usuario reservado, diríxete a a este email.\n\nSe o estado mostra algo que non sexa “operativo”, isto significa que hai un incidente coñecido cos contedores. Volve máis tarde para ver se se resolveu.\nSe non se resolve, publica no foro do curso en MOOVI para facernos saber que hai un problema. Intentaremos determinar o problema con rapidez e se é posible resolvelo. En caso contrario, decidiráse que facer e se vos comunicará a través do foro MOOVI da materia.\n\nNota: Non prevemos que isto suceda regularmente, os sistemas están a operar unha gran maioría do tempo.\n\nSe o estado mostra “operativo”, isto significa que o sistema está previsto que funcione.\nComproba a túa conexión a Internet, se é necesario, reinicie o ordenador para garantir unha nova conexión nova.\nSe o teu problema persiste, publica no foro do curso detalles sobre o que probaches e os erros que ves (incluíndo erros e/ou capturas de pantalla verbatim).\nDe calquera xeito tamén podes cubrir o formulario seguinte:\n\n\n\nIntentaremos, na medida da nosas posibilidades solucionar o problema.",
+    "crumbs": [
+      "Computación",
+      "Problemas c servidor"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "Anxo Sánchez: Son Catedrático de Universidade do Departamento de Enxeñaría Química da Universidade de Vigo."
+  },
+  {
+    "objectID": "about.html#educación",
+    "href": "about.html#educación",
+    "title": "About me",
+    "section": "Educación",
+    "text": "Educación\nUniversidade de Vigo: - Escola de Enxeñaría Industriais: - Campus Universitario Lagoas-Marcosende, 9 36310 Vigo (SPAIN) - Escola de Enxeñar´ia Forestal - Campus Universitario Pontevedra"
+  },
+  {
+    "objectID": "about.html#investigación",
+    "href": "about.html#investigación",
+    "title": "About me",
+    "section": "Investigación",
+    "text": "Investigación\nÁreas de traballo: - Enerxía da biomasa - TEcnoloxías do Hidr´xeno e as Pilas de combustible - Deseño de Procesos e Prodtos Químicos Sustentables, en especial - Disolventes verdes - Biocombustibles"
+  },
+  {
     "objectID": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
     "href": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
     "title": "Modelización e simulación de procesos químicos",
@@ -193,7 +362,7 @@
     "href": "project-description.html",
     "title": "Descrición do Proxecto da Asignatura",
     "section": "",
-    "text": "Ideas para o proxecto ata Venres, 27 de Outubro\nBorrador de informe ata Venres, 1 de Decembro\nInforme Final ata Venres, 8 de Decembro\nPresentación en vídeo + diapositivas Venres, 15 de Decembro",
+    "text": "Ideas para o proxecto ata Venres, 25 de Outubro\nBorrador de informe ata Domingo, 22 de Novembro\nInforme Final ata Venres, 11 de Decembro\nPresentación en vídeo + diapositivas Venres, 15 de Decembro",
     "crumbs": [
       "Proxecto",
       "Instrucións"
@@ -204,7 +373,7 @@
     "href": "project-description.html#liña-de-tempo",
     "title": "Descrición do Proxecto da Asignatura",
     "section": "",
-    "text": "Ideas para o proxecto ata Venres, 27 de Outubro\nBorrador de informe ata Venres, 1 de Decembro\nInforme Final ata Venres, 8 de Decembro\nPresentación en vídeo + diapositivas Venres, 15 de Decembro",
+    "text": "Ideas para o proxecto ata Venres, 25 de Outubro\nBorrador de informe ata Domingo, 22 de Novembro\nInforme Final ata Venres, 11 de Decembro\nPresentación en vídeo + diapositivas Venres, 15 de Decembro",
     "crumbs": [
       "Proxecto",
       "Instrucións"
@@ -320,20 +489,6 @@
     "text": "Neste caso, coñecemos a composición da fase de vapor \\(y_i\\) (corresponde ao caso en que \\(L\\) é moi pequena (\\(L \\geq 0\\)) e \\(y_i = z_i\\). O punto de orballo dun vapor (gas) é o punto no que comeza a condensaar, é dicir, cando se forma a primeira gota de líquido. A temperatura constante, débese aumentar a presión ata que se forme o primeiro líquido. A presión constante, débese diminuír a temperatura ata que se forme o primeiro líquido. En ámbalos dous casos, isto corresponde axustar \\(T\\) ou \\(p\\) ata que\n\\[\n\\sum x_i = 1\n\\]\nou:\n\\[\n\\Sigma_{i} y_{i} / K_{i}=1\n\\]\nonde \\(y_i\\) ven dado. Para unha mestura ideal que cumpre ca lei de Raoult:\n\\[\n\\Sigma_{i} \\frac{y_{i}}{p_{i}^{\\mathrm{sat}}(T)}=\\frac{1}{p}\n\\]\n\n\nUnha mestura líquida contén 50% de pentano, 30% de hexano e 20% de ciclohexano (en moles), é dicir, \\(x_{pentano} = 0.5; x_{hexano} = 0.3 e x_{ciclohexano} = 0.2\\). A \\(T = 400 K\\) se incrementa a presión gradulmente. Cál é a presión de orballo e a composición do primeiro líquido que condensa?. Supoñer unha mestura líquida ideal e gas ideal (lei de Raoult).\n\n\n\nAtopar o valor de \\(p\\) que satisfai a ecuación anterior. Posto que \\(T\\) ven dada, a solución é trivial; simplementa calculamos \\(1/p\\) a partires dela.\n\ny_pentano     = 0.5\ny_hexano      = 0.3\ny_ciclohexano = 0.2\nT = 400 # K\np_orballo = 1 / ( y_pentano / p_sat_pentano + y_hexano / p_sat_hexano + y_ciclohexano / p_sat_ciclohexano)\nx_pentano = y_pentano * p_orballo / p_sat_pentano\nx_hexano = y_hexano * p_orballo / p_sat_hexano\nx_ciclohexano = y_ciclohexano * p_orballo / p_sat_ciclohexano\n\n\n# print(\"Presión de orballo a {:5.2f} [K]\".format(T))\nprint(\"Temperatura        = {:5.2f} [bar]\".format(T))\nprint(\"Presión de orballo = {:5.2f} [bar]\".format(p_orballo))\nprint(\"  Composición  Composto         x[i]   y[i]\")\nprint(\"               {:10s}     {:6.4}{:6.4} \".format('pentano',x_pentano,y_pentano))\nprint(\"               {:10s}     {:6.4}{:6.4} \".format('hexano',x_hexano,y_hexano))\nprint(\"               {:10s}    {:6.4}{:6.4} \".format('ciclohexano',x_ciclohexano,y_ciclohexano))\n\nTemperatura        = 400.00 [bar]\nPresión de orballo =  5.78 [bar]\n  Composición  Composto         x[i]   y[i]\n               pentano        0.2822   0.5 \n               hexano         0.3734   0.3 \n               ciclohexano    0.3445   0.2 \n\n\n\n\n\nConsidera a mesma mestura do problema anterios. At \\(p\\) = 5 bar, a temperatura vaise diminuindo gradialmente. Cál é a tenmperatura de orballo e a composición do primeiro líquido que se foram?.\n\n\n\nNeste caso, nos dan \\(p\\) e \\(y_i\\), e a ecuación de antes convértese nunha ecuación implícita en \\(T\\) que necesita de resolverse numéricamente por un método numérico, por exemplo iteración.\n\nfrom scipy.optimize import fsolve\n\n\npresion = 5. # bar\nT_gues  = 400. # K \n\ndef orballo(T):\n    fun = ( 1 / presion) - y_pentano / 10 ** ( A_pentano - B_pentano / ( C_pentano + T ) ) - y_hexano / 10 ** ( A_hexano - B_hexano / ( C_hexano + T ) ) - y_ciclohexano / 10 ** ( A_ciclohexano - B_ciclohexano / ( C_ciclohexano + T ) ) \n    return fun\n\nT_orballo = fsolve(orballo, T_gues)\n\n\nprint(\"Temperatura de orballo calculada con fsolve = \", T_orballo)\n\nTemperatura de orballo calculada con fsolve =  [393.30333147]\n\n\n\nfrom scipy.optimize import root\nT = root(orballo, [300,400])\n\n\nprint(\"Temperatura de orballo calculada con fsolve = \", T_orballo)\n\nTemperatura de orballo calculada con fsolve =  [393.30333147]\n\n\n\n# Táboa 7.2 : Datos para exemplos e exercicios de flash: parámetros de Antoine para p sat ( T ), temperatura normal de ebulición ( T b ) e calor de vaporización ∆ vap H ( T b ) para os compoñentes seleccionados. Datos : Poling, Prausnitz e O'Connell, As propiedades de gases e líquidos , 5 th Ed., McGraw-Hill (2001).\n# log10(psat[bar]) = A - B / ( T [K] + C) Tb [ K ] dv a p H b [ J / m o l ]\n# pentano C5H12\nA_C5 = 3.97786\nB_C5 = 1064.840\nC_C5 = -41.136\n# hexano C6H14\nA_C6 = 4.00139\nB_C6 = 1170.875\nC_C6 = -48.833\n# ciclohexano C6H12\nA_CC6 =3.93002\nB_CC6 = 1182.774\nC_CC6 = -52.532"
   },
   {
-    "objectID": "notebooks/Diagramas_Pxy_Txy.html",
-    "href": "notebooks/Diagramas_Pxy_Txy.html",
-    "title": "Obtención do diagrama P-x, T-xy e xy.",
-    "section": "",
-    "text": "import numpy as np\n# Parámetros de Antoine\n\n# heptano\nA_heptano = 4.02832\nB_heptano = 1268.636\nC_heptano = -56.199\n\n#Octano\nA_octano=4.04867\nB_octano=1355.126\nC_octano=-63.633\n\n# Alternativa\n# A = [A_heptano, A_octano]\n# B=[B_heptano, B_octano]\n# A[0] = A del heptano\n\n# Dato: temperatura\nT = 115 + 273.15 # K"
-  },
-  {
-    "objectID": "notebooks/Diagramas_Pxy_Txy.html#aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada",
-    "href": "notebooks/Diagramas_Pxy_Txy.html#aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada",
-    "title": "Obtención do diagrama P-x, T-xy e xy.",
-    "section": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada",
-    "text": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada\n\nfrom scipy.optimize import fsolve\n\n\n# Datos do exercicio\n\nP_t = 1.5 #bar\nx_heptano = np.linspace(0,1,11)\n\n# Suponse unha temperatura de partida\n\nT_guess=396\n\n# Créanse dúas listas nas que se almacenarán os datos de temperatura e fraccións molares do heptano, para cada valor de x\n\nlista_temperatura=[]\nlista_y=[]\n\n# Definiranse as funcións para obter as presións de saturación do heptano e o octano\n\ndef p_sat_heptano(T):\n    return 10  ** ( A_heptano - B_heptano / ( T + C_heptano ) )\n\ndef p_sat_octano(T):\n    return 10 ** ( A_octano - B_octano / ( T + C_octano ) )\n\n# Créase un lazo que devolve o valor da temperatura e a fracción molar do vapor para cada valor de x\n\nfor i in x_heptano:\n    def fmin(T):\n        return i*p_sat_heptano(T)/P_t+(1-i)*p_sat_octano(T)/P_t-1\n    solucion=fsolve(fmin,T_guess)\n    lista_temperatura.append(solucion[0])\n    y_heptano=i*p_sat_heptano(solucion)/P_t\n    lista_y.append(y_heptano[0])\n\nprint(lista_temperatura) # valores de temperatura calculados\nprint(lista_y) # valores de y calculados\n\n[np.float64(413.5615852273091), np.float64(409.77113336473025), np.float64(406.2684364969948), np.float64(403.0216612183846), np.float64(400.00305716655544), np.float64(397.18844969691617), np.float64(394.55676804690006), np.float64(392.0896214256247), np.float64(389.77092633460484), np.float64(387.58658343897787), np.float64(385.52419985536085)]\n[np.float64(0.0), np.float64(0.1837276326189331), np.float64(0.33830109800891695), np.float64(0.4693199994809487), np.float64(0.581154434977709), np.float64(0.6772413410638028), np.float64(0.7603047808262194), np.float64(0.832520410718438), np.float64(0.895638942399593), np.float64(0.9510793956603304), np.float64(1.0000000000003693)]\n\n\n\n# Representación do diagrama T-xy\n\nimport matplotlib.pyplot as plt\nplt.plot(x_heptano, lista_temperatura, 'ko-', lista_y, lista_temperatura, 'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y (heptano)')\nplt.ylabel('Temperatura (K)')\nplt.title('Diagrama T-x,y')\n\nText(0.5, 1.0, 'Diagrama T-x,y')\n\n\n\n\n\n\n\n\n\n\n# Tamén se pde realizar con fsolve aplicado a la ecuación de Antoine, y no al sumatorio de y - 1\nz=np.linspace(0,1, num=11) #composición inicial\n\n# Funciónes para determinar as presións de saturación dos dous compoñentes\n\ndef Psat1(T):\n    return 10**(A_heptano-B_heptano/(T+C_heptano))\ndef Psat2(T):\n    return 10**(A_octano-B_octano/(T+C_octano))\n\n# Datos do enunciado\ny=z\nP = 1.5 #bar\nfrom scipy.optimize import fsolve\n\n\ndef fun1(T):\n    return P - 10**(A_heptano-B_heptano/(T+C_heptano)) # a qué temperatura P externa es igual al otro término\nTinf=fsolve(fun1, 350) # 350K valor inicial suposto\n                       # Tinf = temperatura de fervura do heptano\n\ndef fun2(T):\n    return P - 10**(A_octano-B_octano/(T+C_octano))\nTsup=fsolve(fun2, 373) # Tsup = temperatura de fervura do octano\n\nprint('A temperatura á que hierve o heptano á presión externa é {:5.2f} K.'.format(Tinf[0]))\nprint('A temperatura á que hierve o octano  á presión externa é {:5.2f} K.'.format(Tsup[0]))\n\nA temperatura á que hierve o heptano á presión externa é 385.52 K.\nA temperatura á que hierve o octano  á presión externa é 413.56 K.\n\n\n\nT=np.linspace(Tinf,Tsup, num=11)\nx = (P-Psat2(T))/(Psat1(T)-Psat2(T))\ny=x*Psat1(T)/P\nplt.plot(x, T,'ko-', y,T,'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y')\nplt.ylabel('T')\nplt.title('Diagrama T-x, y')\n\nText(0.5, 1.0, 'Diagrama T-x, y')"
-  },
-  {
     "objectID": "course-team.html",
     "href": "course-team.html",
     "title": "Teaching team",
@@ -356,173 +511,14 @@
     ]
   },
   {
-    "objectID": "course-support.html",
-    "href": "course-support.html",
-    "title": "Soporte",
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "SOPQ-2324: Simulación e Optimización de Procesos Químicos",
     "section": "",
-    "text": "Se en algún momento do prooceso tes a sensación de non poder acabr o traballo pide axuda, usa os mecanismos que che proporciona a universidade para non acabar cunha frustrarción e sensación de que é tarde, e sintes incomodeidade, para buscar axuda.",
+    "text": "DATOS IDENTIFICATIVOS 2023_24 Materia Simulación e optimización de procesos químicos Código V12G350V01702 Titulación\nGrao en Enxeñaría en Química Industrial Descritores Cr.totais Sinale Curso Cuadrimestre 6 OB 4 1c Lingua de impartición\nGalego Inglés Prerrequisitos\nDepartamento\nCoordinador/a\nSánchez Bermúdez, Ángel Manuel Correo-e asanchez@uvigo.gal Profesorado Sánchez Bermúdez, Ángel Manuel Web http://http://eqea.uvigo.es Descrición xeral Asignatura obrigatoria que se imparten no 7º cuadrimestre do Grao en Química Industrial, unha vez que o alumno estudou as materias nas que deben demostrar os coñecementos necesarios sobre: - Métodos numéricos empregados na enxeñaría química. - Deseño de reactores químicos. - Deseño de equipos para operacións de separación. - Deseño de equipos de transferencia de calor empregados en procesos químicos. - Control e seguridade dos procesos químicos.\nEsta materia impártese no último ano. O alumno accede despois de adquirir e desenvolver habilidades para xestionar facilmente as ferramentas informáticas da informática dixital, nas que o uso seguirá funcionando e afondar.",
     "crumbs": [
       "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-support.html#clases-e-laboratorios",
-    "href": "course-support.html#clases-e-laboratorios",
-    "title": "Soporte",
-    "section": "Clases e laboratorios",
-    "text": "Clases e laboratorios\nSe tes unha pregunta durante as clases teóricas ou as prácticas, non dubides en preguntar. Probablemente haxa outros compañeiros coas mesma preguntas, polo que unha pregunta túa creará unha oportunidade de aprendizaxe para todos.",
-    "crumbs": [
-      "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-support.html#horario-oficial",
-    "href": "course-support.html#horario-oficial",
-    "title": "Soporte",
-    "section": "Horario oficial",
-    "text": "Horario oficial\n\nOs docentes estamos aquí para axudarche a ter éxito no curso.\nAnímase a asistir ás titorías presenciais para facer preguntas sobre o contido e as tarefas do curso, ou busar consello en xerakl sovrea tiutulación.\nMoitas preguntas quedan mellor respondidas en persoa, polo que o horario de atención presencial é un recurso valioso. Ningúbn profesor pode nin debe afearche o uso intensivo do hotrario de titorías.\nFai un calendario de consultas de titorías para cada materia que curses, polo menos unha vez durante as primeiras semanas de clase.\nO horario de titorías está pbligatoriamente publicado na guía docente da materia e en na [secretaría virtual}(https://seix.uvigo.gal).",
-    "crumbs": [
-      "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-support.html#foros-de-discusión",
-    "href": "course-support.html#foros-de-discusión",
-    "title": "Soporte",
-    "section": "Foros de discusión",
-    "text": "Foros de discusión\n\nTes algunha pregunta que non pode esperar ao horario de titorías?\nPrefires escribir a túa pregunta en detalle en vez de preguntar en persoa?\nO foro de discusión en liña é o mellor lugar para estes.\nUsa [conversas] (https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/13b6446a-a6c6-4222-8cfb-c36d10802b) como o en liña. Hai unha posibilidade de que outro estudante xa se fixera unha pregunta similar, polo que consulte as outras publicacións sobre a discusión de ED antes de engadir unha nova pregunta. Se coñeces a resposta a unha pregunta que se publica, anímovos a responder.",
-    "crumbs": [
-      "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-support.html#email",
-    "href": "course-support.html#email",
-    "title": "Soporte",
-    "section": "Email",
-    "text": "Email\n\nEn caso necesario podes contactar por correo electrónico inda que sexa para adiar un ha videoconferencia ou formular directamente calquera consulta.\nLembra quye este método se reduce a interacción entre ti e o teu profesor e non aporta nada ós compañeiros de curso, sempre é preferible o foro.\nTrata de enviar as proguntas sobre o de contido do curso (estas deberían ir ó foro) e só usa correo electrónico para preguntas sobre asuntos persoais que poden non te atreves a enunciar no foro público (por exemplo, enfermidade, conselloss, etc.).\nPara tales asuntos, podes enviar un correo electrónico [] (mailto: asanchez@uvigo.gal).\nSe me envías un correo electrónico, inclúe “SOPQ-2324” noasunto.\nO tempo de resposta pode ser máis lento para os correos electrónicos enviados o fin de semana.",
-    "crumbs": [
-      "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-support.html#soporte-académico",
-    "href": "course-support.html#soporte-académico",
-    "title": "Soporte",
-    "section": "Soporte académico",
-    "text": "Soporte académico\nPara obter axuda técnica da materia, a continuación relátanse as ligazóns mais relevantes:\n\nMOOVI\nTeams\nCampusremoto\nGithub\n\n\nAsistencia Teams ou Campusremoto\n\nTen en conta que imos facer un uso intensido MOOVI n canto ó seguemento académico da materia.\nNo seu lugar toda a presentación e titoriais, vídeos ,atc. terá lugar en GitHub.\nO Teams utilizarase para o horario de atención liña, ou seña, as titorías telemáticas ou videconferencias particulares solicitadas previamente.",
-    "crumbs": [
-      "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-support.html#saúde-mental-e-benestar",
-    "href": "course-support.html#saúde-mental-e-benestar",
-    "title": "Soporte",
-    "section": "Saúde mental e benestar",
-    "text": "Saúde mental e benestar\n\nA saúde mental e o benestar dos estudantes son de importancia primordial na Uvigo, e a universidade ofrece recursos para apoiar aos estudantes na xestión do estrés diario e no coidado de si mesmo.\nNon teñas medo de utilizar esos recursos.\nVisita con frecuencia as páxinas da Viccerreitoría de estudiantes.\nA Uvigo ofrece varios recursos para que os estudantes busquen asistencia en cursos e para fomentar hábitos diarios que admiten o benestar global, algúns dos cales figuran a continuación:",
-    "crumbs": [
-      "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-support.html#dereitos-dos-materiais-do-curso",
-    "href": "course-support.html#dereitos-dos-materiais-do-curso",
-    "title": "Soporte",
-    "section": "Dereitos dos materiais do curso",
-    "text": "Dereitos dos materiais do curso\n\nTodos os materiais docentes de este curso son de libre distribucvión, amparados polas licencias Creative Commons, agás as aplicacións de prácticas HYSYS e AspenPlus.\nNon hai problemas de copyright asociados a este curso.\nTodas as lecturas procederán de recursos abertos libremente dispoñibles (libros de texto de código aberto, artigos de diario, etc.).",
-    "crumbs": [
-      "Información xeral",
-      "Soporte"
-    ]
-  },
-  {
-    "objectID": "course-links.html",
-    "href": "course-links.html",
-    "title": "Ligazóns",
-    "section": "",
-    "text": "Handbook online\nUniversidade estatal de Iowa\n\n\nCálculos\n🔗 on Checalc\n\n\nCálculos VLE\n🔗 on VLE-Cacl\n\n\nRecursos educativos\n🔗 on CaCHE\n\n\nScreencasts\n🔗 on Learncheme\n\n\nAutoavaliación\n🔗 on Sakai\n\n\nLaboratorios virtuais\n🔗 on Universidade Colorado Boulder",
-    "crumbs": [
-      "Información xeral",
-      "Ligazońs"
-    ]
-  },
-  {
-    "objectID": "computing-troubleshooting.html",
-    "href": "computing-troubleshooting.html",
-    "title": "Problemas de computación",
-    "section": "",
-    "text": "Se tes dificultades para lanzar unha sesión de Python desde o teu usuario reservado, diríxete a a este email.\n\nSe o estado mostra algo que non sexa “operativo”, isto significa que hai un incidente coñecido cos contedores. Volve máis tarde para ver se se resolveu.\nSe non se resolve, publica no foro do curso en MOOVI para facernos saber que hai un problema. Intentaremos determinar o problema con rapidez e se é posible resolvelo. En caso contrario, decidiráse que facer e se vos comunicará a través do foro MOOVI da materia.\n\nNota: Non prevemos que isto suceda regularmente, os sistemas están a operar unha gran maioría do tempo.\n\nSe o estado mostra “operativo”, isto significa que o sistema está previsto que funcione.\nComproba a túa conexión a Internet, se é necesario, reinicie o ordenador para garantir unha nova conexión nova.\nSe o teu problema persiste, publica no foro do curso detalles sobre o que probaches e os erros que ves (incluíndo erros e/ou capturas de pantalla verbatim).\nDe calquera xeito tamén podes cubrir o formulario seguinte:\n\n\n\nIntentaremos, na medida da nosas posibilidades solucionar o problema.",
-    "crumbs": [
-      "Computación",
-      "Problemas c servidor"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About me",
-    "section": "",
-    "text": "Anxo Sánchez: Son Catedrático de Universidade do Departamento de Enxeñaría Química da Universidade de Vigo."
-  },
-  {
-    "objectID": "about.html#educación",
-    "href": "about.html#educación",
-    "title": "About me",
-    "section": "Educación",
-    "text": "Educación\nUniversidade de Vigo: - Escola de Enxeñaría Industriais: - Campus Universitario Lagoas-Marcosende, 9 36310 Vigo (SPAIN) - Escola de Enxeñar´ia Forestal - Campus Universitario Pontevedra"
-  },
-  {
-    "objectID": "about.html#investigación",
-    "href": "about.html#investigación",
-    "title": "About me",
-    "section": "Investigación",
-    "text": "Investigación\nÁreas de traballo: - Enerxía da biomasa - TEcnoloxías do Hidr´xeno e as Pilas de combustible - Deseño de Procesos e Prodtos Químicos Sustentables, en especial - Disolventes verdes - Biocombustibles"
-  },
-  {
-    "objectID": "Minimización-da-Enerxía-Libre-de-Gibbs.html",
-    "href": "Minimización-da-Enerxía-Libre-de-Gibbs.html",
-    "title": "SOPQ-2324",
-    "section": "",
-    "text": "Neste notebook analizamos a minimización directa da enerxía libre de Gibbs das especies, sen supostos sobre a estequiometría das reaccións. Só aplicamos a restrición de conservación dos átomos. Usamos o NIST Webbook para proporcionar os datos da enerxía de Gibbs de cada especie.\nComo recordatorio, consideramos o equilibrio entre as especies \\(CO\\), \\(H_2O\\), \\(CO_2\\) e \\(H_2\\), a 1000K, e unha presión total de 5 atm cun caudal equimolar inicial de \\(CO\\) e \\(H_2O\\).\nImos almacenar todos os datos e cálculos en vectores, polo que debemos asignar cada posición do vector a unha especie. Aquí están as definicións que utilizamos neste traballo.\n# @title\nimport numpy as np\n\nT = 842  # K\nR = 8.314e-3 # kJ/mol/K\n\nP = 5.37 # atm, this is the total pressure in the reactor\nPo = 1.0 # atm, this is the standard state pressure\n# @title\nspecies = ['CO', 'H2O', 'CO2', 'H2']\nAgora, constrúuiremos a función de enerxía libre de Gibbs, explicando o cambio de actividade debido aos cambios de concentración (mestura ideal).\nImpoñemos a restrición de que todos os átomos se conserven desde as condicións iniciais ata a distribución en equilibrio das especies. Estas restricións teñen a forma de \\(A_{eq} n = b_{eq}\\), onde \\(n\\) é o vector dos números moles de cada especie.\n# @title\n# Heats of formation at 298.15 K\n\nHf298 = [\n    -110.53,  # CO\n    -241.826, # H2O\n    -393.51,  # CO2\n       0.0]   # H2\nAgora estamos preparados para resolver o problema."
-  },
-  {
-    "objectID": "Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais",
-    "href": "Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais",
-    "title": "SOPQ-2324",
-    "section": "1 Cálculo das fraccións molares e presións parciais",
-    "text": "1 Cálculo das fraccións molares e presións parciais\nAs presións aquí están de acordo coas presións atopadas por outros métodos. O pequeno desacordo (no terceiro ou cuarto decimal) débese probablemente a tolerancias de converxencia nos diferentes algoritmos utilizados.\n\n# @title\n# Shomate parameters for each species\n#           A          B           C          D          E            F          G       H\nWB = [[25.56759,  6.096130,     4.054656,  -2.671301,  0.131021, -118.0089, 227.3665,   -110.5271],  # CO\n      [30.09200,  6.832514,     6.793435,  -2.534480,  0.082139, -250.8810, 223.3967,   -241.8264],  # H2O\n      [24.99735,  55.18696,   -33.69137,    7.948387, -0.136638, -403.6075, 228.2431,   -393.5224],  # CO2\n      [33.066178, -11.363417,  11.432816,  -2.772874, -0.158558, -9.980797, 172.707974,    0.0]]     # H2\n\nWB = np.array(WB)\n\n\n# @title\n# Shomate equations\n\nt = T/1000\n\nT_H = np.array([t,  t**2 / 2.0, t**3 / 3.0, t**4 / 4.0, -1.0 / t, 1.0, 0.0, -1.0])\nT_S = np.array([np.log(t), t,  t**2 / 2.0,  t**3 / 3.0, -1.0 / (2.0 * t**2), 0.0, 1.0, 0.0])\n\nH = np.dot(WB, T_H)        # (H - H_298.15) kJ/mol\nS = np.dot(WB, T_S/1000.0) # absolute entropy kJ/mol/K\n\nGjo = Hf298 + H - T*S      # Gibbs energy of each component at 1000 K\n\n\n# @title\ndef func(nj):\n    nj = np.array(nj)\n    Enj = np.sum(nj);\n    Gj =  Gjo / (R * T) + np.log(nj / Enj * P / Po)\n    return np.dot(nj, Gj)\n\n\n# @title\nAeq = np.array([[ 1,    0,    1,    0],  # C balance\n                [ 1,    1,    2,    0],  # O balance\n                [ 0,    2,    0,    2]]) # H balance\n\n\n# @title\n# equimolar feed of 1 mol H2O and 1 mol CO\nbeq = np.array([1,  # mol C fed\n                2,  # mol O fed\n                2]) # mol H fed\n\n\n# @title\ndef ec1(nj):\n    'restriccións da lei de conservaxción de átomos'\n    return np.dot(Aeq, nj) - beq\n\n\n# @title\nfrom scipy.optimize import fmin_slsqp\n\nn0 = [0.5, 0.5, 0.5, 0.5]  # initial guesses\nN = fmin_slsqp(func, n0, f_eqcons=ec1)\nprint (N)\n\nOptimization terminated successfully    (Exit mode 0)\n            Current function value: -99.9406728442514\n            Iterations: 3\n            Function evaluations: 16\n            Gradient evaluations: 3\n[0.35799303 0.35799303 0.64200697 0.64200697]"
-  },
-  {
-    "objectID": "Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais-1",
-    "href": "Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais-1",
-    "title": "SOPQ-2324",
-    "section": "1 Cálculo das fraccións molares e presións parciais",
-    "text": "1 Cálculo das fraccións molares e presións parciais\nAs presións aquí están de acordo cas presións atopadas por outros métodos. O pequeno desacordo (no terceiro ou cuarto decimal) débese probablemente a tolerancias de converxencia nos diferentes algoritmos utilizados.\n\n# @title\nyj = N / np.sum(N)\nPj = yj * P\n\nfor s, y, p in zip(species, yj, Pj):\n    print (s, y, p)\n\nCO 0.17899651631887759 0.9612112926323727\nH2O 0.17899651631887759 0.9612112926323727\nCO2 0.3210034836811224 1.7237887073676275\nH2 0.3210034836811224 1.7237887073676275"
-  },
-  {
-    "objectID": "Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-de-constantes-de-equilibrio",
-    "href": "Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-de-constantes-de-equilibrio",
-    "title": "SOPQ-2324",
-    "section": "2. Cálculo de constantes de equilibrio",
-    "text": "2. Cálculo de constantes de equilibrio\nPodemos calcular a constante de equilibrio para a reacción:\n\\[\nCO+H_2O⇌CO_2+H_2\n\\]\nten en en conta que para definir unha constante de equilibrio é necesario especificar unha reacción, aínda que nin sequera sexa necesario considerar unha reacción para obter a distribución en equilibrio das especies.\n\n# @title\nnuj = np.array([-1, -1, 1, 1])  # stoichiometric coefficients of the reaction\nK = np.prod(yj**nuj)\nprint('A constante de equilibrio (adimensional) vale: {:5.4f}'.format(K))\n\nA constante de equilibrio (adimensional) vale: 3.2161"
-  },
-  {
-    "objectID": "computing-access.html",
-    "href": "computing-access.html",
-    "title": "Computing access",
-    "section": "",
-    "text": "Para acceder a recursos informáticos para o uso de python do Departamento de Enxeñaría Química da Universidade de Vigo, diríxete ao servidor de notebooks e accede co te nome (o primeiro só) escrito en minúsculas e sin acento ningún. En caso de que non che permita o acceso o mais probable é que exista algún outro compañeiro co memso primeiro nome c cal debes engadir a inicial do primeioro apelido en maiúsculas (p.e. AnaL, AnaG, etc.).\nSe esta é a primeira vez que accedes debes introducir o contrasinal que quedará por defecto. Só tes que facelo unha vez e.\nEntrarás nunha instancia de JupyterLab, que che permite facer varias cousas, entre elas notebools de jupyter.\nComo alternativa podes usar Google Collab. As diferencias mais salientable entre Collab e EQEA son que no servidor do Departamenteo de Enxeñaría química están instaladas todas as librerías python que se usan no curso, asi como o Octave, que é o clon libre de Matlab.\nAs entregas deberalas facer a través de MOOVI xa que inda que quedan almacendas en Collab e EQEA, non se trasladan directamente ó teu curso de MOOVI para a súa avaliación.",
-    "crumbs": [
-      "Computación",
-      "Aceso"
+      "Información xeral"
     ]
   },
   {
@@ -581,14 +577,14 @@
     ]
   },
   {
-    "objectID": "course-overview.html",
-    "href": "course-overview.html",
-    "title": "SOPQ-2324: Simulación e Optimización de Procesos Químicos",
+    "objectID": "course-links.html",
+    "href": "course-links.html",
+    "title": "Ligazóns",
     "section": "",
-    "text": "DATOS IDENTIFICATIVOS 2023_24 Materia Simulación e optimización de procesos químicos Código V12G350V01702 Titulación\nGrao en Enxeñaría en Química Industrial Descritores Cr.totais Sinale Curso Cuadrimestre 6 OB 4 1c Lingua de impartición\nGalego Inglés Prerrequisitos\nDepartamento\nCoordinador/a\nSánchez Bermúdez, Ángel Manuel Correo-e asanchez@uvigo.gal Profesorado Sánchez Bermúdez, Ángel Manuel Web http://http://eqea.uvigo.es Descrición xeral Asignatura obrigatoria que se imparten no 7º cuadrimestre do Grao en Química Industrial, unha vez que o alumno estudou as materias nas que deben demostrar os coñecementos necesarios sobre: - Métodos numéricos empregados na enxeñaría química. - Deseño de reactores químicos. - Deseño de equipos para operacións de separación. - Deseño de equipos de transferencia de calor empregados en procesos químicos. - Control e seguridade dos procesos químicos.\nEsta materia impártese no último ano. O alumno accede despois de adquirir e desenvolver habilidades para xestionar facilmente as ferramentas informáticas da informática dixital, nas que o uso seguirá funcionando e afondar.",
+    "text": "Handbook online\nUniversidade estatal de Iowa\n\n\nCálculos\n🔗 on Checalc\n\n\nCálculos VLE\n🔗 on VLE-Cacl\n\n\nRecursos educativos\n🔗 on CaCHE\n\n\nScreencasts\n🔗 on Learncheme\n\n\nAutoavaliación\n🔗 on Sakai\n\n\nLaboratorios virtuais\n🔗 on Universidade Colorado Boulder",
     "crumbs": [
       "Información xeral",
-      "Información xeral"
+      "Ligazońs"
     ]
   },
   {
@@ -735,26 +731,18 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SOPQ 23-24: Simulación e Optimización de Procesos Químicos",
+    "objectID": "notebooks/Diagramas_Pxy_Txy.html",
+    "href": "notebooks/Diagramas_Pxy_Txy.html",
+    "title": "Obtención do diagrama P-x, T-xy e xy.",
     "section": "",
-    "text": "Introdución\nEsta páxina contén un esquema dos temas, contido e tarefas para o semestre. Ten en conta que este horario actualizarase a medida que avanza o semestre, con todos os cambios documentados aquí.\n\n\nClases presenciais\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSemán\nData\nTema\nPreparación\nPresentacións\nEA\nLaboratorio\nTraballo individual\nAvaliación\nProxecto\n\n\n\n\n1\nMér, 11 Set\nTema 0 - Benvida + Presentación\n\n\n\n\n\n\n\n\n\n\nMér, 19 Set\nTema 1 - Introdución\n\n🖥️\n\n💻\n\n\n\n\n\n2\nXov, 11 Set\nPráctica Simuladores 1 - Introducción\n\n🖥️\n\n\n\n\n\n\n\n3\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\n\n\n\n\n\n\n\n\n\n8",
-    "crumbs": [
-      "Información xeral",
-      "Programación"
-    ]
+    "text": "import numpy as np\n# Parámetros de Antoine\n\n# heptano\nA_heptano = 4.02832\nB_heptano = 1268.636\nC_heptano = -56.199\n\n#Octano\nA_octano=4.04867\nB_octano=1355.126\nC_octano=-63.633\n\n# Alternativa\n# A = [A_heptano, A_octano]\n# B=[B_heptano, B_octano]\n# A[0] = A del heptano\n\n# Dato: temperatura\nT = 115 + 273.15 # K"
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Blog de SOPQ-2324",
-    "section": "",
-    "text": "Cálculos de separacións flash\n\n\n\n\n\n\n\n\n\n\n\nAnxo Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\nObtención do diagrama P-x, T-xy e xy.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Blog",
-      "Artigos"
-    ]
+    "objectID": "notebooks/Diagramas_Pxy_Txy.html#aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada",
+    "href": "notebooks/Diagramas_Pxy_Txy.html#aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada",
+    "title": "Obtención do diagrama P-x, T-xy e xy.",
+    "section": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada",
+    "text": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada\n\nfrom scipy.optimize import fsolve\n\n\n# Datos do exercicio\n\nP_t = 1.5 #bar\nx_heptano = np.linspace(0,1,11)\n\n# Suponse unha temperatura de partida\n\nT_guess=396\n\n# Créanse dúas listas nas que se almacenarán os datos de temperatura e fraccións molares do heptano, para cada valor de x\n\nlista_temperatura=[]\nlista_y=[]\n\n# Definiranse as funcións para obter as presións de saturación do heptano e o octano\n\ndef p_sat_heptano(T):\n    return 10  ** ( A_heptano - B_heptano / ( T + C_heptano ) )\n\ndef p_sat_octano(T):\n    return 10 ** ( A_octano - B_octano / ( T + C_octano ) )\n\n# Créase un lazo que devolve o valor da temperatura e a fracción molar do vapor para cada valor de x\n\nfor i in x_heptano:\n    def fmin(T):\n        return i*p_sat_heptano(T)/P_t+(1-i)*p_sat_octano(T)/P_t-1\n    solucion=fsolve(fmin,T_guess)\n    lista_temperatura.append(solucion[0])\n    y_heptano=i*p_sat_heptano(solucion)/P_t\n    lista_y.append(y_heptano[0])\n\nprint(lista_temperatura) # valores de temperatura calculados\nprint(lista_y) # valores de y calculados\n\n[np.float64(413.5615852273091), np.float64(409.77113336473025), np.float64(406.2684364969948), np.float64(403.0216612183846), np.float64(400.00305716655544), np.float64(397.18844969691617), np.float64(394.55676804690006), np.float64(392.0896214256247), np.float64(389.77092633460484), np.float64(387.58658343897787), np.float64(385.52419985536085)]\n[np.float64(0.0), np.float64(0.1837276326189331), np.float64(0.33830109800891695), np.float64(0.4693199994809487), np.float64(0.581154434977709), np.float64(0.6772413410638028), np.float64(0.7603047808262194), np.float64(0.832520410718438), np.float64(0.895638942399593), np.float64(0.9510793956603304), np.float64(1.0000000000003693)]\n\n\n\n# Representación do diagrama T-xy\n\nimport matplotlib.pyplot as plt\nplt.plot(x_heptano, lista_temperatura, 'ko-', lista_y, lista_temperatura, 'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y (heptano)')\nplt.ylabel('Temperatura (K)')\nplt.title('Diagrama T-x,y')\n\nText(0.5, 1.0, 'Diagrama T-x,y')\n\n\n\n\n\n\n\n\n\n\n# Tamén se pde realizar con fsolve aplicado a la ecuación de Antoine, y no al sumatorio de y - 1\nz=np.linspace(0,1, num=11) #composición inicial\n\n# Funciónes para determinar as presións de saturación dos dous compoñentes\n\ndef Psat1(T):\n    return 10**(A_heptano-B_heptano/(T+C_heptano))\ndef Psat2(T):\n    return 10**(A_octano-B_octano/(T+C_octano))\n\n# Datos do enunciado\ny=z\nP = 1.5 #bar\nfrom scipy.optimize import fsolve\n\n\ndef fun1(T):\n    return P - 10**(A_heptano-B_heptano/(T+C_heptano)) # a qué temperatura P externa es igual al otro término\nTinf=fsolve(fun1, 350) # 350K valor inicial suposto\n                       # Tinf = temperatura de fervura do heptano\n\ndef fun2(T):\n    return P - 10**(A_octano-B_octano/(T+C_octano))\nTsup=fsolve(fun2, 373) # Tsup = temperatura de fervura do octano\n\nprint('A temperatura á que hierve o heptano á presión externa é {:5.2f} K.'.format(Tinf[0]))\nprint('A temperatura á que hierve o octano  á presión externa é {:5.2f} K.'.format(Tsup[0]))\n\nA temperatura á que hierve o heptano á presión externa é 385.52 K.\nA temperatura á que hierve o octano  á presión externa é 413.56 K.\n\n\n\nT=np.linspace(Tinf,Tsup, num=11)\nx = (P-Psat2(T))/(Psat1(T)-Psat2(T))\ny=x*Psat1(T)/P\nplt.plot(x, T,'ko-', y,T,'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y')\nplt.ylabel('T')\nplt.title('Diagrama T-x, y')\n\nText(0.5, 1.0, 'Diagrama T-x, y')"
   },
   {
     "objectID": "posts/2023-10-30-week-01/index.html",
@@ -773,7 +761,7 @@
   {
     "objectID": "project-tips-resources.html",
     "href": "project-tips-resources.html",
-    "title": "Project tips + resources",
+    "title": "Consellos sobre o proxecto e recursos",
     "section": "",
     "text": "Learcheme Podes atopar en este repositorio:\nScreencasts: capturas de pantalla curta dun PC tableta con narración. Inclúen exemplos e solucións de problemas, explicacións de conceptos, tutoriales de software, introdución a temas, descricións do diagrama e críticas.\nMódulos interactivos de auto-estudo: inclúindo introducións, exames de conceptos básicos, presentacións, ecuacións importantes, simulacións interactivas, simulacións de autoavaliación, reolución interactiva de problemas en pantalla e puntos clave da Enxeñaría Química.\n(https://nptel.ac.in/courses/103105106)\nFiveThirtyEight data\nTidyTuesday",
     "crumbs": [
@@ -784,7 +772,7 @@
   {
     "objectID": "project-tips-resources.html#fontes-de-información",
     "href": "project-tips-resources.html#fontes-de-información",
-    "title": "Project tips + resources",
+    "title": "Consellos sobre o proxecto e recursos",
     "section": "",
     "text": "Learcheme Podes atopar en este repositorio:\nScreencasts: capturas de pantalla curta dun PC tableta con narración. Inclúen exemplos e solucións de problemas, explicacións de conceptos, tutoriales de software, introdución a temas, descricións do diagrama e críticas.\nMódulos interactivos de auto-estudo: inclúindo introducións, exames de conceptos básicos, presentacións, ecuacións importantes, simulacións interactivas, simulacións de autoavaliación, reolución interactiva de problemas en pantalla e puntos clave da Enxeñaría Química.\n(https://nptel.ac.in/courses/103105106)\nFiveThirtyEight data\nTidyTuesday",
     "crumbs": [
@@ -793,162 +781,185 @@
     ]
   },
   {
-    "objectID": "project-tips-resources.html#tips",
-    "href": "project-tips-resources.html#tips",
-    "title": "Project tips + resources",
-    "section": "Tips",
-    "text": "Tips\n\nAsk questions if any of the expectations are unclear.\nCode: In your write up your code should be hidden (echo = FALSE) so that your document is neat and easy to read. However your document should include all your code such that if I re-knit your qmd file I should be able to obtain the results you presented.\n\nException: If you want to highlight something specific about a piece of code, you’re welcome to show that portion.\n\nMerge conflicts will happen, issues will arise, and that’s fine! Commit and push often, and ask questions when stuck.\nMake sure each team member is contributing, both in terms of quality and quantity of contribution (we will be reviewing commits from different team members).\nAll team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in the assignment works.",
+    "objectID": "project-tips-resources.html#consellos",
+    "href": "project-tips-resources.html#consellos",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Consellos",
+    "text": "Consellos\n\nTitorías Fai preguntas se algunha das expectativas non está clara.\nCódigo: Na túa escritura o teu código debería estar oculto para que o documento sexa ordenado e fácil de ler. Non obstante, o teu documento debería incluír todo o teu código de xeito que se volva a colocar o ficheiro QMD, debería poder obter os resultados que presentaches.\nExcepción: Se queres resaltar algo específico sobre un anaco de código, podes amosar esa parte.",
     "crumbs": [
       "Proxecto",
       "Tips + recusos"
     ]
   },
   {
-    "objectID": "project-tips-resources.html#formatting-communication-tips",
-    "href": "project-tips-resources.html#formatting-communication-tips",
-    "title": "Project tips + resources",
-    "section": "Formatting + communication tips",
-    "text": "Formatting + communication tips\n\nSuppress Code, Warnings, & Messages\n\nInclude the following code in a code chunk at the top of your .qmd file to suppress all code, warnings, and other messages. Use the code chunk header {r set-up, include = FALSE} to suppress this set up code.\n\nknitr::opts_chunk$set(echo = FALSE,\n                      warning = FALSE, \n                      message = FALSE)\n\n\nHeaders\n\nUse headers to clearly label each section.\nInspect the document outline to review your headers and sub-headers.\n\n\n\nReferences\n\nInclude all references in a section called “References” at the end of the report.\nThis course does not have specific requirements for formatting citations and references.\n\n\n\nAppendix\n\nIf you have additional work that does not fit or does not belong in the body of the report, you may put it at the end of the document in section called “Appendix”.\nThe items in the appendix should be properly labeled.\nThe appendix should only be for additional material. The reader should be able to fully understand your report without viewing content in the appendix.\n\n\n\nResize figures\nResize plots and figures, so you have more space for the narrative.\n\n\nArranging plots\nArrange plots in a grid, instead of one after the other. This is especially useful when displaying plots for exploratory data analysis and to check assumptions.\nIf you’re using ggplot2 functions, the patchwork package makes it easy to arrange plots in a grid. See the documentation and examples here.\n\n\nPlot titles and axis labels\nBe sure all plot titles and axis labels are visible and easy to read.\n\nUse informative titles, not variable names, for titles and axis labels.\n\n❌ NO! The x-axis is hard to read because the names overlap.\n✅ YES! Names are readable```\n\n\nDo a little more to make the plot look professional!\n\nInformative title and axis labels\nFlipped coordinates to make names readable\nArranged bars based on count\nCapitalized manufacturer names\nOptional: Added color - Use a coordinated color scheme throughout paper / presentation\nOptional: Applied a theme - Use same theme throughout paper / presentation\n\n\n\nTables and model output\n\nUse the kable function from the knitr package to neatly output all tables and model output. This will also ensure all model coefficients are displayed.\n\nUse the digits argument to display only 3 or 4 significant digits.\nUse the caption argument to add captions to your table.\n\n\n\n\nGuidelines for communicating results\n\nDon’t use variable names in your narrative! Use descriptive terms, so the reader understands your narrative without relying on the data dictionary.\n\n❌ There is a negative linear relationship between mpg and hp.\n✅ There is a negative linear relationship between a car’s fuel economy (in miles per gallon) and its horsepower.\n\nKnow your audience: Your report should be written for a general audience who has an understanding of statistics at the level of STA 210.\nAvoid subject matter jargon: Don’t assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term.\nTell the “so what”: Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation.\n\n❌ For every one unit increase in horsepower, we expect the miles per gallon to decrease by 0.068 units, on average.\n✅ If the priority is to have good fuel economy, then one should choose a car with lower horsepower. Based on our model, the fuel economy is expected to decrease, on average, by 0.68 miles per gallon for every 10 additional horsepower.\n\nTell a story: All visualizations, tables, model output, and narrative should tell a cohesive story!\nUse one voice: Though multiple people are writing the report, it should read as if it’s from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.",
+    "objectID": "project-tips-resources.html#formato-e-presentando-os-proxecto",
+    "href": "project-tips-resources.html#formato-e-presentando-os-proxecto",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Formato e presentando os proxecto",
+    "text": "Formato e presentando os proxecto\n\nsuprime o código, as advertencias e as mensaxes\n\nInclúe o seguinte código nun pedazo de código na parte superior do seu ficheiro .qmd para suprimir todo o código, avisos e outras mensaxes.\n\n\n\nCabeceiras\n\nUse cabeceiras para etiquetar claramente cada sección.\nInspeccione o esquema do documento para revisar as cabeceiras e os sub-cabeceiros.\n\n\n\nReferencias\n\nInclúe todas as referencias bibliográficas e web nunha sección chamada Referencias ao final do informe.\nEste curso non ten requisitos específicos para formatar citas e referencias.\n\n\n\nApéndice\n\nSe tes un traballo adicional que non encaixa ou non pertence ao corpo do informe, pode poñelo ao final do documento na sección chamada Apéndice.\nOs elementos do apéndice deben estar etiquetados correctamente.\nO apéndice só debe ser para material adicional.O lector debería poder comprender completamente o seu informe sen ver o contido no apéndice.\n\n\n\nRedimensionar as cifras\nRedimensionar as parcelas e as figuras, polo que tes máis espazo para a narración.",
     "crumbs": [
       "Proxecto",
       "Tips + recusos"
     ]
   },
   {
-    "objectID": "project-tips-resources.html#additional-resources",
-    "href": "project-tips-resources.html#additional-resources",
-    "title": "Project tips + resources",
-    "section": "Additional resources",
-    "text": "Additional resources\n\nR for Data Science\nQuarto Documentation\nData visualization\n\nggplot2 Reference\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A Practice Introduction\nPatchwork R Package",
+    "objectID": "project-tips-resources.html#esmérate-na-presentación-dos-gráficos.",
+    "href": "project-tips-resources.html#esmérate-na-presentación-dos-gráficos.",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Esmérate na presentación dos gráficos.",
+    "text": "Esmérate na presentación dos gráficos.\n\nUse títulos informativos, non nomes de variables, para títulos e etiquetas do eixe.\n\nTítulo informativo e etiquetas do eixe\n\nQue os nomes sexan lexibles\n\nNomes capitalizados\n\nOpcional:\n\nUsa un esquema de cores coordinado en todo o documento ou presentación.\n\nAplicado un tema, usa o mesmo tema en todo o documento ou presentación.\n\n\n\nDirectrices para comunicar resultados\n\nNon use nomes variables na túa narración: usa termos descritivos, polo que o lector entende a súa narración sen depender do dicionario de datos.\n\nCoñece a túa audiencia: O teu traballo debería estar escrito para un público xeral pero que comprenda as simulacións os conceptos principais da enxeñaría química.\n\n** Evite a xerga de temas: ** Non supoña que a audiencia coñeza toda a terminoloxía específica relacionada coa súa materia.\nSe debes usar a xerga, inclúe unha breve definición a primeira vez que introduce un termo.\n\n** Diga o “Entón”: ** O seu informe e presentación debería ser máis que unha lista de interpretacións e definicións técnicas. Concéntrate no que significan os resultados, é dicir, o que queres que a audiencia saiba sobre o teu tema despois de ler o teu informe ou ver a túa presentación.\n\n** Conta unha historia: ** Todas as visualizacións, táboas, saída do modelo e narrativa deberían contar unha historia cohesionada.",
     "crumbs": [
       "Proxecto",
       "Tips + recusos"
     ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
-    "href": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Resumo das clases teóricas",
-    "text": "Resumo das clases teóricas\n\n\n\n\n\n\n\nConceptos\nNivel\n\n\n\n\nFundamentos da simulación de procesos\nBásico\n\n\nIntrodución á simulación de procesos\nBásico\n\n\nRexistro de novos compoñentes\nBásico\n\n\nEstimación de propiedades físicas para simulación de procesos\nBásico\n\n\nSimulación de correntes de reciclado\nBásico"
+    "objectID": "project-tips-resources.html#recursos-adicionais-",
+    "href": "project-tips-resources.html#recursos-adicionais-",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Recursos adicionais-",
+    "text": "Recursos adicionais-\n\n[Jup]yter Notebook](https://docs.jupyter.org/en/latest/)\nVisualización de datos\n\nMatplotlib\nPlotly\nGuía de visualización de datos",
+    "crumbs": [
+      "Proxecto",
+      "Tips + recusos"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simulación-de-procesos",
-    "href": "simulacion-de-procesos-gl.html#simulación-de-procesos",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simulación de procesos",
-    "text": "Simulación de procesos\n A simulación de procesos é unha técnica computacional empregada en varias industrias para:\n- Modelar\n- Analizar e\n- Optimizar procesos complexos.\n - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións."
+    "objectID": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html",
+    "href": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html",
+    "title": "SOPQ-2324",
+    "section": "",
+    "text": "Neste notebook analizamos a minimización directa da enerxía libre de Gibbs das especies, sen supostos sobre a estequiometría das reaccións. Só aplicamos a restrición de conservación dos átomos. Usamos o NIST Webbook para proporcionar os datos da enerxía de Gibbs de cada especie.\nComo recordatorio, consideramos o equilibrio entre as especies \\(CO\\), \\(H_2O\\), \\(CO_2\\) e \\(H_2\\), a 1000K, e unha presión total de 5 atm cun caudal equimolar inicial de \\(CO\\) e \\(H_2O\\).\nImos almacenar todos os datos e cálculos en vectores, polo que debemos asignar cada posición do vector a unha especie. Aquí están as definicións que utilizamos neste traballo.\n# @title\nimport numpy as np\n\nT = 842  # K\nR = 8.314e-3 # kJ/mol/K\n\nP = 5.37 # atm, this is the total pressure in the reactor\nPo = 1.0 # atm, this is the standard state pressure\n# @title\nspecies = ['CO', 'H2O', 'CO2', 'H2']\nAgora, constrúuiremos a función de enerxía libre de Gibbs, explicando o cambio de actividade debido aos cambios de concentración (mestura ideal).\nImpoñemos a restrición de que todos os átomos se conserven desde as condicións iniciais ata a distribución en equilibrio das especies. Estas restricións teñen a forma de \\(A_{eq} n = b_{eq}\\), onde \\(n\\) é o vector dos números moles de cada especie.\n# @title\n# Heats of formation at 298.15 K\n\nHf298 = [\n    -110.53,  # CO\n    -241.826, # H2O\n    -393.51,  # CO2\n       0.0]   # H2\nAgora estamos preparados para resolver o problema."
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
-    "href": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Qué implica a simulación de procesos?",
-    "text": "Qué implica a simulación de procesos?\nA simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico\n\n\n\n\n\nflowchart TD\n  A[Inicio] --&gt; B[Modelado]\n  B --&gt; C[Entrada de Datos]\n  C --&gt; D[Simulación]\n  D --&gt; E[Visualización]\n  E --&gt; F[Análise]\n  F --&gt; G[Optimización]\n  G --&gt; H[Aplicación]\n  H --&gt; I[Fin]"
+    "objectID": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais",
+    "href": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais",
+    "title": "SOPQ-2324",
+    "section": "1 Cálculo das fraccións molares e presións parciais",
+    "text": "1 Cálculo das fraccións molares e presións parciais\nAs presións aquí están de acordo coas presións atopadas por outros métodos. O pequeno desacordo (no terceiro ou cuarto decimal) débese probablemente a tolerancias de converxencia nos diferentes algoritmos utilizados.\n\n# @title\n# Shomate parameters for each species\n#           A          B           C          D          E            F          G       H\nWB = [[25.56759,  6.096130,     4.054656,  -2.671301,  0.131021, -118.0089, 227.3665,   -110.5271],  # CO\n      [30.09200,  6.832514,     6.793435,  -2.534480,  0.082139, -250.8810, 223.3967,   -241.8264],  # H2O\n      [24.99735,  55.18696,   -33.69137,    7.948387, -0.136638, -403.6075, 228.2431,   -393.5224],  # CO2\n      [33.066178, -11.363417,  11.432816,  -2.772874, -0.158558, -9.980797, 172.707974,    0.0]]     # H2\n\nWB = np.array(WB)\n\n\n# @title\n# Shomate equations\n\nt = T/1000\n\nT_H = np.array([t,  t**2 / 2.0, t**3 / 3.0, t**4 / 4.0, -1.0 / t, 1.0, 0.0, -1.0])\nT_S = np.array([np.log(t), t,  t**2 / 2.0,  t**3 / 3.0, -1.0 / (2.0 * t**2), 0.0, 1.0, 0.0])\n\nH = np.dot(WB, T_H)        # (H - H_298.15) kJ/mol\nS = np.dot(WB, T_S/1000.0) # absolute entropy kJ/mol/K\n\nGjo = Hf298 + H - T*S      # Gibbs energy of each component at 1000 K\n\n\n# @title\ndef func(nj):\n    nj = np.array(nj)\n    Enj = np.sum(nj);\n    Gj =  Gjo / (R * T) + np.log(nj / Enj * P / Po)\n    return np.dot(nj, Gj)\n\n\n# @title\nAeq = np.array([[ 1,    0,    1,    0],  # C balance\n                [ 1,    1,    2,    0],  # O balance\n                [ 0,    2,    0,    2]]) # H balance\n\n\n# @title\n# equimolar feed of 1 mol H2O and 1 mol CO\nbeq = np.array([1,  # mol C fed\n                2,  # mol O fed\n                2]) # mol H fed\n\n\n# @title\ndef ec1(nj):\n    'restriccións da lei de conservaxción de átomos'\n    return np.dot(Aeq, nj) - beq\n\n\n# @title\nfrom scipy.optimize import fmin_slsqp\n\nn0 = [0.5, 0.5, 0.5, 0.5]  # initial guesses\nN = fmin_slsqp(func, n0, f_eqcons=ec1)\nprint (N)\n\nOptimization terminated successfully    (Exit mode 0)\n            Current function value: -99.9406728442514\n            Iterations: 3\n            Function evaluations: 16\n            Gradient evaluations: 3\n[0.35799303 0.35799303 0.64200697 0.64200697]"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#modelado",
-    "href": "simulacion-de-procesos-gl.html#modelado",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Modelado",
-    "text": "Modelado\n A simulación de procesos comeza coa creación dun modelo matemático ou computacional que representa:\n - Os compoñentes\n- As variables e\n- As interaccións clave dun proceso físico.\n Este modelo pode basearse en:\n- Ecuacións matemáticas\n- Datos empíricos\n Ou unha combinación de ambos."
+    "objectID": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais-1",
+    "href": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-das-fraccións-molares-e-presións-parciais-1",
+    "title": "SOPQ-2324",
+    "section": "1 Cálculo das fraccións molares e presións parciais",
+    "text": "1 Cálculo das fraccións molares e presións parciais\nAs presións aquí están de acordo cas presións atopadas por outros métodos. O pequeno desacordo (no terceiro ou cuarto decimal) débese probablemente a tolerancias de converxencia nos diferentes algoritmos utilizados.\n\n# @title\nyj = N / np.sum(N)\nPj = yj * P\n\nfor s, y, p in zip(species, yj, Pj):\n    print (s, y, p)\n\nCO 0.17899651631887759 0.9612112926323727\nH2O 0.17899651631887759 0.9612112926323727\nCO2 0.3210034836811224 1.7237887073676275\nH2 0.3210034836811224 1.7237887073676275"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simulación",
-    "href": "simulacion-de-procesos-gl.html#simulación",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simulación",
-    "text": "Simulación\nUnha vez que o modelo se desenvolve, impleméntase no software de simulación. O software usa algoritmos para: - Realizar cálculos numéricos - Resolver ecuacións para simular o comportamento do proceso ao longo do tempo."
+    "objectID": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-de-constantes-de-equilibrio",
+    "href": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html#cálculo-de-constantes-de-equilibrio",
+    "title": "SOPQ-2324",
+    "section": "2. Cálculo de constantes de equilibrio",
+    "text": "2. Cálculo de constantes de equilibrio\nPodemos calcular a constante de equilibrio para a reacción:\n\\[\nCO+H_2O⇌CO_2+H_2\n\\]\nten en en conta que para definir unha constante de equilibrio é necesario especificar unha reacción, aínda que nin sequera sexa necesario considerar unha reacción para obter a distribución en equilibrio das especies.\n\n# @title\nnuj = np.array([-1, -1, 1, 1])  # stoichiometric coefficients of the reaction\nK = np.prod(yj**nuj)\nprint('A constante de equilibrio (adimensional) vale: {:5.4f}'.format(K))\n\nA constante de equilibrio (adimensional) vale: 3.2161"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
-    "href": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Parámetros de entrada",
-    "text": "Parámetros de entrada\nOs usuarios poden introducir varios parámetros: - Condicións de funcionamento - Especificacións de equipos - Variables de proceso, etc.  \npara explorar diferentes escenarios e estudar como os cambios afectan o proceso."
+    "objectID": "computing-access.html",
+    "href": "computing-access.html",
+    "title": "Computing access",
+    "section": "",
+    "text": "Para acceder a recursos informáticos para o uso de python do Departamento de Enxeñaría Química da Universidade de Vigo, diríxete ao servidor de notebooks e accede co te nome (o primeiro só) escrito en minúsculas e sin acento ningún. En caso de que non che permita o acceso o mais probable é que exista algún outro compañeiro co memso primeiro nome c cal debes engadir a inicial do primeioro apelido en maiúsculas (p.e. AnaL, AnaG, etc.).\nSe esta é a primeira vez que accedes debes introducir o contrasinal que quedará por defecto. Só tes que facelo unha vez e.\nEntrarás nunha instancia de JupyterLab, que che permite facer varias cousas, entre elas notebools de jupyter.\nComo alternativa podes usar Google Collab. As diferencias mais salientable entre Collab e EQEA son que no servidor do Departamenteo de Enxeñaría química están instaladas todas as librerías python que se usan no curso, asi como o Octave, que é o clon libre de Matlab.\nAs entregas deberalas facer a través de MOOVI xa que inda que quedan almacendas en Collab e EQEA, non se trasladan directamente ó teu curso de MOOVI para a súa avaliación.",
+    "crumbs": [
+      "Computación",
+      "Aceso"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#visualización",
-    "href": "simulacion-de-procesos-gl.html#visualización",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Visualización",
-    "text": "Visualización\nO software de simulación de procesos adoita proporcionar representacións visuais de: - O proceso simulado, incluíndo - gráficos - animacións.  Isto permite aos usuarios obter información sobre o rendemento e o comportamento do sistema."
+    "objectID": "course-support.html",
+    "href": "course-support.html",
+    "title": "Soporte",
+    "section": "",
+    "text": "Se en algún momento do prooceso tes a sensación de non poder acabr o traballo pide axuda, usa os mecanismos que che proporciona a universidade para non acabar cunha frustrarción e sensación de que é tarde, e sintes incomodeidade, para buscar axuda.",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#análise",
-    "href": "simulacion-de-procesos-gl.html#análise",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Análise",
-    "text": "Análise\nOs usuarios poden analizar os resultados da simulación para avaliar: - A eficiencia - O rendemento - A seguridade do proceso.  Esta análise axuda a: - Identificar posibles bloqueos de botella - Optimizar o uso de recursos - Mellorar o deseño xeral do proceso."
+    "objectID": "course-support.html#clases-e-laboratorios",
+    "href": "course-support.html#clases-e-laboratorios",
+    "title": "Soporte",
+    "section": "Clases e laboratorios",
+    "text": "Clases e laboratorios\nSe tes unha pregunta durante as clases teóricas ou as prácticas, non dubides en preguntar. Probablemente haxa outros compañeiros coas mesma preguntas, polo que unha pregunta túa creará unha oportunidade de aprendizaxe para todos.",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#optimización",
-    "href": "simulacion-de-procesos-gl.html#optimización",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Optimización",
-    "text": "Optimización\nA simulación de procesos pódese usar para atopar o conxunto óptimo de: - parámetros ou -condicións  que leven ao resultado desexado, tales como: - Maximizar o rendemento da produción ou - Minimizar o consumo de enerxía. ## Aplicacións:\nA simulación de procesos se utiliza en diversas industrias, incluyendo la ingeniería química, la manufactura, el petróleo y el gas, la farmacéutica y el transporte, para modelar y mejorar procesos como reacciones químicas, líneas de producción, cadenas de suministro, entre otros."
+    "objectID": "course-support.html#horario-oficial",
+    "href": "course-support.html#horario-oficial",
+    "title": "Soporte",
+    "section": "Horario oficial",
+    "text": "Horario oficial\n\nOs docentes estamos aquí para axudarche a ter éxito no curso.\nAnímase a asistir ás titorías presenciais para facer preguntas sobre o contido e as tarefas do curso, ou busar consello en xerakl sovrea tiutulación.\nMoitas preguntas quedan mellor respondidas en persoa, polo que o horario de atención presencial é un recurso valioso. Ningúbn profesor pode nin debe afearche o uso intensivo do hotrario de titorías.\nFai un calendario de consultas de titorías para cada materia que curses, polo menos unha vez durante as primeiras semanas de clase.\nO horario de titorías está pbligatoriamente publicado na guía docente da materia e en na [secretaría virtual}(https://seix.uvigo.gal).",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#beneficios",
-    "href": "simulacion-de-procesos-gl.html#beneficios",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Beneficios:",
-    "text": "Beneficios:\n A simulación de procesos pode levar a:\n- Un aforro de custos\n- Unha mellor calidade do produto\n- Unha redución de riscos\n- Unha maior seguridade de produción\n permitindo probas virtuais e optimización antes de implementar cambios nos procesos do mundo real."
+    "objectID": "course-support.html#foros-de-discusión",
+    "href": "course-support.html#foros-de-discusión",
+    "title": "Soporte",
+    "section": "Foros de discusión",
+    "text": "Foros de discusión\n\nTes algunha pregunta que non pode esperar ao horario de titorías?\nPrefires escribir a túa pregunta en detalle en vez de preguntar en persoa?\nO foro de discusión en liña é o mellor lugar para estes.\nUsa [conversas] (https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/13b6446a-a6c6-4222-8cfb-c36d10802b) como o en liña. Hai unha posibilidade de que outro estudante xa se fixera unha pregunta similar, polo que consulte as outras publicacións sobre a discusión de ED antes de engadir unha nova pregunta. Se coñeces a resposta a unha pregunta que se publica, anímovos a responder.",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#fluxogramas",
-    "href": "simulacion-de-procesos-gl.html#fluxogramas",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Fluxogramas",
-    "text": "Fluxogramas\nAlexander C. Dimian (2003)  \n\nO diagrama de fluxo é unha descrición sistémica de fluxos de materiais e enerxía en a planta de proceso mediante simulación informática co ámbito de proxectar unha nova planta ou mellorar o rendemento dunha planta existente. \nO diagrama de fluxo pode usarse como axuda para implementar un control en toda a planta estratexia, así como para xestionar o funcionamento da planta."
+    "objectID": "course-support.html#email",
+    "href": "course-support.html#email",
+    "title": "Soporte",
+    "section": "Email",
+    "text": "Email\n\nEn caso necesario podes contactar por correo electrónico inda que sexa para adiar un ha videoconferencia ou formular directamente calquera consulta.\nLembra quye este método se reduce a interacción entre ti e o teu profesor e non aporta nada ós compañeiros de curso, sempre é preferible o foro.\nTrata de enviar as proguntas sobre o de contido do curso (estas deberían ir ó foro) e só usa correo electrónico para preguntas sobre asuntos persoais que poden non te atreves a enunciar no foro público (por exemplo, enfermidade, conselloss, etc.).\nPara tales asuntos, podes enviar un correo electrónico [] (mailto: asanchez@uvigo.gal).\nSe me envías un correo electrónico, inclúe “SOPQ-2324” noasunto.\nO tempo de resposta pode ser máis lento para os correos electrónicos enviados o fin de semana.",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
-    "href": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos",
-    "text": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos\n\nModelo de Linnhoff"
+    "objectID": "course-support.html#soporte-académico",
+    "href": "course-support.html#soporte-académico",
+    "title": "Soporte",
+    "section": "Soporte académico",
+    "text": "Soporte académico\nPara obter axuda técnica da materia, a continuación relátanse as ligazóns mais relevantes:\n\nMOOVI\nTeams\nCampusremoto\nGithub\n\n\nAsistencia Teams ou Campusremoto\n\nTen en conta que imos facer un uso intensido MOOVI n canto ó seguemento académico da materia.\nNo seu lugar toda a presentación e titoriais, vídeos ,atc. terá lugar en GitHub.\nO Teams utilizarase para o horario de atención liña, ou seña, as titorías telemáticas ou videconferencias particulares solicitadas previamente.",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
-    "href": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Modelo de deseño de capas da cebola (Linnhoff)",
-    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\nModelo de Linnhoff[Modelo de capa d]\n\nDentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos."
+    "objectID": "course-support.html#saúde-mental-e-benestar",
+    "href": "course-support.html#saúde-mental-e-benestar",
+    "title": "Soporte",
+    "section": "Saúde mental e benestar",
+    "text": "Saúde mental e benestar\n\nA saúde mental e o benestar dos estudantes son de importancia primordial na Uvigo, e a universidade ofrece recursos para apoiar aos estudantes na xestión do estrés diario e no coidado de si mesmo.\nNon teñas medo de utilizar esos recursos.\nVisita con frecuencia as páxinas da Viccerreitoría de estudiantes.\nA Uvigo ofrece varios recursos para que os estudantes busquen asistencia en cursos e para fomentar hábitos diarios que admiten o benestar global, algúns dos cales figuran a continuación:",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#resumo",
-    "href": "simulacion-de-procesos-gl.html#resumo",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Resumo",
-    "text": "Resumo\nA simulación de procesos é unha poderosa ferramenta que permite a proba virtual e a análise de procesos complexos, facilitando a decisión e a optimización nunha ampla gama de industrias."
+    "objectID": "course-support.html#dereitos-dos-materiais-do-curso",
+    "href": "course-support.html#dereitos-dos-materiais-do-curso",
+    "title": "Soporte",
+    "section": "Dereitos dos materiais do curso",
+    "text": "Dereitos dos materiais do curso\n\nTodos os materiais docentes de este curso son de libre distribucvión, amparados polas licencias Creative Commons, agás as aplicacións de prácticas HYSYS e AspenPlus.\nNon hai problemas de copyright asociados a este curso.\nTodas as lecturas procederán de recursos abertos libremente dispoñibles (libros de texto de código aberto, artigos de diario, etc.).",
+    "crumbs": [
+      "Información xeral",
+      "Soporte"
+    ]
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
-    "href": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Arquitectura de simuladores de proceso",
-    "text": "Arquitectura de simuladores de proceso\n\nModular secuencial\n\nBaseado no concepto de modularidade, que estende o concepto da enxeñaría de operación unitaria a un cálculo da unidades de operación mediante un o código informático responsable do cálculo das unidades de proceso.\n\nO cálculo de todo o fluxograma se fai unidade a unidade seguindo unha secuencia de cálculo.\n\n\nO orientado á ecuacións (Simultáneameo - Non modular)\n\nO modelo completo do fluxograma exprésase en forma dun gran sistema disperso de ecuacións alxébricas non lineais, que se solucionan simultaneamente para todas as incógnitas.\n\nModular Simultáneo Combinación de secuencial-modular e orientado á ecuación enfoques"
-  },
-  {
-    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
-    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
-    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nSequenciais – Modulares\n\nAspen Plus\nAspen Hysys\nChemCAD\nPRO II\nUniSim"
-  },
-  {
-    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
-    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
-    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nOrientados a Ecuación\n\ngProms\nVMGSim\nAspen Plus in EO\nAspen Custom Modeler"
-  },
-  {
-    "objectID": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
-    "href": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Servizos de propiedades físicas",
-    "text": "Servizos de propiedades físicas\n\nSubministran estimacións para varias propiedades físicas diferentes mentres a simulación está funcionando.\nO equilibrio de fase representa unha das propiedades físicas máis importantes, xa que moitas simulacións de procesos químicos implican destilación, separación, evaporación ou separación líquido - líquidos.\nResolven os balances de masa e enerxía para estas operacións que require a predicción:\n\nVapor - Equilibrio líquido (VLE)\nLíquido - Equilibrio líquido (LLE)\n\n\n\n\n\n\n\n\nNote\n\n\n\nA estimación de propiedades físicas pode consumir ata o 90% do tempo de computación dunha simulación. Os paquetes de propiedades úsanse para predecir o equilibrio de fase e o comportamento de compoñentes puros e sistemas de mestura\n\n\n\n\n\n\n\n\nhttps://github.com/anxosanchez/sopq"
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog de SOPQ-2324",
+    "section": "",
+    "text": "Cálculos de separacións flash\n\n\n\n\n\n\n\n\n\n\n\nAnxo Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\nObtención do diagrama P-x, T-xy e xy.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Blog",
+      "Artigos"
+    ]
   }
 ]
