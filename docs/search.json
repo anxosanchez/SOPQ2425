@@ -956,10 +956,17 @@
     "href": "posts.html",
     "title": "Blog de SOPQ-2324",
     "section": "",
-    "text": "Cálculos de separacións flash\n\n\n\n\n\n\n\n\n\n\n\nAnxo Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\nObtención do diagrama P-x, T-xy e xy.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Cálculos de separacións flash\n\n\n\n\n\n\n\n\n\n\n\nAnxo Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\nObtención do diagrama P-x, T-xy e xy.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCálculo da constante de eqilibrio e as concentracións mediante a minimizaci´lln da enerxía libre de Gibbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Blog",
       "Artigos"
     ]
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Cálculo da constante de eqilibrio e as concentracións mediante a minimizaci´lln da enerxía libre de Gibbs",
+    "section": "",
+    "text": "Calcular as composicións no equilibrio a 1000 K e 1 bar para a reacción de intercambio gas auga (WGS) para unha limentación equimolar de CO e H2O usando: - a minimización da enexía libre de Gibbs - o grao de avance da reacción.\nPara o cálculo das funcióons termodimmámicas usa os polinomios de Shomate.\nConsultado a base de datos do Nist temos os valores eequiridos para resolver o problema.\nCO ΔfH°gas -110.53 kJ/mol S°gas,1 bar 197.66 J/mol*K\nRecordamos as as ecuación de Shomate baseadas en 8 termos A, B, C, D, E, F, G, H, que permiten calcular varios parámetros termodinámicos:\n\\[\n\\beg]in{align*}\nC^o_p & = & A + B t + C t^2 + D t^3 + \\frac{E}{t^2} \\\\\nH^o − H°_{298.15} & = & At + B \\frac{B}{\\frac {t^2} {2}} + C \\frac{C}{\\frac {t^3} {3}} + D \\frac{D}{\\frac {t^4} {4}} − \\frac{E}{t^2} + F − H\nS^o = A \\ln(t) + B t + C \\frac{t^2}{2} + D \\frac{t^3}{3} − \\frac{E}{2t^2} + G\n\\end{align*}\n\\]\nonde:\n- Cp = heat capacity (J/molK).\n- H° = standard enthalpy (kJ/mol).\n- S° = standard entropy (J/molK).\n- t = temperature (K) / 1000.\nComo a temperatura do problema é de 1000 K, tomaremos o primeiro conxunto de datos (298-1300 K).\n\n\n\nCO\nCO2\nH2\nH2O\n\n\n\n\nA\n25.56759\n24.99735\n\n\n\nB\n6.096130\n55.18696\n\n\n\nC\n4.054656\n-33.69137\n\n\n\nD\n-2.671301\n7.948387\n\n\n\nE\n0.131021\n-0.136638\n\n\n\nF\n-118.0089\n-403.6075\n\n\n\nG\n227.3665\n228.2431\n\n\n\nH\n-110.5271\n-393.5224\n\n\n\n\nReference Chase, 1998 Chase, 1998 Comment Data last reviewed in September, 1965 Data last reviewed in September, 1965\nΔfH°gas -393.51 ± 0.13 kJ/mol Review Cox, Wagman, et al., 1984 CODATA Review value ΔfH°gas -393.52\nTemperature (K) 298. to 1200. 1200. to 6000. A 58.16639 B 2.720074 C -0.492289 D 0.038844 E -6.447293 F -425.9186 G 263.6125 H -393.5224 Reference Chase, 1998 Chase, 1998 Comment Data last reviewed in September, 1965 Data last reviewed in September, 1965"
   }
 ]

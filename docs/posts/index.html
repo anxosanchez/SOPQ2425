@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.6.9">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog de SOPQ-2324 – SOPQ-2324</title>
+<title>Cálculo da constante de eqilibrio e as concentracións mediante a minimizaci´lln da enerxía libre de Gibbs – SOPQ-2324</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./project-tips-resources.html" rel="prev">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-79bb3942e891885f9f7af119cd221462.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-37bb72f48501692975d9c066fdeb097b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d1cdd4446ca14090a8a45bf569e32643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-79bb3942e891885f9f7af119cd221462.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-37bb72f48501692975d9c066fdeb097b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d1cdd4446ca14090a8a45bf569e32643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-categories','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/tex-gyre-adventor" type="text/css">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -134,7 +102,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -143,7 +111,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./posts.html">Blog</a></li><li class="breadcrumb-item"><a href="./posts.html">Artigos</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cálculo da constante de eqilibrio e as concentracións mediante a minimizaci´lln da enerxía libre de Gibbs</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,13 +123,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./posts.html">Blog</a></li><li class="breadcrumb-item"><a href="./posts.html">Artigos</a></li></ol></nav>
-      <h1 class="title">Blog de SOPQ-2324</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">Cálculo da constante de eqilibrio e as concentracións mediante a minimizaci´lln da enerxía libre de Gibbs</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-body">
+  <div class="quarto-title-meta">
 
       
     
@@ -169,12 +137,12 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./imaxes/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../imaxes/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/anxosanchez/SOPQ-2324" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -200,43 +168,43 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Información xeral</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Programación</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guía Docente</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-team.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-team.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Profesorado</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-links.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-links.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ligazońs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-support.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-support.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Soporte</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -253,13 +221,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./computing-access.html" class="sidebar-item-text sidebar-link">
+  <a href="../computing-access.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Aceso</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./computing-troubleshooting.html" class="sidebar-item-text sidebar-link">
+  <a href="../computing-troubleshooting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problemas c servidor</span></a>
   </div>
 </li>
@@ -276,13 +244,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-description.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-description.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Instrucións</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-tips-resources.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-tips-resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tips + recusos</span></a>
   </div>
 </li>
@@ -290,16 +258,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Blog</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts.html" class="sidebar-item-text sidebar-link active">
+  <a href="../posts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Artigos</span></a>
   </div>
 </li>
@@ -310,97 +278,99 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>Calcular as composicións no equilibrio a 1000 K e 1 bar para a reacción de intercambio gas auga (WGS) para unha limentación equimolar de CO e H<sub>2</sub>O usando: - a minimización da enexía libre de Gibbs - o grao de avance da reacción.</p>
+<p>Para o cálculo das funcióons termodimmámicas usa os <strong>polinomios de Shomate</strong>.</p>
+<p>Consultado a base de datos do Nist temos os valores eequiridos para resolver o problema.</p>
+<p>CO ΔfH°gas -110.53 kJ/mol S°gas,1 bar 197.66 J/mol*K</p>
+<p>Recordamos as as ecuación de Shomate baseadas en 8 termos A, B, C, D, E, F, G, H, que permiten calcular varios parámetros termodinámicos:</p>
+<p><span class="math display">\[
+\beg]in{align*}
+C^o_p &amp; = &amp; A + B t + C t^2 + D t^3 + \frac{E}{t^2} \\
+H^o − H°_{298.15} &amp; = &amp; At + B \frac{B}{\frac {t^2} {2}} + C \frac{C}{\frac {t^3} {3}} + D \frac{D}{\frac {t^4} {4}} − \frac{E}{t^2} + F − H
+S^o = A \ln(t) + B t + C \frac{t^2}{2} + D \frac{t^3}{3} − \frac{E}{2t^2} + G
+\end{align*}
+\]</span></p>
+<p>onde:<br>
+- Cp = heat capacity (J/mol<em>K).<br>
+- H° = standard enthalpy (kJ/mol).<br>
+- S° = standard entropy (J/mol</em>K).<br>
+- t = temperature (K) / 1000.</p>
+<p>Como a temperatura do problema é de 1000 K, tomaremos o primeiro conxunto de datos (298-1300 K).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">CO</th>
+<th style="text-align: right;">CO2</th>
+<th style="text-align: right;">H2</th>
+<th style="text-align: right;">H2O</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">25.56759</td>
+<td style="text-align: right;">24.99735</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">B</td>
+<td style="text-align: right;">6.096130</td>
+<td style="text-align: right;">55.18696</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">C</td>
+<td style="text-align: right;">4.054656</td>
+<td style="text-align: right;">-33.69137</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">D</td>
+<td style="text-align: right;">-2.671301</td>
+<td style="text-align: right;">7.948387</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">E</td>
+<td style="text-align: right;">0.131021</td>
+<td style="text-align: right;">-0.136638</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">F</td>
+<td style="text-align: right;">-118.0089</td>
+<td style="text-align: right;">-403.6075</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">227.3665</td>
+<td style="text-align: right;">228.2431</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">H</td>
+<td style="text-align: right;">-110.5271</td>
+<td style="text-align: right;">-393.5224</td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>Reference Chase, 1998 Chase, 1998 Comment Data last reviewed in September, 1965 Data last reviewed in September, 1965</p>
+<p>ΔfH°gas -393.51 ± 0.13 kJ/mol Review Cox, Wagman, et al., 1984 CODATA Review value ΔfH°gas -393.52</p>
+<p>Temperature (K) 298. to 1200. 1200. to 6000. A 58.16639 B 2.720074 C -0.492289 D 0.038844 E -6.447293 F -425.9186 G 263.6125 H -393.5224 Reference Chase, 1998 Chase, 1998 Comment Data last reviewed in September, 1965 Data last reviewed in September, 1965</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1727437805240" data-listing-reading-time-sort="9" data-listing-word-count-sort="1750">
-<div class="thumbnail">
-<p><a href="./posts/2023-10-20-probas/index.html" class="no-external"></a></p><a href="./posts/2023-10-20-probas/index.html" class="no-external">
-<p><img loading="lazy" src="./imaxes/flash.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2023-10-20-probas/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2023-10-20-probas/index.html" class="no-external">Cálculos de separacións flash</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2023-10-20-probas/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2023-10-20-probas/index.html" class="no-external">  </a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2023-10-20-probas/index.html" class="no-external"></a></p><a href="./posts/2023-10-20-probas/index.html" class="no-external">
-<div class="listing-author">
-Anxo Sánchez
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1727437805240" data-listing-reading-time-sort="3" data-listing-word-count-sort="572">
-<div class="thumbnail">
-<p><a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a></p><a href="./posts/2023-10-30-week-01/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/2023-10-30-week-01/index_files/figure-html/cell-5-output-2.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2023-10-30-week-01/index.html" class="no-external">Obtención do diagrama P-x, T-xy e xy.</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2023-10-30-week-01/index.html" class="no-external">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
-</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a></p><a href="./posts/2023-10-30-week-01/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1728722421773" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
-<div class="thumbnail">
-<p><a href="./posts/index.html" class="no-external"></a></p><a href="./posts/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/index.html" class="no-external">Cálculo da constante de eqilibrio e as concentracións mediante a minimizaci´lln da enerxía libre de Gibbs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/index.html" class="no-external">Calcular as composicións no equilibrio a 1000 K e 1 bar para a reacción de intercambio gas auga (WGS) para unha limentación equimolar de CO e H<sub>2</sub>O usando: - a minimización da…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/index.html" class="no-external"></a></p><a href="./posts/index.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -965,15 +935,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-body">
-  <div class="nav-page nav-page-previous">
-      <a href="./project-tips-resources.html" class="pagination-link" aria-label="Tips + recusos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tips + recusos</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -982,7 +943,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/anxosanchez/SOPQ-2324/edit/main/posts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/anxosanchez/SOPQ-2324/edit/main/posts/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Este site está inspirado no site STA 210, deseñado por Mine Çetinkaya-Rundel</p>
 </div>
