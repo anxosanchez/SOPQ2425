@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog de SOPQ-2324 – SOPQ-2324</title>
+<title>Trátase de atopar as concentracións no equilibrio da reacción WGS – SOPQ-2324</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,30 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./project-tips-resources.html" rel="prev">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-79bb3942e891885f9f7af119cd221462.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-37bb72f48501692975d9c066fdeb097b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d1cdd4446ca14090a8a45bf569e32643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-79bb3942e891885f9f7af119cd221462.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-37bb72f48501692975d9c066fdeb097b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d1cdd4446ca14090a8a45bf569e32643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,70 +102,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-categories','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/tex-gyre-adventor" type="text/css">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -143,7 +116,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./posts.html">Blog</a></li><li class="breadcrumb-item"><a href="./posts.html">Artigos</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Trátase de atopar as concentracións no equilibrio da reacción WGS</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,13 +128,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./posts.html">Blog</a></li><li class="breadcrumb-item"><a href="./posts.html">Artigos</a></li></ol></nav>
-      <h1 class="title">Blog de SOPQ-2324</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">Trátase de atopar as concentracións no equilibrio da reacción WGS</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-body">
+  <div class="quarto-title-meta">
 
       
     
@@ -169,12 +142,12 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./imaxes/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../imaxes/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/anxosanchez/SOPQ-2324" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -200,43 +173,43 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Información xeral</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Programación</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guía Docente</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-team.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-team.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Profesorado</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-links.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-links.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ligazońs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-support.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-support.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Soporte</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -253,13 +226,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./computing-access.html" class="sidebar-item-text sidebar-link">
+  <a href="../computing-access.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Aceso</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./computing-troubleshooting.html" class="sidebar-item-text sidebar-link">
+  <a href="../computing-troubleshooting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problemas c servidor</span></a>
   </div>
 </li>
@@ -276,13 +249,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-description.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-description.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Instrucións</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-tips-resources.html" class="sidebar-item-text sidebar-link">
+  <a href="../project-tips-resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tips + recusos</span></a>
   </div>
 </li>
@@ -290,16 +263,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Blog</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts.html" class="sidebar-item-text sidebar-link active">
+  <a href="../posts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Artigos</span></a>
   </div>
 </li>
@@ -310,119 +283,121 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>A reacción é a seguinte:</p>
+<p>CO + H<sub>2</sub>O &lt;=&gt; CO<sub>2</sub> + H<sub>2</sub></p>
+<p>a 1000 K, e 1 bar de presión total cun caudal inicial equimolar de CO e H<sub>2</sub>O.</p>
+<div id="cell-2" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># K</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>R <span class="op">=</span> <span class="fl">8.314e-3</span> <span class="co"># kJ/mol/K</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> <span class="fl">10.0</span> <span class="co"># atm, this is the total pressure in the reactor</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Po <span class="op">=</span> <span class="fl">1.0</span> <span class="co"># atm, this is the standard state pressure</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>We are going to store <span class="bu">all</span> the data <span class="kw">and</span> calculations <span class="kw">in</span> vectors, so we need to assign each position <span class="kw">in</span> the vector to a species. Here are the definitions we use <span class="kw">in</span> this work.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  CO</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  H2O</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  CO2</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  H2</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>species <span class="op">=</span> [<span class="st">'CO'</span>, <span class="st">'H2O'</span>, <span class="st">'CO2'</span>, <span class="st">'H2'</span>]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Heats of formation at 298.15 K</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Hf298 <span class="op">=</span> [</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="fl">110.53</span>,  <span class="co"># CO</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="fl">241.826</span>, <span class="co"># H2O</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="fl">393.51</span>,  <span class="co"># CO2</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>       <span class="fl">0.0</span>]   <span class="co"># H2</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Shomate parameters for each species</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">#           A          B           C          D          E            F          G       H</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>WB <span class="op">=</span> [[<span class="fl">25.56759</span>,  <span class="fl">6.096130</span>,     <span class="fl">4.054656</span>,  <span class="op">-</span><span class="fl">2.671301</span>,  <span class="fl">0.131021</span>, <span class="op">-</span><span class="fl">118.0089</span>, <span class="fl">227.3665</span>,   <span class="op">-</span><span class="fl">110.5271</span>],  <span class="co"># CO</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>      [<span class="fl">30.09200</span>,  <span class="fl">6.832514</span>,     <span class="fl">6.793435</span>,  <span class="op">-</span><span class="fl">2.534480</span>,  <span class="fl">0.082139</span>, <span class="op">-</span><span class="fl">250.8810</span>, <span class="fl">223.3967</span>,   <span class="op">-</span><span class="fl">241.8264</span>],  <span class="co"># H2O</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>      [<span class="fl">24.99735</span>,  <span class="fl">55.18696</span>,   <span class="op">-</span><span class="fl">33.69137</span>,    <span class="fl">7.948387</span>, <span class="op">-</span><span class="fl">0.136638</span>, <span class="op">-</span><span class="fl">403.6075</span>, <span class="fl">228.2431</span>,   <span class="op">-</span><span class="fl">393.5224</span>],  <span class="co"># CO2</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>      [<span class="fl">33.066178</span>, <span class="op">-</span><span class="fl">11.363417</span>,  <span class="fl">11.432816</span>,  <span class="op">-</span><span class="fl">2.772874</span>, <span class="op">-</span><span class="fl">0.158558</span>, <span class="op">-</span><span class="fl">9.980797</span>, <span class="fl">172.707974</span>,    <span class="fl">0.0</span>]]     <span class="co"># H2</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>WB <span class="op">=</span> np.array(WB)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Shomate equations</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> T<span class="op">/</span><span class="dv">1000</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>T_H <span class="op">=</span> np.array([t,  t<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> <span class="fl">2.0</span>, t<span class="op">**</span><span class="dv">3</span> <span class="op">/</span> <span class="fl">3.0</span>, t<span class="op">**</span><span class="dv">4</span> <span class="op">/</span> <span class="fl">4.0</span>, <span class="op">-</span><span class="fl">1.0</span> <span class="op">/</span> t, <span class="fl">1.0</span>, <span class="fl">0.0</span>, <span class="op">-</span><span class="fl">1.0</span>])</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>T_S <span class="op">=</span> np.array([np.log(t), t,  t<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> <span class="fl">2.0</span>,  t<span class="op">**</span><span class="dv">3</span> <span class="op">/</span> <span class="fl">3.0</span>, <span class="op">-</span><span class="fl">1.0</span> <span class="op">/</span> (<span class="fl">2.0</span> <span class="op">*</span> t<span class="op">**</span><span class="dv">2</span>), <span class="fl">0.0</span>, <span class="fl">1.0</span>, <span class="fl">0.0</span>])</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>H <span class="op">=</span> np.dot(WB, T_H)        <span class="co"># (H - H_298.15) kJ/mol</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>S <span class="op">=</span> np.dot(WB, T_S<span class="op">/</span><span class="fl">1000.0</span>) <span class="co"># absolute entropy kJ/mol/K</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Gjo <span class="op">=</span> Hf298 <span class="op">+</span> H <span class="op">-</span> T<span class="op">*</span>S      <span class="co"># Gibbs energy of each component at 1000 K</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Now, construct the Gibbs free energy function, accounting <span class="cf">for</span> the change <span class="kw">in</span> activity due to concentration changes (ideal mixing).</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(nj):</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    nj <span class="op">=</span> np.array(nj)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    Enj <span class="op">=</span> np.<span class="bu">sum</span>(nj)<span class="op">;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    Gj <span class="op">=</span>  Gjo <span class="op">/</span> (R <span class="op">*</span> T) <span class="op">+</span> np.log(nj <span class="op">/</span> Enj <span class="op">*</span> P <span class="op">/</span> Po)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.dot(nj, Gj)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>We impose the constraint that <span class="bu">all</span> atoms are conserved <span class="im">from</span> the initial conditions to the equilibrium distribution of species. These constraints are <span class="kw">in</span> the form of Aeqn<span class="op">=</span>beq</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>, where n</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a> <span class="kw">is</span> the vector of mole numbers <span class="cf">for</span> each species.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Aeq <span class="op">=</span> np.array([[ <span class="dv">1</span>,    <span class="dv">0</span>,    <span class="dv">1</span>,    <span class="dv">0</span>],  <span class="co"># C balance</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>                [ <span class="dv">1</span>,    <span class="dv">1</span>,    <span class="dv">2</span>,    <span class="dv">0</span>],  <span class="co"># O balance</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>                [ <span class="dv">0</span>,    <span class="dv">2</span>,    <span class="dv">0</span>,    <span class="dv">2</span>]]) <span class="co"># H balance</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="co"># equimolar feed of 1 mol H2O and 1 mol CO</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>beq <span class="op">=</span> np.array([<span class="dv">1</span>,  <span class="co"># mol C fed</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>                <span class="dv">2</span>,  <span class="co"># mol O fed</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>                <span class="dv">2</span>]) <span class="co"># mol H fed</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ec1(nj):</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    <span class="co">'conservation of atoms constraint'</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.dot(Aeq, nj) <span class="op">-</span> beq</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Now we are ready to solve the problem.</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> fmin_slsqp</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>n0 <span class="op">=</span> [<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>]  <span class="co"># initial guesses</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> fmin_slsqp(func, n0, f_eqcons<span class="op">=</span>ec1)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> N</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="op">&gt;&gt;&gt;</span> Optimization terminated successfully.    (Exit mode <span class="dv">0</span>)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>            Current function value: <span class="op">-</span><span class="fl">91.204832308</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>            Iterations: <span class="dv">2</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>            Function evaluations: <span class="dv">13</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>            Gradient evaluations: <span class="dv">2</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>[ <span class="fl">0.45502309</span>  <span class="fl">0.45502309</span>  <span class="fl">0.54497691</span>  <span class="fl">0.54497691</span>]</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> Compute mole fractions <span class="kw">and</span> partial pressures</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>The pressures here are <span class="kw">in</span> good agreement <span class="cf">with</span> the pressures found by other methods. The minor disagreement (<span class="kw">in</span> the third <span class="kw">or</span> fourth decimal place) <span class="kw">is</span> likely due to convergence tolerances <span class="kw">in</span> the different algorithms used.</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>yj <span class="op">=</span> N <span class="op">/</span> np.<span class="bu">sum</span>(N)</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Pj <span class="op">=</span> yj <span class="op">*</span> P</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> s, y, p <span class="kw">in</span> <span class="bu">zip</span>(species, yj, Pj):</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> <span class="st">'</span><span class="sc">{0:10s}</span><span class="st">: </span><span class="sc">{1:1.2f}</span><span class="st"> </span><span class="sc">{2:1.2f}</span><span class="st">'</span>.<span class="bu">format</span>(s, y, p)</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="op">&gt;&gt;&gt;</span> ... ... CO        : <span class="fl">0.23</span> <span class="fl">2.28</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>H2O       : <span class="fl">0.23</span> <span class="fl">2.28</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>CO2       : <span class="fl">0.27</span> <span class="fl">2.72</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>H2        : <span class="fl">0.27</span> <span class="fl">2.72</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> Computing equilibrium constants</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>We can compute the equilibrium constant <span class="cf">for</span> the reaction CO<span class="op">+</span>H2O⇌CO2<span class="op">+</span>H2</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>. Compared to the value of K <span class="op">=</span> <span class="fl">1.44</span> we found at the end of Post <span class="dv">1536</span> , the agreement <span class="kw">is</span> excellent. Note, that to define an equilibrium constant it <span class="kw">is</span> necessary to specify a reaction, even though it <span class="kw">is</span> <span class="kw">not</span> necessary to even consider a reaction to obtain the equilibrium distribution of species<span class="op">!</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>nuj <span class="op">=</span> np.array([<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>])  <span class="co"># stoichiometric coefficients of the reaction</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>K <span class="op">=</span> np.prod(yj<span class="op">**</span>nuj)</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> K</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="fl">1.43446295961</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Copyright (C) <span class="dv">2013</span> by John Kitchin. See the License <span class="cf">for</span> information about copying.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1727437805240" data-listing-reading-time-sort="9" data-listing-word-count-sort="1750">
-<div class="thumbnail">
-<p><a href="./posts/2023-10-20-probas/index.html" class="no-external"></a></p><a href="./posts/2023-10-20-probas/index.html" class="no-external">
-<p><img loading="lazy" src="./imaxes/flash.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2023-10-20-probas/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2023-10-20-probas/index.html" class="no-external">Cálculos de separacións flash</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2023-10-20-probas/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2023-10-20-probas/index.html" class="no-external">  </a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2023-10-20-probas/index.html" class="no-external"></a></p><a href="./posts/2023-10-20-probas/index.html" class="no-external">
-<div class="listing-author">
-Anxo Sánchez
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1727437805240" data-listing-reading-time-sort="3" data-listing-word-count-sort="572">
-<div class="thumbnail">
-<p><a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a></p><a href="./posts/2023-10-30-week-01/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/2023-10-30-week-01/index_files/figure-html/cell-5-output-2.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2023-10-30-week-01/index.html" class="no-external">Obtención do diagrama P-x, T-xy e xy.</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2023-10-30-week-01/index.html" class="no-external">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
-</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2023-10-30-week-01/index.html" class="no-external"></a></p><a href="./posts/2023-10-30-week-01/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1728748970961" data-listing-reading-time-sort="6" data-listing-word-count-sort="1094">
-<div class="thumbnail">
-<p><a href="./posts/2024-10-12/index.html" class="no-external"></a></p><a href="./posts/2024-10-12/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2024-10-12/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024-10-12/index.html" class="no-external">Cálculo da constante de eqilibrio e as concentracións mediante a minimizaci´lln da enerxía libre de Gibbs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024-10-12/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2024-10-12/index.html" class="no-external">Calcular as composicións no equilibrio a 1000 K e 1 bar para a reacción de intercambio gas auga (WGS) para unha limentación equimolar de CO e H<sub>2</sub>O usando: - a minimización da…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2024-10-12/index.html" class="no-external"></a></p><a href="./posts/2024-10-12/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1728748536860" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
-<div class="thumbnail">
-<p><a href="./posts/Untitled-1.html" class="no-external"></a></p><a href="./posts/Untitled-1.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/Untitled-1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Untitled-1.html" class="no-external">Trátase de atopar as concentracións no equilibrio da reacción WGS</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Untitled-1.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/Untitled-1.html" class="no-external">A reacción é a seguinte:</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/Untitled-1.html" class="no-external"></a></p><a href="./posts/Untitled-1.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -987,15 +962,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-body">
-  <div class="nav-page nav-page-previous">
-      <a href="./project-tips-resources.html" class="pagination-link" aria-label="Tips + recusos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tips + recusos</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1004,7 +970,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/anxosanchez/SOPQ-2324/edit/main/posts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.dev/anxosanchez/SOPQ-2324/blob/main/posts/Untitled-1.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Este site está inspirado no site STA 210, deseñado por Mine Çetinkaya-Rundel</p>
 </div>
