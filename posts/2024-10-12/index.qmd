@@ -163,5 +163,5 @@ CO + H<sub>2</sub>O ⇌ CO<sub>2</sub> + H<sub>2</sub>
 ```{python}
 nui = np.array([-1, -1, 1, 1])  # coeficientes estequiométricos da reacción
 K = np.prod(yi**nui)
-printpwd(K)
+print(K)
 ```

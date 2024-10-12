@@ -64,7 +64,7 @@
         "| G\t| 227.3665 | 228.2431 | 172.707974 | 223.3967 |  \n",
         "| H\t| -110.5271 | -393.5224 | 0.0 | -241.8264 |   \n"
       ],
-      "id": "645f6fc2"
+      "id": "f13fafc9"
     },
     {
       "cell_type": "code",
@@ -108,7 +108,7 @@
         "\n",
         "Gio = Hf298 + H - T * S      # Gibbs energy of each component at 1000 K"
       ],
-      "id": "f31c7382",
+      "id": "8ca2b318",
       "execution_count": null,
       "outputs": []
     },
@@ -118,7 +118,7 @@
       "source": [
         "Agora, construimos a función da enerxía libre de Gibbs, contabilizando o cambio na actividade debido aos cambios de concentración (mestura ideal).\n"
       ],
-      "id": "c482a7e5"
+      "id": "97e0a3a5"
     },
     {
       "cell_type": "code",
@@ -130,7 +130,7 @@
         "    Gi =  Gio / ( R * T ) + np.log( ni / sumni * P / P0 )\n",
         "    return np.dot(ni, Gi)"
       ],
-      "id": "660f6b17",
+      "id": "4d539cd5",
       "execution_count": null,
       "outputs": []
     },
@@ -146,7 +146,7 @@
         "  \n",
         "onde $n$ é o vector que contén o número de moles de cada especie.\n"
       ],
-      "id": "192ca019"
+      "id": "d7ca5229"
     },
     {
       "cell_type": "code",
@@ -161,7 +161,7 @@
         "                2,  # moles de O na alimentación\n",
         "                2]) # moles de H na alimentación"
       ],
-      "id": "f8ced7eb",
+      "id": "3056d64c",
       "execution_count": null,
       "outputs": []
     },
@@ -171,7 +171,7 @@
       "source": [
         "Definimos a funxión de conservación de átomos:\n"
       ],
-      "id": "dd3e0522"
+      "id": "69f6bc6d"
     },
     {
       "cell_type": "code",
@@ -181,7 +181,7 @@
         "    'condición da lei de conservación dos átoms'\n",
         "    return np.dot(Aeq, ni) - beq"
       ],
-      "id": "cf3d13b6",
+      "id": "9fc5458c",
       "execution_count": null,
       "outputs": []
     },
@@ -191,7 +191,7 @@
       "source": [
         "Agora xa podemos resolver. O podemos facer con 'fmin_slsqp' \n"
       ],
-      "id": "18c86de3"
+      "id": "a10b2b8f"
     },
     {
       "cell_type": "code",
@@ -203,7 +203,7 @@
         "N = fmin_slsqp(func, n0, f_eqcons=ec1)\n",
         "print(N)"
       ],
-      "id": "254a626f",
+      "id": "1eab658f",
       "execution_count": null,
       "outputs": []
     },
@@ -215,7 +215,7 @@
         "\n",
         "As presións aquí están de bo acordo coas presións atopadas por outros métodos. O desacordo menor (no terceiro ou cuarto lugar decimal) é probable debido ás tolerancias de converxencia nos distintos algoritmos empregados.\n"
       ],
-      "id": "7ff4da52"
+      "id": "c4e2c5b7"
     },
     {
       "cell_type": "code",
@@ -227,7 +227,7 @@
         "for s, y, p in zip(especies, yi, Pi):\n",
         "    print('{0:10s}: {1:1.4f} {2:1.4f}'.format(s, y, p))"
       ],
-      "id": "fc093a16",
+      "id": "1427b64b",
       "execution_count": null,
       "outputs": []
     },
@@ -241,7 +241,7 @@
         "\n",
         "CO + H<sub>2</sub>O ⇌ CO<sub>2</sub> + H<sub>2</sub>\n"
       ],
-      "id": "0b114965"
+      "id": "03835a56"
     },
     {
       "cell_type": "code",
@@ -249,9 +249,9 @@
       "source": [
         "nui = np.array([-1, -1, 1, 1])  # coeficientes estequiométricos da reacción\n",
         "K = np.prod(yi**nui)\n",
-        "print(K)"
+        "printpwd(K)"
       ],
-      "id": "6fb641c1",
+      "id": "5b5d0509",
       "execution_count": null,
       "outputs": []
     }
