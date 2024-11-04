@@ -14,15 +14,15 @@ Para o cálculo das funcióons termodimmámicas usa os **polinomios de Shomate**
 Consultado a base de datos do Nist temos os valores eequiridos para resolver o problema. 
 
 CO  
-$\DeltaH_{f,gas}^o$	= -110.53 kJ·mol<sup>-1</sup>
-$S^o$_{gas}$ = 197.66 J·mol<sup>-1</sup>·K<sup>-1</sup>
+$\Delta H_{f,gas}^o$	= -110.53 kJ·mol<sup>-1</sup>  
+$S^o$_{gas}$ = 197.66 J·mol<sup>-1</sup>·K<sup>-1</sup>  
 CO<sub>2</sub>    
-$\DeltaH_{f,gas}^o$	= -393.51 kJ·mol<sup>-1</sup>  
+$\Delta H_{f,gas}^o$	= -393.51 kJ·mol<sup>-1</sup>  
 $S^o$_{gas}$ = 213.79 J·mol<sup>-1</sup>·K<sup>-1</sup>  	
 H<sub>2</sub>  
-$S^o$_{gas}$ = 130.68 J·mol<sup>-1</sup>·K<sup>-1</sup>	
+$S^o$_{gas}$ = 130.68 J·mol<sup>-1</sup>·K<sup>-1</sup>	 
 H<sub>2</sub>O  
-$\DeltaH_{f,gas}^o$ = -241.83k J·mol<sup>-1</sup>  
+$\Delta H_{f,gas}^o$ = -241.83k J·mol<sup>-1</sup>  
 $S^o$_{gas}$ = 188.84 J·mol<sup>-1</sup>·K<sup>-1</sup>
   
 Recordamos as as ecuación de Shomate baseadas en 8 termos A, B, C, D, E, F, G, H, que permiten calcular varios parámetros termodinámicos:
@@ -36,13 +36,12 @@ S^o = A \ln(t) + B t + C \frac{t^2}{2} + D \frac{t^3}{3} − \frac{E}{2t^2} + G
 $$
   
 onde:  
-- Cp = heat capacity (J/mol*K).  
-- H° = standard enthalpy (kJ/mol).  
-- S° = standard entropy (J/mol*K).  
-- t = temperature (K) / 1000.
+- Cp = capacidade calorífica (J/mol*K).  
+- H° = enthalpía estándar (kJ/mol).  
+- S° = enthalpía estándar (J/mol*K).  
+- t = temperatura (K) / 1000.
 
-Como a temperatura do problema é de 1000 K, tomaremos o primeiro conxunto de datos (298-1300 K).
-
+Como a temperatura do problema é de 1000 K, tomaremos o primeiro conxunto de datos.
 
 | CO | CO2 | H2 | H2O |
 | ---------: | ---------: | ---------: | ---------: | 
@@ -55,14 +54,18 @@ Como a temperatura do problema é de 1000 K, tomaremos o primeiro conxunto de da
 | G	| 227.3665 | 228.2431 | 172.707974 | 223.3967 |  
 | H	| -110.5271 | -393.5224 | 0.0 | -241.8264 |   
 
+# Solución
+
+- Primeriro teremos que definir as constantes e os datos do problema
+
 ```{python}
 import numpy as np
 
 T = 1000  # K
 R = 8.314e-3 # kJ/mol/K
 
-P = 1.0 # atm, this is the total pressure in the reactor
-P0 = 1.0 # atm, this is the standard state pressure
+P = 1.0 # bar, a presión total do sistema
+P0 = 1.0 # bar, presión do estado estándar
 
 especies = ['CO', 'CO2', 'H2', 'H2O']
 

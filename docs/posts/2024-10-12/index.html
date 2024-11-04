@@ -405,7 +405,7 @@ S^o = A \ln(t) + B t + C \frac{t^2}{2} + D \frac{t^3}{3} − \frac{E}{2t^2} + G
 </tr>
 </tbody>
 </table>
-<div id="a1b9ccbe" class="cell" data-execution_count="1">
+<div id="c79a4696" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># K</span></span>
@@ -445,7 +445,7 @@ S^o = A \ln(t) + B t + C \frac{t^2}{2} + D \frac{t^3}{3} − \frac{E}{2t^2} + G
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Gio <span class="op">=</span> Hf298 <span class="op">+</span> H <span class="op">-</span> T <span class="op">*</span> S      <span class="co"># Gibbs energy of each component at 1000 K</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Agora, construimos a función da enerxía libre de Gibbs, contabilizando o cambio na actividade debido aos cambios de concentración (mestura ideal).</p>
-<div id="c3a2a336" class="cell" data-execution_count="2">
+<div id="34d77369" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(ni):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    ni <span class="op">=</span> np.array(ni)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    sumni <span class="op">=</span> np.<span class="bu">sum</span>(ni)</span>
@@ -457,7 +457,7 @@ S^o = A \ln(t) + B t + C \frac{t^2}{2} + D \frac{t^3}{3} − \frac{E}{2t^2} + G
 A_{equil} = b_{equil}
 \]</span></p>
 <p>onde <span class="math inline">\(n\)</span> é o vector que contén o número de moles de cada especie.</p>
-<div id="29cecc67" class="cell" data-execution_count="3">
+<div id="ba5d68f3" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Aeq <span class="op">=</span> np.array([[ <span class="dv">1</span>,    <span class="dv">0</span>,    <span class="dv">1</span>,    <span class="dv">0</span>],  <span class="co"># balance C </span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                [ <span class="dv">1</span>,    <span class="dv">1</span>,    <span class="dv">2</span>,    <span class="dv">0</span>],  <span class="co"># balance O </span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                [ <span class="dv">0</span>,    <span class="dv">2</span>,    <span class="dv">0</span>,    <span class="dv">2</span>]]) <span class="co"># balance H </span></span>
@@ -468,13 +468,13 @@ A_{equil} = b_{equil}
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                <span class="dv">2</span>]) <span class="co"># moles de H na alimentación</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Definimos a funxión de conservación de átomos:</p>
-<div id="945deabd" class="cell" data-execution_count="4">
+<div id="40831a2e" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ec1(ni):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'condición da lei de conservación dos átoms'</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.dot(Aeq, ni) <span class="op">-</span> beq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Agora xa podemos resolver. O podemos facer con ‘fmin_slsqp’</p>
-<div id="d5ceec45" class="cell" data-execution_count="5">
+<div id="6f8b707c" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> fmin_slsqp </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>n0 <span class="op">=</span> [<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>]  <span class="co"># supoñemos valores iniciais</span></span>
@@ -492,7 +492,7 @@ A_{equil} = b_{equil}
 <section id="cálculo-das-fraccións-molares-e-presións-parciais" class="level1">
 <h1>Cálculo das fraccións molares e presións parciais</h1>
 <p>As presións aquí están de bo acordo coas presións atopadas por outros métodos. O desacordo menor (no terceiro ou cuarto lugar decimal) é probable debido ás tolerancias de converxencia nos distintos algoritmos empregados.</p>
-<div id="a631be89" class="cell" data-execution_count="6">
+<div id="4c577bd2" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>yi <span class="op">=</span> N <span class="op">/</span> np.<span class="bu">sum</span>(N)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Pi <span class="op">=</span> yi <span class="op">*</span> P</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -510,7 +510,7 @@ H2O       : 0.2725 0.2725</code></pre>
 <h1>Constantes de equilibrio informático</h1>
 <p>Podemos calcular a constante de equilibrio para a reacción:</p>
 <p>CO + H<sub>2</sub>O ⇌ CO<sub>2</sub> + H<sub>2</sub></p>
-<div id="ad1d0663" class="cell" data-execution_count="7">
+<div id="01771f5c" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>nui <span class="op">=</span> np.array([<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>])  <span class="co"># coeficientes estequiométricos da reacción</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>K <span class="op">=</span> np.prod(yi<span class="op">**</span>nui)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(K)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
