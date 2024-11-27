@@ -1,0 +1,77 @@
+{
+  "404.qmd": {
+    "404.html": "f1f2abd2"
+  },
+  "about.qmd": {
+    "about.html": "1a53b0c2"
+  },
+  "computing-access.qmd": {
+    "computing-access.html": "66092043"
+  },
+  "computing-troubleshooting.qmd": {
+    "computing-troubleshooting.html": "ff6f76c3"
+  },
+  "course-faq.qmd": {
+    "course-faq.html": "a61bba04"
+  },
+  "course-links.qmd": {
+    "course-links.html": "77ff0a45"
+  },
+  "course-overview.qmd": {
+    "course-overview.html": "d1635f0e"
+  },
+  "course-support.qmd": {
+    "course-support.html": "03728d6e"
+  },
+  "course-syllabus.qmd": {
+    "course-syllabus.html": "514a23ab"
+  },
+  "course-team.qmd": {
+    "course-team.html": "bb0c7296"
+  },
+  "index.qmd": {
+    "index.html": "1377a301"
+  },
+  "notebooks/Control-teoria-1.md": {
+    "Control-teoria-1.html": "40d41d06"
+  },
+  "notebooks/Diagramas_Pxy_Txy.qmd": {
+    "Diagramas_Pxy_Txy.html": "13ea93fc"
+  },
+  "notebooks/enunciado.ipynb": {
+    "enunciado.html": "a7a04ee2"
+  },
+  "posts.qmd": {
+    "posts.html": "afc58c24"
+  },
+  "posts/2023-10-20-probas/index.qmd": {
+    "index.html": "8d2fbbbc"
+  },
+  "posts/2023-10-30-week-01/index.qmd": {
+    "index.html": "c53ed215"
+  },
+  "posts/2024-10-12/index.qmd": {
+    "index.html": "f7894018"
+  },
+  "project-description.qmd": {
+    "project-description.html": "f0e2a61c"
+  },
+  "project-tips-resources.qmd": {
+    "project-tips-resources.html": "7d55a7af"
+  },
+  "qmd/Diagramas_Pxy_Txy.ipynb": {
+    "Diagramas_Pxy_Txy.html": "e524315e"
+  },
+  "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.ipynb": {
+    "Minimización-da-Enerxía-Libre-de-Gibbs.html": "84c65417"
+  },
+  "simulacion-de-procesos-gl.qmd": {
+    "simulacion-de-procesos-gl.html": "b1b222cd"
+  },
+  "slides/tema-01.qmd": {
+    "tema-01.html": "cfa6acd1"
+  },
+  "notebooks/simulacion-deposito-gravedade.quarto.ipynb": {
+    "simulacion-deposito-gravedade.quarto.html": "e80c3433"
+  }
+}
