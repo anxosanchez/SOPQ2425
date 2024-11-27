@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>enunciado – SOPQ-2425</title>
+<title>Simulación dinámica dun depósito – SOPQ-2425</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,6 +104,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/tex-gyre-adventor" type="text/css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -116,7 +145,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Simulación dinámica dun depósito</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,59 +298,182 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Simulación dinámica dun depósito</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<div id="cell-0" class="cell" data-execution_count="75">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="enunciado" class="level2">
+<h2 class="anchored" data-anchor-id="enunciado">Enunciado</h2>
+<p>Se dispone de un deposito que se vacía por gravedad y se quiere modelar y simular su comportamiento teniendo en cuenta los siguientes datos: - Altura inicial de líquido en el deposito: 1 m<br>
+- caudal de entrada: 3 m<sup>3</sup>·h<sup>-1</sup><br>
+- area del deposito: 10 m<sup>2</sup><br>
+- area de salida de la tubería: 0,001 m<sup>2</sup></p>
+</section>
+<section id="requisitos" class="level2">
+<h2 class="anchored" data-anchor-id="requisitos">Requisitos</h2>
+<ol type="1">
+<li>Plantear las ecuaciones que constituyen el modelo.</li>
+<li>Resolver el modelo implementando el metodo de Euler explícito.</li>
+<li>Comparar los resultados en funcion del paso de integración. Dibujar las curvas de evolucion del sistema. ´</li>
+</ol>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="./caso-3.png" class="img-fluid figure-img"></p>
+<figcaption>Tanque con saída por gravidade</figcaption>
+</figure>
+</div>
+</section>
+<section id="modelo-matemático" class="level2">
+<h2 class="anchored" data-anchor-id="modelo-matemático">Modelo matemático</h2>
+<section id="balance-de-materia" class="level3">
+<h3 class="anchored" data-anchor-id="balance-de-materia">Balance de materia</h3>
+<p>Dado que o líquido que entra e que sae son o mesmo, pódese supor que non hai variación de densidade, polo que o balance de materia se pode facer en volumen:</p>
+<p><span class="math display">\[
+\frac {dV} {dt} = F_{in} − F_{out}
+\tag{1}
+\]</span></p>
+<p>O volume do líquido no reactor ven dado por:</p>
+<p><span class="math display">\[
+V = h A
+\tag{2}
+\]</span></p>
+<p>e, como a seccion do depósito é constante:</p>
+<p><span class="math display">\[
+\frac {dV} {dt} = \frac {d} {dt} (hA) = A \frac {dh}{dt}
+\tag{3}
+\]</span></p>
+<p>o balance de materia queda do segunte xeito:</p>
+<p><span class="math display">\[
+\frac {dh} {dt} = \frac {1}{A} (F_{in} − F_{out})
+\tag{4}
+\]</span></p>
+<p>onde:<br>
+<span class="math inline">\(F_{in}\)</span>: Caudal de entrada ó depósito (m<sup>3</sup>·h<sup>-1</sup>).<br>
+<span class="math inline">\(F_{out}\)</span>: Caudal de saída do deposito (m<sup>3</sup>·h<sup>-1</sup>).<br>
+<span class="math inline">\(V\)</span> : Volumen do deposito (m<sup>3</sup>).<br>
+<span class="math inline">\(h\)</span>: Altura do líquido no depósito (m).<br>
+<span class="math inline">\(A\)</span>: Área do depósito (m<sup>2</sup>.<br>
+<span class="math inline">\(A_s\)</span>: Area dó tubo de saída (m<sup>2</sup>).<br>
+<span class="math inline">\(g\)</span>: Gravedad (m·s<sup>2</sup>).</p>
+</section>
+<section id="ecuación-auxiliar" class="level3">
+<h3 class="anchored" data-anchor-id="ecuación-auxiliar">Ecuación auxiliar</h3>
+<p>A saída do deposito polo fondo prodúcese únicamente polo efecto da gravidade, polo que:</p>
+<p><span class="math display">\[
+F_{out} = A_s \sqrt {2 g h}
+\tag{5}
+\]</span></p>
+<p>Non obstante, dado que a gravidade está expresada en ms<sup>-2</sup> e o caudal debe de estar m<sup>-3</sup>·h<sup>-1</sup>,débese de usar o factor de conversion (3600 s·h<sup>-1</sup>), polo que:</p>
+<p><span class="math display">\[
+F_{out} = 3600 A_s \sqrt {2 g h}
+\tag{6}
+\]</span></p>
+</section>
+</section>
+<section id="simulacion-dinámica" class="level2">
+<h2 class="anchored" data-anchor-id="simulacion-dinámica">Simulacion dinámica</h2>
+<section id="método-de-euler" class="level3">
+<h3 class="anchored" data-anchor-id="método-de-euler">Método de <strong>Euler</strong></h3>
+<p>Comecemos cun pouco de teoría que podes aprender máis sobre Wikipedia se o desexas <a href="https://en.wikipedia.org/wiki/Euler_method"></a>.</p>
+<p>Aquí ten algúns métodos engadidos ao método Forward Euler que se inclúe na mesma categoría ao usar métodos numéricos deste tipo: A diferenza de adiante, a diferenza cara atrás e o método de diferenza central.</p>
+<p>O método Euler é un método numérico que permite resolver ecuacións diferenciais (<a href="https://en.wikipedia.org/wiki/Ordinary_differential_equation">ecuacións diferenciais ordinarias</a>, ODEs ou EDOs). É un método fácil para aproximar o comportamento da ecuación nun determinado intrervalo determinado.</p>
+<p>En este exemplo, intentaremos explicar como se pode usar o método <strong>Euler</strong> para resolver ecuacións diferenciais en [Matlab}(https://es.mathworks.com/products/matlab.html) ou <a href="https://www.gnu.org/software/octave/">Octave</a>, e analizaremos as carencias máis importantes do método.</p>
+<p>Para facer uso deste método debe coñecerse o a da condición inicial da ecuación diferencial que está intentando resolver, é dicir, se usa para resolver ODEs do tipo <a href="https://en.wikipedia.org/wiki/Initial_value_problem">IVP</a>.</p>
+</section>
+</section>
+<section id="método-de-euler-1" class="level2">
+<h2 class="anchored" data-anchor-id="método-de-euler-1">Método de Euler</h2>
+<p>Este método está ben documentado en diversos sites de internet. Existe unha boa disertación sobre el na [Wikipedia(https://en.wikipedia.org/wiki/Euler_method). É un método de primeiro orde, o que significa que o erro local (erro por paso) é proporcional ao cadrado do tamaño do paso e o erro global (erro nun momento determinado) é proporcional ao tamaño do paso. O método <strong>Euler</strong> adoita servir de base para construír métodos máis complexos, por exemplo, o método do corrector predictor. Existen variantes en función da implementación así, se pode efalar de:</p>
+<ul>
+<li>Diferencia cara adiante:</li>
+</ul>
+<p><span class="math display">\[
+f'(x) = \frac {f(x+h) - f(x)} {h}
+\]</span></p>
+<ul>
+<li>Diferencia cara atrás:</li>
+</ul>
+<p><span class="math display">\[
+f'(x) = \frac {f(x) - f(x+h)} {h}
+\]</span></p>
+<ul>
+<li>Diferencia central:</li>
+</ul>
+<p><span class="math display">\[
+f'(x) = \frac {f \left( x + \frac {h} {2}  \right) - f \left( x - \frac {h} {2}  \right) } {h}
+\]</span></p>
+<p>Imos a implementar este método en python.</p>
+<div id="ddc99bd4" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>alunos <span class="op">=</span> [<span class="st">'PCF'</span>,<span class="st">'ICP'</span>,<span class="st">'MCM'</span>,<span class="st">'ACV'</span>,<span class="st">'SFC'</span>,<span class="st">'FEFC'</span>,<span class="st">'MGL'</span>,<span class="st">'IGD'</span>,<span class="st">'CGF'</span>,<span class="st">'ULL'</span>,<span class="st">'ELG'</span>,<span class="st">'RPF'</span>,<span class="st">'RRC'</span>,<span class="st">'BRS'</span>,<span class="st">'MSC'</span>,<span class="st">'ASM'</span>,<span class="st">'GVG'</span>]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>foo <span class="op">=</span> [<span class="st">'pentano'</span>, <span class="st">'hexano'</span>, <span class="st">'heptano'</span>, <span class="st">'octano'</span>, <span class="st">'ciclohexano'</span>,<span class="st">'benceno'</span>,<span class="st">'tolueno'</span>,<span class="st">'o-xileno'</span>,<span class="st">'m-xileno'</span>,<span class="st">'p_xileno'</span>]</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'| </span><span class="sc">{</span><span class="st">'Inciais:'</span><span class="sc">:4s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'Presión:'</span><span class="sc">:8s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'Composto 1'</span><span class="sc">:12s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'Composto 2'</span><span class="sc">:12s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'  x_1'</span><span class="sc">:6s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'z_1'</span><span class="sc">:4s}</span><span class="ss"> |'</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'| </span><span class="sc">{</span><span class="st">':-------'</span><span class="sc">:4s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'-------:'</span><span class="sc">:8s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'---------:'</span><span class="sc">:12s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">'---------:'</span><span class="sc">:12s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">':----:'</span><span class="sc">:6s}</span><span class="ss"> | </span><span class="sc">{</span><span class="st">':--:'</span><span class="sc">:4s}</span><span class="ss"> |'</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> alunos:</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    composto1 <span class="op">=</span> random.choice(foo)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    composto2 <span class="op">=</span> random.choice(foo)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> composto1 <span class="op">==</span> composto2:</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        composto2 <span class="op">=</span> random.choice(foo)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    presion_bar <span class="op">=</span> random.uniform(<span class="fl">1.15</span>, <span class="fl">2.25</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    z_1 <span class="op">=</span> random.uniform(<span class="fl">0.40</span>, <span class="fl">.60</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    fraccion_molar1 <span class="op">=</span> random.uniform(<span class="fl">0.1</span>, <span class="fl">0.9</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'| </span><span class="sc">{</span>i<span class="sc">:8s}</span><span class="ss"> | </span><span class="sc">{</span>presion_bar<span class="sc">:8.2f}</span><span class="ss"> | </span><span class="sc">{</span>composto1<span class="sc">:12s}</span><span class="ss"> | </span><span class="sc">{</span>composto2<span class="sc">:12s}</span><span class="ss"> | </span><span class="sc">{</span>fraccion_molar1<span class="sc">:1.4f}</span><span class="ss"> | </span><span class="sc">{</span>z_1<span class="sc">:1.2f}</span><span class="ss"> |'</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># (,composto1,composto2,fraccion_molar1,fraccion_molar2)</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>| Inciais: | Presión: | Composto 1   | Composto 2   |   x_1  | z_1  |
-| :------- | -------: | ---------:   | ---------:   | :----: | :--: |
-| PCF      |     2.22 | tolueno      | benceno      | 0.8023 | 0.56 |
-| ICP      |     2.08 | benceno      | m-xileno     | 0.2822 | 0.40 |
-| MCM      |     1.70 | tolueno      | hexano       | 0.6100 | 0.51 |
-| ACV      |     1.27 | m-xileno     | octano       | 0.8817 | 0.57 |
-| SFC      |     2.19 | octano       | ciclohexano  | 0.6454 | 0.46 |
-| FEFC     |     1.65 | benceno      | o-xileno     | 0.6681 | 0.57 |
-| MGL      |     1.55 | o-xileno     | p_xileno     | 0.4678 | 0.58 |
-| IGD      |     1.47 | octano       | heptano      | 0.2648 | 0.54 |
-| CGF      |     1.97 | heptano      | tolueno      | 0.3718 | 0.51 |
-| ULL      |     2.24 | p_xileno     | o-xileno     | 0.3777 | 0.42 |
-| ELG      |     1.94 | octano       | pentano      | 0.5126 | 0.41 |
-| RPF      |     1.47 | pentano      | tolueno      | 0.4426 | 0.48 |
-| RRC      |     1.62 | o-xileno     | pentano      | 0.3683 | 0.53 |
-| BRS      |     1.58 | m-xileno     | p_xileno     | 0.2367 | 0.42 |
-| MSC      |     2.02 | tolueno      | m-xileno     | 0.8489 | 0.49 |
-| ASM      |     1.19 | benceno      | heptano      | 0.8231 | 0.47 |
-| GVG      |     1.93 | pentano      | p_xileno     | 0.5187 | 0.42 |</code></pre>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Datos</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Fin <span class="op">=</span> <span class="dv">3</span>      <span class="co"># Caudal de entrada en m3/h</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>A   <span class="op">=</span> <span class="dv">10</span>     <span class="co"># Area do depósito en m2</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>As  <span class="op">=</span> <span class="fl">0.001</span>  <span class="co"># Area de saída en m2</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>g   <span class="op">=</span> <span class="fl">9.81</span><span class="op">;</span>  <span class="co"># Gravedad en m/s2</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Método de Euler explícito</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> <span class="fl">.1</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>t0 <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>tf <span class="op">=</span> <span class="dv">100</span> <span class="co"># </span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.arange(t0,tf,h) <span class="co"># Vector de tempos de integracion</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> dh_dt(t,h):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Caudal de saída</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> h <span class="op">&lt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        Fout <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        Fout <span class="op">=</span> As <span class="op">*</span> <span class="dv">3600</span> <span class="op">*</span> sqrt ( <span class="dv">2</span> <span class="op">*</span> g <span class="op">*</span> h )</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Balance de materia</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (Fin <span class="op">-</span> Fout)<span class="op">/</span>A</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [] </span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="bu">len</span>(t)):</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Algoritmo de Euler para la integracion</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    x[i] <span class="op">=</span> x[i<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span> h<span class="op">*</span>feval(odefun,t(i),x(i))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">IndexError</span>                                Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[1], line 27</span>
+<span class="ansi-green-fg ansi-bold">     24</span> x <span style="color:rgb(98,98,98)">=</span> [] 
+<span class="ansi-green-fg ansi-bold">     25</span> <span style="font-weight:bold;color:rgb(0,135,0)">for</span> i <span style="font-weight:bold;color:rgb(175,0,255)">in</span> <span style="color:rgb(0,135,0)">range</span>(<span style="color:rgb(98,98,98)">1</span>,<span style="color:rgb(0,135,0)">len</span>(t)):
+<span class="ansi-green-fg ansi-bold">     26</span>     <span style="font-style:italic;color:rgb(95,135,135)"># Algoritmo de Euler para la integracion</span>
+<span class="ansi-green-fg">---&gt; 27</span>     x[i] <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">i</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">-</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">1</span><span class="ansi-yellow-bg">]</span> <span style="color:rgb(98,98,98)">+</span> h<span style="color:rgb(98,98,98)">*</span>feval(odefun,t(i),x(i))
+
+<span class="ansi-red-fg">IndexError</span>: list index out of range</pre>
 </div>
 </div>
+</div>
+<p>Na figura seguinte se simulou o comportamento do sistema dividindo o tempo de integración en 20 intervalos, é dicir, usando un paso de integración de 0.25 horas. Pódese ver como o depósito se baleira ata chegar ao réxime estacionario no que se estabiliza a altura.´</p>
+<div id="7913c12b" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Representacion grafica</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>plt.plot(t,h,<span class="st">'bo--'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>xlabel(’Tempo (h)’)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>ylabel(’Altura (m)’)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Na Figura 1.3 o comportamento do método de resolución para diferentes pasos de integración. Obsérvase como o método se inculca á medida que aumenta o paso.12 de 126 CAP´ITULO 1. DEPOSITO ´</p>
+<p>Figura 1.3: Simulacion con diferentes pasos de integraci ´ on. ´</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -893,7 +1045,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.dev/anxosanchez/SOPQ-2324/blob/main/notebooks/enunciado.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.dev/anxosanchez/SOPQ-2324/blob/main/notebooks/simulacion-deposito-gravedade.quarto.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Este site está inspirado no site STA 210, deseñado por Mine Çetinkaya-Rundel</p>
 </div>
