@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/rubrica.html</loc>
-    <lastmod>2024-12-27T11:28:11.655Z</lastmod>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/index.html</loc>
+    <lastmod>2024-12-27T12:09:03.207Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/slides/tema-01.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/project-description.html</loc>
+    <lastmod>2024-12-27T11:26:17.990Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/simulacion-de-procesos-gl.html</loc>
     <lastmod>2024-12-12T11:26:31.627Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/qmd/Diagramas_Pxy_Txy.html</loc>
-    <lastmod>2024-12-20T18:54:18.386Z</lastmod>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html</loc>
+    <lastmod>2024-12-12T11:26:31.626Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/project-tips-resources.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2024-10-12/index.html</loc>
     <lastmod>2024-12-12T11:26:31.625Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2023-10-30-week-01/index.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2023-10-20-probas/index.html</loc>
     <lastmod>2024-12-12T11:26:31.624Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/posts.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/simulacion-deposito-gravedade.quarto.html</loc>
     <lastmod>2024-12-12T11:26:31.624Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/enunciado.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/Diagramas_Pxy_Txy.html</loc>
     <lastmod>2024-12-12T11:26:31.624Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/Control-teoria-1.html</loc>
-    <lastmod>2024-12-12T11:26:31.622Z</lastmod>
   </url>
   <url>
     <loc>https://anxosanchez.github.io/SOPQ-2324/course-team.html</loc>
@@ -69,35 +69,35 @@
     <lastmod>2024-12-12T11:26:31.507Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/index.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/Control-teoria-1.html</loc>
     <lastmod>2024-12-12T11:26:31.622Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/Diagramas_Pxy_Txy.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/enunciado.html</loc>
     <lastmod>2024-12-12T11:26:31.624Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/notebooks/simulacion-deposito-gravedade.quarto.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/posts.html</loc>
     <lastmod>2024-12-12T11:26:31.624Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2023-10-20-probas/index.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2023-10-30-week-01/index.html</loc>
     <lastmod>2024-12-12T11:26:31.624Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/posts/2024-10-12/index.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/project-tips-resources.html</loc>
     <lastmod>2024-12-12T11:26:31.625Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html</loc>
-    <lastmod>2024-12-12T11:26:31.626Z</lastmod>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/qmd/Diagramas_Pxy_Txy.html</loc>
+    <lastmod>2024-12-20T18:54:18.386Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/simulacion-de-procesos-gl.html</loc>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/slides/tema-01.html</loc>
     <lastmod>2024-12-12T11:26:31.627Z</lastmod>
   </url>
   <url>
-    <loc>https://anxosanchez.github.io/SOPQ-2324/project-description.html</loc>
-    <lastmod>2024-12-27T11:26:17.990Z</lastmod>
+    <loc>https://anxosanchez.github.io/SOPQ-2324/rubrica.html</loc>
+    <lastmod>2024-12-27T11:28:11.655Z</lastmod>
   </url>
 </urlset>
