@@ -1,178 +1,239 @@
 [
   {
-    "objectID": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
-    "href": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Introdución ó modelado e a simulación: contidos",
-    "text": "Introdución ó modelado e a simulación: contidos\n\nModelado de sistemas físicos\n\nSimulación estacionaria\n\nSimulación dinámica\n\nSistemas de parámetros distribuidos\n\nsistemas híbridos"
+    "objectID": "project-description.html",
+    "href": "project-description.html",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "",
+    "text": "Ideas para o proxecto ata Venres, 25 de Outubro de 2024\nBorrador de informe ata Domingo, 22 de Novembro de 2024\nInforme Final ata Venres, 3 de Xaneiro de 2025\nPresentación en vídeo + diapositivas Venres, 3 de Xaneiro de 2025",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#qué-é-un-sistema.",
-    "href": "slides/tema-01.html#qué-é-un-sistema.",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Qué é un sistema.",
-    "text": "Qué é un sistema.\n– Según (B. Ziegler) : “Un sistema é unha fonte potencial de datos” - É un conxunto de compoñentes, pezas ou obxectos, que interactúan entre si dentro dos límites para producir un determinado patrón de comportamento - “A system is defined by its boundary” Según (B. Gaines) : “Un sistema é o que se distingue como sistema”\nA definición completa de sistema mediante o seu contorno implica ter en conta: - As especificación da fronteira\n- Os canais do contorno a través dos cuais o sistema interacciona co entorno (entradas e saídas)\n- A estructura interna e o comportamento do sistema"
+    "objectID": "project-description.html#liña-de-tempo",
+    "href": "project-description.html#liña-de-tempo",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "",
+    "text": "Ideas para o proxecto ata Venres, 25 de Outubro de 2024\nBorrador de informe ata Domingo, 22 de Novembro de 2024\nInforme Final ata Venres, 3 de Xaneiro de 2025\nPresentación en vídeo + diapositivas Venres, 3 de Xaneiro de 2025",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#o-sistema-e-o-seu-entorno",
-    "href": "slides/tema-01.html#o-sistema-e-o-seu-entorno",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "O sistema e o seu entorno",
-    "text": "O sistema e o seu entorno\nTipos de variables\n- Entrada: denota o efecto do entorno sobre o proceso\n- Manipuladas: o seus valores pódense axustar libremente por un operador ou unha acción de control\n- Perturbacións: os seus valores non son axustables\n- Saída: denota o efecto do proceso sobre o entorno\n- Medidas: os seus valores son coñecidos polos sistemas de medida\n- Nom medidas: os seus valores non se poden medir de forma directa\n- Internas: Son variables propias do sistema\n- De estado: definen o estado do sistema e necesitan coñecer a historia do mesmo para ser definidas. É o conxunto mínimo de variables internas que define o estado do sistema."
+    "objectID": "project-description.html#introdución",
+    "href": "project-description.html#introdución",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Introdución",
+    "text": "Introdución\nO Proxecto: Pensa en unha idea ou concepto da Enxeñaría Química e desenvólvea en forma de demostración, utilidade, simulación ou programa de cálculo ou deseño. Ese é o verdadeiro obxecivo. Trátase de que uses a simulación ou a optimización para ilustar de algún xeito algúns dos aspectos mais importantes da enxeñaría química.\nO modelo no que te basees xa pode existir, ou ben, podes plantexar un por ti mesmo sobre algún tema que che insterse especialmente, ou buscalo na web. O teu obxectivo ca realización do proxecto debe de ser a demostraci´on das túas competencias adquiridas na materia en forma de un caso práctico xa sexa de deseño, solución, mellora ou simple simulación demostrativa.\nA linguaxe de programación no é tan importante coma a idea. Non obstante a simulación debe presentar ó usuario unha interface (ou GUI) que o faga útil (por exemplo formularios de excel, widgets de python, GUI’s de Matlab, etc.).\nTodos os traballos deben estar acompañados da súa documentación, tanto do obxectivo, método, algortimo, código e interface, así comop un emmplod e aplicación xa terminado.\nAntes de pasar á realización do mesmo deberás entregar (entregable en MOOVI) un preproxecto quye deberá ser aprobado polo teu profesor, En caso de que a túa proposta non sexa axeitada ou non cunpla cun nivel acorde ca asignatura, non poderás empezar e debesrás reescribir a túa proposta, ben sexa sonbre o mesmo tema ou sobre outro.\n\nLoxística\nTraballarás no proxecto de xeito indicidual.\nOs entregables obligatorios para o proxecto final son\n\nUn Informe escrito e reproducible que detalla a súa análise, os algoritmos ou métodos numéricos usados, o diagrama de fluxo da programación d a descrición da interface.\nUn Código executable debvidamente documentado acorde ó documento anterior.\nUnha Presentación en formato diapositivas\nUn Vídeo explicativo do proxcto e a súas funcionalidads",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#tipos-de-sistemas-relacións-co-entorno",
-    "href": "slides/tema-01.html#tipos-de-sistemas-relacións-co-entorno",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Tipos de sistemas (relacións co entorno)",
-    "text": "Tipos de sistemas (relacións co entorno)\n\nAillado: non intercambia nin materia nin enerxía co entorno\n\nReactor batch adiabático\n\n\nPechado: non intercambia materia pero sí enerxía coentorno\n\nReactor batch no adiabático\n\n\nAberto: intercambia materia e enerxía co entorno\n\nReactor CSTR"
+    "objectID": "project-description.html#topic-ideas",
+    "href": "project-description.html#topic-ideas",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Ideas para o proxecto",
+    "text": "Ideas para o proxecto\n\nIntrodución e propósito\n\nIndicae a fonte e o propósito da simulacion.\nDescribe a fonte(s) de inspiración e a utilidade que lle ves.\nDescribe as observacións e as características para plantexala e desenvolvela.\nDescribe o software e os algoritmos de cálculo ou solución que vas a empregar para a simulación.\n\n\n\nUtilidade\n\nDescribe para que se podería utilizar a túa simulació e os potenciais usuarios da mesma.",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#modeloss",
-    "href": "slides/tema-01.html#modeloss",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Modeloss",
-    "text": "Modeloss"
+    "objectID": "project-description.html#project-proposal",
+    "href": "project-description.html#project-proposal",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Proposta de proxeto",
+    "text": "Proposta de proxeto\nO propósito da proposta do proxecto é axudarche a pensar na túa estratexia de análise cedo.\nInclúe o seguinte na proposta:\n\nSección 1 - Introdución\nA sección de introdución inclúe\n\nUnha introdución ao tema que estás simulando.\nA motivación para a da túa elección (citando calquera bibliografía relevante).\nA pregunta ou problema xeral que desexas resolver.\nAs túas hipóteses sobre a cuestión.\n\n\n\nSección 2 - Descrición dos datos\nNesta sección, describirás o conxunto de datos que vas usar. Isto inclúe\n\nDescrición das observacións no conxunto de datos, variables, librerías etc.,\nDescrición de como se procederá orixinalmente á realización da simulación, a interface e os usuarios ña que vai dirixida.\n\n\n\nSección 3 - Enfoque da análise\nNesta sección, proporcionarás unha breve visión xeral do teu enfoque de análise da simulación. Isto inclúe:\n\nDescrición da variables de resposta.\nEstatísticas de visualización gráfica e nmérica das variable de resposta.\nLista de variables que vas a consideradar na simulación.\nTécnica de modelado numérico (regresión lineal múltiple, ODE,etc.).\n\n\n\nDicionario de datos (enunciado de variables principais)\n\nInclúe un dicionario de datos para todas as variables do conxunto de datos da simulación.\nCrea un ficheiro “Readme” do teu proxecto en texto plano no cartafol principal.\n\n\n\nEnvío\nMete todos os teus ficheiros finais nda proposta e entrégaos nun ficheiro zip, ou creao un repositorio ou disco compartido (por exemplo GitHub ou OneDrive) e envía o PDF da súa proposta ca ligazón ó repositorio.\n\n\nCualficación das propostas\n\n\n\nTotal\n100 ptos\n\n\n\n\nIntrodución\n30 ptos\n\n\nDescrición dos datos\n20 ptos\n\n\nEnfoque da análise\n40 ptos\n\n\nDicionario de datos\n10 pts\n\n\n\nCada compoñente cualificarase do seguinte xeito:\n\nCumpre as expectativas (crédito completo): Todos os elementos necesarios están completados e son precisos. A narración está escrita con claridade, todas as táboas e visualizacións están ben formatadas e o traballo sería presenta nun look profesional.\nCerca das expectativas (crédito medio): Hai algúns elementos que faltan e/ou imprecisos. Hai algúns problemas co formato.\nNon cumpre as expectativas (sen crédito): Faltan os elementos principais. O traballo non está perfectamente formateado e non presentaría nun look profesional.",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#multiscale",
-    "href": "slides/tema-01.html#multiscale",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Multiscale",
-    "text": "Multiscale"
+    "objectID": "project-description.html#draft-report",
+    "href": "project-description.html#draft-report",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Borrador de informe",
+    "text": "Borrador de informe\nO propósito do borrador é darche a oportunidade de obter comentarios anticipados sobre a túa simulación. Polo tanto, o borrador e centraranse principalmente nunha análise exploratoria da simulación, modelado de datos e interpretacións iniciais do obxectivo.\nEscribe o borrador no ficheiro informe-escrito no repo do seu proxecto ou engrégao en MOOVI.\nA continuación móstrase unha breve descrición das seccións para centrarse no borrador:\n\nIntrodución e datos\nEsta sección inclúe unha introdución á motivación da simulación, datos implicado e obxecto d mesma. Describe os datos e definicións de variables clave. Tamén debe incluír algunha análise exploratorios do proceso.\n\n\nMetodoloxía\nEsta sección inclúe unha breve descrición do seu proceso de modelado.\n\nExplica o razoamento do tipo de modelo que estás encaixando, as variables de predición consideradas para o modelo incluíndo calquera interacción.\n\nAmosa como chegas ós requeriments finais que lle pos á túa simulación, describindo o proceso de selección de modelos, calquera transformacións variables (se é necesario) e calquera outra consideración relevante que formaron parte ds mesma.\n\nExplica tamén a linguaxe de programacion que vas a usa e cáles son as rzóns da túa elección.\n\n\n\nResultados\nNesta sección, presenta os resultados que se poidan tirar da simulación e inclúe unha breve discusión sobre os aspectos mais relevantes que ti considreres.\nEsta sección tamén inclúe interpretacións iniciais e conclusións extraídas do modelo así como a interfaces que vas a presentar ó usuario.",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#modeling",
-    "href": "slides/tema-01.html#modeling",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "modeling",
-    "text": "modeling"
+    "objectID": "project-description.html#written-report",
+    "href": "project-description.html#written-report",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Informe escrito",
+    "text": "Informe escrito\nO teu informe escrito debe completarse no ficheiro informe-escrito e debe estar en formato pdf ou odt. Antes de finalizar a súa escritura, asegúrese de que a impresión de anacos de código está desactivada e o códiga resaltado, ben indicado.\n\nO PDF que envíes debe coincidir cos ficheiros de entrega (repositorio GitHub, ficheiro .zip ou disco compartido) exactamente.\n\nOs compoñentes obrigatorios do informe están numeradas mais adiante no texto, inda que eres libre de engadir seccións adicionais segundo sexa necesario.\n\nO informe, incluídas as visualizacións, debería ser non máis de 10 páxinas de longo.\nNon hai requerimento dun número mínimo de páxina, non obstante, debes abordar de xeito exhaustivo toda a análise e informe.\n\n\nSe selectivo no que inclúe na súa redacción final. O obxectivo é escribir unha narración cohesionada que demostre unha análise completa e completa en vez de explicar cada paso da análise.\nSerá valorada a inclusión dun apéndice con traballo adicional ao final do documento de informe escrito, non obstante, a cualificación basearase en gran medida no contido do corpo principal do informe.\n\nDebes asumir que o material do apéndice non se consultará a menos que o solicite no corpo principal de texto do informe.\n\nO apéndice debe estar formateado e ser fácil de navegar por el.\nNon está incluído no límite de 10 páxinas.\n\n\nO informe escrito vale 40 puntos, descomprimido do seguinte xeito:\n\n\n\nTotal\n100 ptos\n\n\n\n\nIntrodución\n10 ptos\n\n\nMetodoloxía\n25 ptos\n\n\nResultados\n15 pts\n\n\nDiscusión + Descrición + Conclusións\n20 ptos\n\n\nOrganización + Formato + Interface\n20 ptos\n\n\n\nClica aquí para obter un PDF descritivo da rúbrica da avaliación do proxecto.\n\nIntrodución e datos\nEsta sección inclúe unha introdución dos datos que manipulas na simulación.\n\nDescribe os datos e definicións de variables clave.\nTamén debe incluír algunha análise exploratoria de datos (valores guess, por exemplo).\nAlgunhas outras deas sobre as variables e relacións interesantes na simulación.\n\n\nCriterio de avaliación\n\nO obxectivo da simulación debe están claramente indicado na introdución, incluíndo a bibliografía consultada, as fontes de datos e calquera investigación externa.\nDescrebe claramente os datos, incluída unha descrición sobre como se recollían orixinalmente os datos e unha definición concisa das variables relevantes para comprender os resultados da simulación.\nDescrebe tamén o proceso de “limpeza de datos”, incluíndo as decisións tomadas no proceso (por exemplo, creando novas variables, eliminando observacións, consideranto variables constantes nun intervalo etc.) A análise de datos explicativa axuda ao lector a comprender mellor as observacións nos datos xunto con relacións interesantes e relevantes entre ovariables.\nIncorpora tantas gráficas como consideres oprtuno.\nNo caso de incluir unha interface, descrebe a sús funcioinalidades.\n\n\n\n\nMetodoloxía\nEsta sección inclúe unha breve descrición do teu proceso de modelado.\n\nExplica razoadamente o tipo de modelo que estás usando, as variables que consideras e as súas interaccións.\nDescrebe como chegas ó modelo final: proceso de selección de modelos, as interaccións consideradas, as transformacións de variables (se é necesario), a avaliación de condicións e diagnósticos e calquera outra consideración relevante que formaron parte do proceso de montaxe da simulación.\n\n\nCriterios de avaliación\nEn xeral, se che terán en conta os seguintes conceptos para a acaliación do proxecto (inda que mais adiante podes ver a rúbrica). - Os pasos de análise son apropiados para a simulación. - O enfoque é minucioso e coidadoso para seleccionar o modelo final. - O enfoque descríbese claramente no informe. - O proceso de selección de modelos tivo en conta os potenciais efectos de interacción e abordou calquera violación nas condicións do modelo. - As condicións do modelo e os diagnósticos son avaliadas a fondo e con precisión para a utilidade da simulación\n\n\n\nResultados\nAquí é onde debes de valorizar a túa simulación.\n\nDescribe os resultados clave da simulación.\nO obxectivo non é interpretar todas as variables, senón demostrar que és competente no uso da saídas da simulación para explicar as súas funcionalidades, empregando as interpretacións para apoiar as túas conclusións.\nConcéntrate nas variables claves da simulación, e en todo aquelo que proporcione un contexto relevante para o usuario da mesma.\n\n\nCriterios de avaliación\n\nO modelo usad axústase ós requerimentos da simulación e é describe claramente os resultados.\n\nAs interpretacións dos resultados úsanse para demostrar ou facilitar o tema obxecto da siuacionapoiar, as conclusións clave, en lugar de simplemente enumerar a interpretación de todos os coeficientes do moesmo.\n\nSe o principal obxectivo de modelado é a predición ou o cálculo, avalíase a fondo o poder predictivo do modelo ou a presicisón do cálculo.\n\n\n\n\nDiscussion + Conclusion\n\nNesta sección incluirás un resumo do que aprendiches facenso a túa simulación, xunto con argumentos estatísticos que apoien as túas conclusións.\nAdemais, discute as limitacións da memsa e proporciona suxestións sobre formas de mellorala.\nTamén se deben discutir calquera problema potencial relacionado coa fiabilidade e validez dos resultados ue se poidan extraer da mesma.\nPor último, esta sección incluirá ideas para o traballo futuro.\n\n\nCriterios de avaliación\n\nDescríbe claramente a funcionalidade da túa simulación. Análiza os resultados do modelo que propós no contexto máis amplo do tema e da cuestión de investigación orixinal.\nFai unha consideración reflexiva das posibles limitacións dos datos e/ou análises, e as ideas para o traballo futuro.\nExplica a utilidade do teu modelo (simulación, dimensionamento de equipos, docencia…) e valora a súa aplicación e ralci´on directa ca materia.\n\n\n\n\nOrganización e formato\nA continuación se describe información sobre a avaliación e o formato do informe escrito.\n\nCriterios de avaliación\n\nO informe debe estar ordeado e organizado coas correspondentes cabeceiras das seccións e figuras de tamaño axecuado coas correspondentes textos informativos.\nOs resultados numéricos denrán estar formatados cun número razoable de díxitos e todas as gráficas tamén, con título, títulos de eixos, lenfas de datos, e demais.\nTodas as citas e ligazóns deben estár correctamente formatadas.\nSe hai un apéndice que resuma todos os datos, mellor. debe estar razoablemente organizado e ser fácil de ler útil para atopar información relevante.\nNo código de programa debes suprimír avisos, códigos de erro e mensaxes. O corpo principal do informe escrito (sen incluír o apéndice) non é superior a 10 páxinas.",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#model-reduction",
-    "href": "slides/tema-01.html#model-reduction",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Model reduction",
-    "text": "Model reduction"
+    "objectID": "project-description.html#video-presentation-slides",
+    "href": "project-description.html#video-presentation-slides",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Video presentation + slides",
+    "text": "Video presentation + slides\n\nDiapositivas\n\nAdemais do informe escrito, o debes creará diapositivas de presentación e grabar unha presentación de vídeo que resuma e mostrará o teu proxecto. Poderemos pedirche que a expoñas na aula.\nFai unha introdución da túa simulación, conxunto de datos, representacións gráficas, utilidade, e discute as conclusións pricipais do teu traballo.\nEstas diapositivas deben servir como un breve complemento visual ó teu informe escrito e terán un certo peso na nota final do proxecto.\nPara a subir a presentación, converte estas diapositivas a un documento .pdf oy .html e entrégao en MOOVI.\nA presentación de diapositivas non debe ter máis de 10 diapositivas de contido + 1 diapositiva de título.\nAquí tes unha suxestión, a modo de esquema, de como deben ser as diapositivas:\n\nDiapositiva do título Diapositiva 1: Introducir o tema e a motivación Diapositiva 2: Marco teórico Diapositiva 3: Modelo lóxico Diapositiva 4: Modelo matemático Diapositiva 5: Ferramentas de software Diapositiva 6: Interface de usuario ou variables axustables Diapositiva 7: Exemplo de uso Diapositiva 8: Discusión dos aspectos reevantes Diapositiva 9: Conclusións + Diapositiva 10: traballo futuro (melloras)\n\n\nPresentación en Vídeo\n\nPara a presentación de vídeo, podes falar sobre as túas de diapositivas, como nas conferencias.\nA presentación de vídeo non debe ser superior a 5 minutos.\nPodes usar pode usar calquera plataforma dee soporte de vídeo ou subir a grabación en formato mp4 ou mkv a MOOVI.\nA continuación móstranse algúns recursos na gravación de vídeos:\n[Ferramentas de grabación de pantalla de balde:\n\nCamstudio\n\nSimple Screen Recorder\n\nOBS Studiohttps://obsproject.com/\n\n[Apple QuickTime para a gravación de pantalla] (https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac)\n[Funcionalidade de gravación de pantalla incorporada de Windows 10] (https://www.youtube.com/watch?v=ofpBr1mrduo)",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#minimal-models",
-    "href": "slides/tema-01.html#minimal-models",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Minimal models",
-    "text": "Minimal models"
+    "objectID": "project-description.html#reproducibilidade-organización",
+    "href": "project-description.html#reproducibilidade-organización",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Reproducibilidade + organización",
+    "text": "Reproducibilidade + organización\nTodo o traballo escrito (con excepción das diapositivas de presentación) debe ser reproducible e o directorio compartido ou ficheiro .zip debería estar ben organizado. Debería ter a seguinte estrutura:\n\nREADME: descrición curta do proxecto.\n\ninforme-escrito: informe final escrito en formato pdf ou odt.\n\nCartafol Datos: cartafol que contén o conxunto de datos para o proxecto final.\nCartafol Preparación: cartafol que contén os ficheiros ideas e proposta-de-proxecto.\nCartafol Presentación: cartafol coas diapositivas da presentación.\n\nSe as diapositivas de presentación están en liña, podes poñer unha ligazón ás diapositivas nun ficheiro readme no cartafol Presentación.\n\nCartadfol Vídeo: cartafol co vídeo.\n\nSe o vídeo están en liña, podes poñer unha ligazón nun ficheiro readme no cartafol Vídeo.\n\nOs puntos para a reproducibilidade e organización estarán baseados na reproducibilidade do informe escrito e na organización do ficheiro ou disco de entrega.\nO repo, disco ou .zip debe estar organizado perfectamente como se describe anteriormente, non debería haber ficheiros alleos, todo o texto no README debe ser facilmente lexible.\n\n\nA nosa recomendación é que crees un espazo de traballo en Github, é de balde par auso persoal e podes aprender bastante en cano a gardar o teu traballo de xeito seguro e organizado, incluindo o control de versións, tan importante á hora de eleborar código.",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#model-nature",
-    "href": "slides/tema-01.html#model-nature",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Model nature",
-    "text": "Model nature"
+    "objectID": "project-description.html#puntuación-final",
+    "href": "project-description.html#puntuación-final",
+    "title": "Descrición do Proxecto da Asignatura",
+    "section": "Puntuación final",
+    "text": "Puntuación final\nA rúbrica de avaliación de do proxecto da asignatura é a seguinte:\n\n\n\nTotal\n100 pts\n\n\n\n\nIdeas e orixinallidade\n5 pts\n\n\nProposta de proxecto\n10 pts\n\n\nrevisión bibliográfica\n10 pts\n\n\nInforme escrito\n40 pts\n\n\nDiapositivas e preosentación\n25 pts\n\n\nReproducibilidade e organización\n5 pts\n\n\nVídeo\n5 pts\n\n\n\n\n\n\n\n\n\nAviso\n\n\n\nNote: Non se aceptarán entregas fóra de prazo.\n\n\n\nResumo da avaliación\nA valoración final do proxecto terá en conta o seguinte:\n\nContido - Cal é a calidade da simulación e a relevancia dos cálculos?.\nCorrección: Os procedementos matemáticos realízanse e explícanse correctamente?.\nEscritura e presentación: A calidade da presentación estatística, a escritura e as explicacións son boas?.\nCreatividade e pensamento crítico: Está ben pensada e é útila?. Ten limitacións importantes?.\nDedicación: O tempo e o esforzo encaixan na planificación de dedicación de traballo pèrsoal da guía docnete da materia?.\n\nUn desglose xeral da puntuación é o seguinte:\n\n90%-100%: Esforzo intenso. O estudante entende como aplicar todos os conceptos teóricos e praćticos, pode poñer os resultados en valor, pode identificar debilidades do traballo e pode comunicar claramente os resultados.\n80%-89%: Bo esforzo. O estudante entende a maioría dos conceptos teóricos, pode poñer a meirande parte dos resultados en valor, pode identificar as debilidades importantes do traballo e pode comunicar razoablemente os resultados.\n70%-79%: Esforzo mediocre. O estudante ten unha incomprensión de conceptos teóricos en áreas, ten algúns problemas para argumentar os resultados, e a comunicación dos mesmos ás veces non está clara.\n60%-69%: Esforzo insuficinte: O estudante fixo pouco esforzo, ten carencias na comprensión do modelo e é incapaz de xustificar a validez da súa simulación. A comunicación de resultados non está clara.\npor baixo do 60% : o alumno non fixo un esforzo suficiente.\n\n\n\nPolítica de entregas de última hora\nSalvo que medie algunha xustificación por razońs de forza maior, debidamente acreditada,Non se aceptaránm entregas fora de prazo.",
+    "crumbs": [
+      "Proxecto",
+      "Instrucións"
+    ]
   },
   {
-    "objectID": "slides/tema-01.html#functional-models",
-    "href": "slides/tema-01.html#functional-models",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Functional models",
-    "text": "Functional models"
+    "objectID": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
+    "href": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Resumo das clases teóricas",
+    "text": "Resumo das clases teóricas\n\n\n\n\n\n\n\nConceptos\nNivel\n\n\n\n\nFundamentos da simulación de procesos\nBásico\n\n\nIntrodución á simulación de procesos\nBásico\n\n\nRexistro de novos compoñentes\nBásico\n\n\nEstimación de propiedades físicas para simulación de procesos\nBásico\n\n\nSimulación de correntes de reciclado\nBásico"
   },
   {
-    "objectID": "slides/tema-01.html#logical-models",
-    "href": "slides/tema-01.html#logical-models",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Logical models",
-    "text": "Logical models"
+    "objectID": "simulacion-de-procesos-gl.html#simulación-de-procesos",
+    "href": "simulacion-de-procesos-gl.html#simulación-de-procesos",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simulación de procesos",
+    "text": "Simulación de procesos\n A simulación de procesos é unha técnica computacional empregada en varias industrias para:\n- Modelar\n- Analizar e\n- Optimizar procesos complexos.\n - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións."
   },
   {
-    "objectID": "slides/tema-01.html#bioinspired-models",
-    "href": "slides/tema-01.html#bioinspired-models",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Bioinspired models",
-    "text": "Bioinspired models"
+    "objectID": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
+    "href": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Qué implica a simulación de procesos?",
+    "text": "Qué implica a simulación de procesos?\nA simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico\n\n\n\n\n\nflowchart TD\n  A[Inicio] --&gt; B[Modelado]\n  B --&gt; C[Entrada de Datos]\n  C --&gt; D[Simulación]\n  D --&gt; E[Visualización]\n  E --&gt; F[Análise]\n  F --&gt; G[Optimización]\n  G --&gt; H[Aplicación]\n  H --&gt; I[Fin]"
   },
   {
-    "objectID": "slides/tema-01.html#model-assumptions-model-use",
-    "href": "slides/tema-01.html#model-assumptions-model-use",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Model assumptions Model use",
-    "text": "Model assumptions Model use"
+    "objectID": "simulacion-de-procesos-gl.html#modelado",
+    "href": "simulacion-de-procesos-gl.html#modelado",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Modelado",
+    "text": "Modelado\n A simulación de procesos comeza coa creación dun modelo matemático ou computacional que representa:\n - Os compoñentes\n- As variables e\n- As interaccións clave dun proceso físico.\n Este modelo pode basearse en:\n- Ecuacións matemáticas\n- Datos empíricos\n Ou unha combinación de ambos."
   },
   {
-    "objectID": "slides/tema-01.html#model-implementation",
-    "href": "slides/tema-01.html#model-implementation",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Model implementation",
-    "text": "Model implementation"
+    "objectID": "simulacion-de-procesos-gl.html#simulación",
+    "href": "simulacion-de-procesos-gl.html#simulación",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simulación",
+    "text": "Simulación\nUnha vez que o modelo se desenvolve, impleméntase no software de simulación. O software usa algoritmos para: - Realizar cálculos numéricos - Resolver ecuacións para simular o comportamento do proceso ao longo do tempo."
   },
   {
-    "objectID": "slides/tema-01.html#model-languages-empirical-models",
-    "href": "slides/tema-01.html#model-languages-empirical-models",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Model languages Empirical models",
-    "text": "Model languages Empirical models"
+    "objectID": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
+    "href": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Parámetros de entrada",
+    "text": "Parámetros de entrada\nOs usuarios poden introducir varios parámetros: - Condicións de funcionamento - Especificacións de equipos - Variables de proceso, etc.  \npara explorar diferentes escenarios e estudar como os cambios afectan o proceso."
   },
   {
-    "objectID": "slides/tema-01.html#qualitative-models",
-    "href": "slides/tema-01.html#qualitative-models",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Qualitative models",
-    "text": "Qualitative models"
+    "objectID": "simulacion-de-procesos-gl.html#visualización",
+    "href": "simulacion-de-procesos-gl.html#visualización",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Visualización",
+    "text": "Visualización\nO software de simulación de procesos adoita proporcionar representacións visuais de: - O proceso simulado, incluíndo - gráficos - animacións.  Isto permite aos usuarios obter información sobre o rendemento e o comportamento do sistema."
   },
   {
-    "objectID": "slides/tema-01.html#modeling-hierarchy-model-integration",
-    "href": "slides/tema-01.html#modeling-hierarchy-model-integration",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Modeling hierarchy Model integration",
-    "text": "Modeling hierarchy Model integration"
+    "objectID": "simulacion-de-procesos-gl.html#análise",
+    "href": "simulacion-de-procesos-gl.html#análise",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Análise",
+    "text": "Análise\nOs usuarios poden analizar os resultados da simulación para avaliar: - A eficiencia - O rendemento - A seguridade do proceso.  Esta análise axuda a: - Identificar posibles bloqueos de botella - Optimizar o uso de recursos - Mellorar o deseño xeral do proceso."
   },
   {
-    "objectID": "slides/tema-01.html#goals-in-models",
-    "href": "slides/tema-01.html#goals-in-models",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Goals in models",
-    "text": "Goals in models"
+    "objectID": "simulacion-de-procesos-gl.html#optimización",
+    "href": "simulacion-de-procesos-gl.html#optimización",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Optimización",
+    "text": "Optimización\nA simulación de procesos pódese usar para atopar o conxunto óptimo de: - parámetros ou -condicións  que leven ao resultado desexado, tales como: - Maximizar o rendemento da produción ou - Minimizar o consumo de enerxía. ## Aplicacións:\nA simulación de procesos se utiliza en diversas industrias, incluyendo la ingeniería química, la manufactura, el petróleo y el gas, la farmacéutica y el transporte, para modelar y mejorar procesos como reacciones químicas, líneas de producción, cadenas de suministro, entre otros."
   },
   {
-    "objectID": "slides/tema-01.html#i-have-been-and-remain-entirely",
-    "href": "slides/tema-01.html#i-have-been-and-remain-entirely",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "! “I have been, and remain, entirely",
-    "text": "! “I have been, and remain, entirely"
+    "objectID": "simulacion-de-procesos-gl.html#beneficios",
+    "href": "simulacion-de-procesos-gl.html#beneficios",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Beneficios:",
+    "text": "Beneficios:\n A simulación de procesos pode levar a:\n- Un aforro de custos\n- Unha mellor calidade do produto\n- Unha redución de riscos\n- Unha maior seguridade de produción\n permitindo probas virtuais e optimización antes de implementar cambios nos procesos do mundo real."
   },
   {
-    "objectID": "slides/tema-01.html#committed-to-the-idea-that-modeling-is-the",
-    "href": "slides/tema-01.html#committed-to-the-idea-that-modeling-is-the",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "committed to the idea that modeling is the",
-    "text": "committed to the idea that modeling is the"
+    "objectID": "simulacion-de-procesos-gl.html#fluxogramas",
+    "href": "simulacion-de-procesos-gl.html#fluxogramas",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Fluxogramas",
+    "text": "Fluxogramas\nAlexander C. Dimian (2003)  \n\nO diagrama de fluxo é unha descrición sistémica de fluxos de materiais e enerxía en a planta de proceso mediante simulación informática co ámbito de proxectar unha nova planta ou mellorar o rendemento dunha planta existente. \nO diagrama de fluxo pode usarse como axuda para implementar un control en toda a planta estratexia, así como para xestionar o funcionamento da planta."
   },
   {
-    "objectID": "slides/tema-01.html#essence-of-science-and-the-habitat-of-all",
-    "href": "slides/tema-01.html#essence-of-science-and-the-habitat-of-all",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "essence of science and the habitat of all",
-    "text": "essence of science and the habitat of all"
+    "objectID": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
+    "href": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos",
+    "text": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos\n\nModelo de Linnhoff"
   },
   {
-    "objectID": "slides/tema-01.html#epistemology.",
-    "href": "slides/tema-01.html#epistemology.",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "epistemology.”",
-    "text": "epistemology.”"
+    "objectID": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
+    "href": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Modelo de deseño de capas da cebola (Linnhoff)",
+    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\nModelo de Linnhoff[Modelo de capa d]\n\nDentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos."
   },
   {
-    "objectID": "slides/tema-01.html#robert-rosen-essays-on",
-    "href": "slides/tema-01.html#robert-rosen-essays-on",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "- Robert Rosen, Essays on",
-    "text": "- Robert Rosen, Essays on"
+    "objectID": "simulacion-de-procesos-gl.html#resumo",
+    "href": "simulacion-de-procesos-gl.html#resumo",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Resumo",
+    "text": "Resumo\nA simulación de procesos é unha poderosa ferramenta que permite a proba virtual e a análise de procesos complexos, facilitando a decisión e a optimización nunha ampla gama de industrias."
   },
   {
-    "objectID": "slides/tema-01.html#life-itself",
-    "href": "slides/tema-01.html#life-itself",
-    "title": "Modelización e simulación de procesos químicos",
-    "section": "Life Itself",
-    "text": "Life Itself"
+    "objectID": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
+    "href": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Arquitectura de simuladores de proceso",
+    "text": "Arquitectura de simuladores de proceso\n\nModular secuencial\n\nBaseado no concepto de modularidade, que estende o concepto da enxeñaría de operación unitaria a un cálculo da unidades de operación mediante un o código informático responsable do cálculo das unidades de proceso.\n\nO cálculo de todo o fluxograma se fai unidade a unidade seguindo unha secuencia de cálculo.\n\n\nO orientado á ecuacións (Simultáneameo - Non modular)\n\nO modelo completo do fluxograma exprésase en forma dun gran sistema disperso de ecuacións alxébricas non lineais, que se solucionan simultaneamente para todas as incógnitas.\n\nModular Simultáneo Combinación de secuencial-modular e orientado á ecuación enfoques"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
+    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
+    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nSequenciais – Modulares\n\nAspen Plus\nAspen Hysys\nChemCAD\nPRO II\nUniSim"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
+    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
+    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nOrientados a Ecuación\n\ngProms\nVMGSim\nAspen Plus in EO\nAspen Custom Modeler"
+  },
+  {
+    "objectID": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
+    "href": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
+    "title": "Introdución á Simulación de Procesos",
+    "section": "Servizos de propiedades físicas",
+    "text": "Servizos de propiedades físicas\n\nSubministran estimacións para varias propiedades físicas diferentes mentres a simulación está funcionando.\nO equilibrio de fase representa unha das propiedades físicas máis importantes, xa que moitas simulacións de procesos químicos implican destilación, separación, evaporación ou separación líquido - líquidos.\nResolven os balances de masa e enerxía para estas operacións que require a predicción:\n\nVapor - Equilibrio líquido (VLE)\nLíquido - Equilibrio líquido (LLE)\n\n\n\n\n\n\n\n\nNote\n\n\n\nA estimación de propiedades físicas pode consumir ata o 90% do tempo de computación dunha simulación. Os paquetes de propiedades úsanse para predecir o equilibrio de fase e o comportamento de compoñentes puros e sistemas de mestura"
   },
   {
     "objectID": "qmd/Minimización-da-Enerxía-Libre-de-Gibbs.html",
@@ -201,72 +262,6 @@
     "title": "SOPQ-2425",
     "section": "2. Cálculo de constantes de equilibrio",
     "text": "2. Cálculo de constantes de equilibrio\nPodemos calcular a constante de equilibrio para a reacción:\n\\[\nCO+H_2O⇌CO_2+H_2\n\\]\nten en en conta que para definir unha constante de equilibrio é necesario especificar unha reacción, aínda que nin sequera sexa necesario considerar unha reacción para obter a distribución en equilibrio das especies.\n\n# @title\nnuj = np.array([-1, -1, 1, 1])  # stoichiometric coefficients of the reaction\nK = np.prod(yj**nuj)\nprint('A constante de equilibrio (adimensional) vale: {:5.4f}'.format(K))\n\nA constante de equilibrio (adimensional) vale: 3.2161"
-  },
-  {
-    "objectID": "project-tips-resources.html",
-    "href": "project-tips-resources.html",
-    "title": "Consellos sobre o proxecto e recursos",
-    "section": "",
-    "text": "Learcheme Podes atopar en este repositorio:\nScreencasts: capturas de pantalla curta dun PC tableta con narración. Inclúen exemplos e solucións de problemas, explicacións de conceptos, tutoriales de software, introdución a temas, descricións do diagrama e críticas.\nMódulos interactivos de auto-estudo: inclúindo introducións, exames de conceptos básicos, presentacións, ecuacións importantes, simulacións interactivas, simulacións de autoavaliación, reolución interactiva de problemas en pantalla e puntos clave da Enxeñaría Química.\n(https://nptel.ac.in/courses/103105106)\nFiveThirtyEight data\nTidyTuesday",
-    "crumbs": [
-      "Proxecto",
-      "Tips + recusos"
-    ]
-  },
-  {
-    "objectID": "project-tips-resources.html#fontes-de-información",
-    "href": "project-tips-resources.html#fontes-de-información",
-    "title": "Consellos sobre o proxecto e recursos",
-    "section": "",
-    "text": "Learcheme Podes atopar en este repositorio:\nScreencasts: capturas de pantalla curta dun PC tableta con narración. Inclúen exemplos e solucións de problemas, explicacións de conceptos, tutoriales de software, introdución a temas, descricións do diagrama e críticas.\nMódulos interactivos de auto-estudo: inclúindo introducións, exames de conceptos básicos, presentacións, ecuacións importantes, simulacións interactivas, simulacións de autoavaliación, reolución interactiva de problemas en pantalla e puntos clave da Enxeñaría Química.\n(https://nptel.ac.in/courses/103105106)\nFiveThirtyEight data\nTidyTuesday",
-    "crumbs": [
-      "Proxecto",
-      "Tips + recusos"
-    ]
-  },
-  {
-    "objectID": "project-tips-resources.html#consellos",
-    "href": "project-tips-resources.html#consellos",
-    "title": "Consellos sobre o proxecto e recursos",
-    "section": "Consellos",
-    "text": "Consellos\n\nTitorías Fai preguntas se algunha das expectativas non está clara.\nCódigo: Na túa escritura o teu código debería estar oculto para que o documento sexa ordenado e fácil de ler. Non obstante, o teu documento debería incluír todo o teu código de xeito que se volva a colocar o ficheiro QMD, debería poder obter os resultados que presentaches.\nExcepción: Se queres resaltar algo específico sobre un anaco de código, podes amosar esa parte.",
-    "crumbs": [
-      "Proxecto",
-      "Tips + recusos"
-    ]
-  },
-  {
-    "objectID": "project-tips-resources.html#formato-e-presentando-os-proxecto",
-    "href": "project-tips-resources.html#formato-e-presentando-os-proxecto",
-    "title": "Consellos sobre o proxecto e recursos",
-    "section": "Formato e presentando os proxecto",
-    "text": "Formato e presentando os proxecto\n\nsuprime o código, as advertencias e as mensaxes\n\nInclúe o seguinte código nun pedazo de código na parte superior do seu ficheiro .qmd para suprimir todo o código, avisos e outras mensaxes.\n\n\n\nCabeceiras\n\nUse cabeceiras para etiquetar claramente cada sección.\nInspeccione o esquema do documento para revisar as cabeceiras e os sub-cabeceiros.\n\n\n\nReferencias\n\nInclúe todas as referencias bibliográficas e web nunha sección chamada Referencias ao final do informe.\nEste curso non ten requisitos específicos para formatar citas e referencias.\n\n\n\nApéndice\n\nSe tes un traballo adicional que non encaixa ou non pertence ao corpo do informe, pode poñelo ao final do documento na sección chamada Apéndice.\nOs elementos do apéndice deben estar etiquetados correctamente.\nO apéndice só debe ser para material adicional.O lector debería poder comprender completamente o seu informe sen ver o contido no apéndice.\n\n\n\nRedimensionar as cifras\nRedimensionar as parcelas e as figuras, polo que tes máis espazo para a narración.",
-    "crumbs": [
-      "Proxecto",
-      "Tips + recusos"
-    ]
-  },
-  {
-    "objectID": "project-tips-resources.html#esmérate-na-presentación-dos-gráficos.",
-    "href": "project-tips-resources.html#esmérate-na-presentación-dos-gráficos.",
-    "title": "Consellos sobre o proxecto e recursos",
-    "section": "Esmérate na presentación dos gráficos.",
-    "text": "Esmérate na presentación dos gráficos.\n\nUse títulos informativos, non nomes de variables, para títulos e etiquetas do eixe.\n\nTítulo informativo e etiquetas do eixe\n\nQue os nomes sexan lexibles\n\nNomes capitalizados\n\nOpcional:\n\nUsa un esquema de cores coordinado en todo o documento ou presentación.\n\nAplicado un tema, usa o mesmo tema en todo o documento ou presentación.\n\n\n\nDirectrices para comunicar resultados\n\nNon use nomes variables na túa narración: usa termos descritivos, polo que o lector entende a súa narración sen depender do dicionario de datos.\n\nCoñece a túa audiencia: O teu traballo debería estar escrito para un público xeral pero que comprenda as simulacións os conceptos principais da enxeñaría química.\n\n** Evite a xerga de temas: ** Non supoña que a audiencia coñeza toda a terminoloxía específica relacionada coa súa materia.\nSe debes usar a xerga, inclúe unha breve definición a primeira vez que introduce un termo.\n\n** Diga o “Entón”: ** O seu informe e presentación debería ser máis que unha lista de interpretacións e definicións técnicas. Concéntrate no que significan os resultados, é dicir, o que queres que a audiencia saiba sobre o teu tema despois de ler o teu informe ou ver a túa presentación.\n\n** Conta unha historia: ** Todas as visualizacións, táboas, saída do modelo e narrativa deberían contar unha historia cohesionada.",
-    "crumbs": [
-      "Proxecto",
-      "Tips + recusos"
-    ]
-  },
-  {
-    "objectID": "project-tips-resources.html#recursos-adicionais-",
-    "href": "project-tips-resources.html#recursos-adicionais-",
-    "title": "Consellos sobre o proxecto e recursos",
-    "section": "Recursos adicionais-",
-    "text": "Recursos adicionais-\n\n[Jup]yter Notebook](https://docs.jupyter.org/en/latest/)\nVisualización de datos\n\nMatplotlib\nPlotly\nGuía de visualización de datos",
-    "crumbs": [
-      "Proxecto",
-      "Tips + recusos"
-    ]
   },
   {
     "objectID": "posts/2024-10-12/index.html",
@@ -783,253 +778,258 @@
     "text": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada\n\nfrom scipy.optimize import fsolve\n\n\n# Datos do exercicio\n\nP_t = 1.5 #bar\nx_heptano = np.linspace(0,1,11)\n\n# Suponse unha temperatura de partida\n\nT_guess=396\n\n# Créanse dúas listas nas que se almacenarán os datos de temperatura e fraccións molares do heptano, para cada valor de x\n\nlista_temperatura=[]\nlista_y=[]\n\n# Definiranse as funcións para obter as presións de saturación do heptano e o octano\n\ndef p_sat_heptano(T):\n    return 10  ** ( A_heptano - B_heptano / ( T + C_heptano ) )\n\ndef p_sat_octano(T):\n    return 10 ** ( A_octano - B_octano / ( T + C_octano ) )\n\n# Créase un lazo que devolve o valor da temperatura e a fracción molar do vapor para cada valor de x\n\nfor i in x_heptano:\n    def fmin(T):\n        return i*p_sat_heptano(T)/P_t+(1-i)*p_sat_octano(T)/P_t-1\n    solucion=fsolve(fmin,T_guess)\n    lista_temperatura.append(solucion[0])\n    y_heptano=i*p_sat_heptano(solucion)/P_t\n    lista_y.append(y_heptano[0])\n\nprint(lista_temperatura) # valores de temperatura calculados\nprint(lista_y) # valores de y calculados\n\n[np.float64(413.5615852273091), np.float64(409.77113336473025), np.float64(406.2684364969948), np.float64(403.0216612183846), np.float64(400.00305716655544), np.float64(397.18844969691617), np.float64(394.55676804690006), np.float64(392.0896214256247), np.float64(389.77092633460484), np.float64(387.58658343897787), np.float64(385.52419985536085)]\n[np.float64(0.0), np.float64(0.1837276326189331), np.float64(0.33830109800891695), np.float64(0.4693199994809487), np.float64(0.581154434977709), np.float64(0.6772413410638028), np.float64(0.7603047808262194), np.float64(0.832520410718438), np.float64(0.895638942399593), np.float64(0.9510793956603304), np.float64(1.0000000000003693)]\n\n\n\n# Representación do diagrama T-xy\n\nimport matplotlib.pyplot as plt\nplt.plot(x_heptano, lista_temperatura, 'ko-', lista_y, lista_temperatura, 'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y (heptano)')\nplt.ylabel('Temperatura (K)')\nplt.title('Diagrama T-x,y')\n\nText(0.5, 1.0, 'Diagrama T-x,y')\n\n\n\n\n\n\n\n\n\n\n# Tamén se pde realizar con fsolve aplicado a la ecuación de Antoine, y no al sumatorio de y - 1\nz=np.linspace(0,1, num=11) #composición inicial\n\n# Funciónes para determinar as presións de saturación dos dous compoñentes\n\ndef Psat1(T):\n    return 10**(A_heptano-B_heptano/(T+C_heptano))\ndef Psat2(T):\n    return 10**(A_octano-B_octano/(T+C_octano))\n\n# Datos do enunciado\ny=z\nP = 1.5 #bar\nfrom scipy.optimize import fsolve\n\n\ndef fun1(T):\n    return P - 10**(A_heptano-B_heptano/(T+C_heptano)) # a qué temperatura P externa es igual al otro término\nTinf=fsolve(fun1, 350) # 350K valor inicial suposto\n                       # Tinf = temperatura de fervura do heptano\n\ndef fun2(T):\n    return P - 10**(A_octano-B_octano/(T+C_octano))\nTsup=fsolve(fun2, 373) # Tsup = temperatura de fervura do octano\n\nprint('A temperatura á que hierve o heptano á presión externa é {:5.2f} K.'.format(Tinf[0]))\nprint('A temperatura á que hierve o octano  á presión externa é {:5.2f} K.'.format(Tsup[0]))\n\nA temperatura á que hierve o heptano á presión externa é 385.52 K.\nA temperatura á que hierve o octano  á presión externa é 413.56 K.\n\n\n\nT=np.linspace(Tinf,Tsup, num=11)\nx = (P-Psat2(T))/(Psat1(T)-Psat2(T))\ny=x*Psat1(T)/P\nplt.plot(x, T,'ko-', y,T,'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y')\nplt.ylabel('T')\nplt.title('Diagrama T-x, y')\n\nText(0.5, 1.0, 'Diagrama T-x, y')"
   },
   {
-    "objectID": "project-description.html",
-    "href": "project-description.html",
-    "title": "Descrición do Proxecto da Asignatura",
+    "objectID": "project-tips-resources.html",
+    "href": "project-tips-resources.html",
+    "title": "Consellos sobre o proxecto e recursos",
     "section": "",
-    "text": "Ideas para o proxecto ata Venres, 25 de Outubro\nBorrador de informe ata Domingo, 22 de Novembro\nInforme Final ata Venres, 11 de Decembro\nPresentación en vídeo + diapositivas Venres, 15 de Decembro",
+    "text": "Learcheme Podes atopar en este repositorio:\nScreencasts: capturas de pantalla curta dun PC tableta con narración. Inclúen exemplos e solucións de problemas, explicacións de conceptos, tutoriales de software, introdución a temas, descricións do diagrama e críticas.\nMódulos interactivos de auto-estudo: inclúindo introducións, exames de conceptos básicos, presentacións, ecuacións importantes, simulacións interactivas, simulacións de autoavaliación, reolución interactiva de problemas en pantalla e puntos clave da Enxeñaría Química.\n(https://nptel.ac.in/courses/103105106)\nFiveThirtyEight data\nTidyTuesday",
     "crumbs": [
       "Proxecto",
-      "Instrucións"
+      "Tips + recusos"
     ]
   },
   {
-    "objectID": "project-description.html#liña-de-tempo",
-    "href": "project-description.html#liña-de-tempo",
-    "title": "Descrición do Proxecto da Asignatura",
+    "objectID": "project-tips-resources.html#fontes-de-información",
+    "href": "project-tips-resources.html#fontes-de-información",
+    "title": "Consellos sobre o proxecto e recursos",
     "section": "",
-    "text": "Ideas para o proxecto ata Venres, 25 de Outubro\nBorrador de informe ata Domingo, 22 de Novembro\nInforme Final ata Venres, 11 de Decembro\nPresentación en vídeo + diapositivas Venres, 15 de Decembro",
+    "text": "Learcheme Podes atopar en este repositorio:\nScreencasts: capturas de pantalla curta dun PC tableta con narración. Inclúen exemplos e solucións de problemas, explicacións de conceptos, tutoriales de software, introdución a temas, descricións do diagrama e críticas.\nMódulos interactivos de auto-estudo: inclúindo introducións, exames de conceptos básicos, presentacións, ecuacións importantes, simulacións interactivas, simulacións de autoavaliación, reolución interactiva de problemas en pantalla e puntos clave da Enxeñaría Química.\n(https://nptel.ac.in/courses/103105106)\nFiveThirtyEight data\nTidyTuesday",
     "crumbs": [
       "Proxecto",
-      "Instrucións"
+      "Tips + recusos"
     ]
   },
   {
-    "objectID": "project-description.html#introdución",
-    "href": "project-description.html#introdución",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Introdución",
-    "text": "Introdución\nO Proxecto: Pensa en unha idea ou concepto da Enxeñaría Química e desenvólvea en forma de demostración, utilidade, simulación ou programa de cálculo ou deseño. Ese é o verdadeiro obxecivo. Trátase de que uses a simulación ou a optimización para ilustar de algún xeito algúns dos aspectos mais importantes da enxeñaría química.\nO modelo no que te basees xa pode existir, ou ben, podes plantexar un por ti mesmo sobre algún tema que che insterse especialmente, ou buscalo na web. O teu obxectivo ca realización do proxecto debe de ser a demostraci´on das túas competencias adquiridas na materia en forma de un caso práctico xa sexa de deseño, solución, mellora ou simple simulación demostrativa.\nA linguaxe de programación no é tan importante coma a idea. Non obstante a simulación debe presentar ó usuario unha interface (ou GUI) que o faga útil (por exemplo formularios de excel, widgets de python, GUI’s de Matlab, etc.).\nTodos os traballos deben estar acompañados da súa documentación, tanto do obxectivo, método, algortimo, código e interface, así comop un emmplod e aplicación xa terminado.\nAntes de pasar á realización do mesmo deberás entregar (entregable en MOOVI) un preproxecto quye deberá ser aprobado polo teu profesor, En caso de que a túa proposta non sexa axeitada ou non cunpla cun nivel acorde ca asignatura, non poderás empezar e debesrás reescribir a túa proposta, ben sexa sonbre o mesmo tema ou sobre outro.\n\nLoxística\nTraballarás no proxecto de xeito indicidual.\nOs entregables obligatorios para o proxecto final son\n\nUn Informe escrito e reproducible que detalla a súa análise, os algoritmos ou métodos numéricos usados, o diagrama de fluxo da programación d a descrición da interface.\nUn Código executable debvidamente documentado acorde ó documento anterior.\nUnha Presentación en formato diapositivas\nUn Vídeo explicativo do proxcto e a súas funcionalidads",
+    "objectID": "project-tips-resources.html#consellos",
+    "href": "project-tips-resources.html#consellos",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Consellos",
+    "text": "Consellos\n\nTitorías Fai preguntas se algunha das expectativas non está clara.\nCódigo: Na túa escritura o teu código debería estar oculto para que o documento sexa ordenado e fácil de ler. Non obstante, o teu documento debería incluír todo o teu código de xeito que se volva a colocar o ficheiro QMD, debería poder obter os resultados que presentaches.\nExcepción: Se queres resaltar algo específico sobre un anaco de código, podes amosar esa parte.",
     "crumbs": [
       "Proxecto",
-      "Instrucións"
+      "Tips + recusos"
     ]
   },
   {
-    "objectID": "project-description.html#topic-ideas",
-    "href": "project-description.html#topic-ideas",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Ideas para o proxecto",
-    "text": "Ideas para o proxecto\n\nIntrodución e propósito\n\nIndicae a fonte e o propósito da simulacion.\nDescribe a fonte(s) de inspiración e a utilidade que lle ves.\nDescribe as observacións e as características para plantexala e desenvolvela.\nDescribe o software e os algoritmos de cálculo ou solución que vas a empregar para a simulación.\n\n\n\nUtilidade\n\nDescribe para que se podería utilizar a túa simulació e os potenciais usuarios da mesma.",
+    "objectID": "project-tips-resources.html#formato-e-presentando-os-proxecto",
+    "href": "project-tips-resources.html#formato-e-presentando-os-proxecto",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Formato e presentando os proxecto",
+    "text": "Formato e presentando os proxecto\n\nsuprime o código, as advertencias e as mensaxes\n\nInclúe o seguinte código nun pedazo de código na parte superior do seu ficheiro .qmd para suprimir todo o código, avisos e outras mensaxes.\n\n\n\nCabeceiras\n\nUse cabeceiras para etiquetar claramente cada sección.\nInspeccione o esquema do documento para revisar as cabeceiras e os sub-cabeceiros.\n\n\n\nReferencias\n\nInclúe todas as referencias bibliográficas e web nunha sección chamada Referencias ao final do informe.\nEste curso non ten requisitos específicos para formatar citas e referencias.\n\n\n\nApéndice\n\nSe tes un traballo adicional que non encaixa ou non pertence ao corpo do informe, pode poñelo ao final do documento na sección chamada Apéndice.\nOs elementos do apéndice deben estar etiquetados correctamente.\nO apéndice só debe ser para material adicional.O lector debería poder comprender completamente o seu informe sen ver o contido no apéndice.\n\n\n\nRedimensionar as cifras\nRedimensionar as parcelas e as figuras, polo que tes máis espazo para a narración.",
     "crumbs": [
       "Proxecto",
-      "Instrucións"
+      "Tips + recusos"
     ]
   },
   {
-    "objectID": "project-description.html#project-proposal",
-    "href": "project-description.html#project-proposal",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Proposta de proxeto",
-    "text": "Proposta de proxeto\nO propósito da proposta do proxecto é axudarche a pensar na túa estratexia de análise cedo.\nInclúe o seguinte na proposta:\n\nSección 1 - Introdución\nA sección de introdución inclúe\n\nUnha introdución ao tema que estás simulando.\nA motivación para a da túa elección (citando calquera bibliografía relevante).\nA pregunta ou problema xeral que desexas resolver.\nAs túas hipóteses sobre a cuestión.\n\n\n\nSección 2 - Descrición dos datos\nNesta sección, describirás o conxunto de datos que vas usar. Isto inclúe\n\nDescrición das observacións no conxunto de datos, variables, librerías etc.,\nDescrición de como se procederá orixinalmente á realización da simulación, a interface e os usuarios ña que vai dirixida.\n\n\n\nSección 3 - Enfoque da análise\nNesta sección, proporcionarás unha breve visión xeral do teu enfoque de análise da simulación. Isto inclúe:\n\nDescrición da variables de resposta.\nEstatísticas de visualización gráfica e nmérica das variable de resposta.\nLista de variables que vas a consideradar na simulación.\nTécnica de modelado numérico (regresión lineal múltiple, ODE,etc.).\n\n\n\nDicionario de datos (enunciado de variables principais)\n\nInclúe un dicionario de datos para todas as variables do conxunto de datos da simulación.\nCrea un ficheiro “Readme” do teu proxecto en texto plano no cartafol principal.\n\n\n\nEnvío\nMete todos os teus ficheiros finais nda proposta e entrégaos nun ficheiro zip, ou creao un repositorio ou disco compartido (por exemplo GitHub ou OneDrive) e envía o PDF da súa proposta ca ligazón ó repositorio.\n\n\nCualficación das propostas\n\n\n\nTotal\n100 ptos\n\n\n\n\nIntrodución\n30 ptos\n\n\nDescrición dos datos\n20 ptos\n\n\nEnfoque da análise\n40 ptos\n\n\nDicionario de datos\n10 pts\n\n\n\nCada compoñente cualificarase do seguinte xeito:\n\nCumpre as expectativas (crédito completo): Todos os elementos necesarios están completados e son precisos. A narración está escrita con claridade, todas as táboas e visualizacións están ben formatadas e o traballo sería presenta nun look profesional.\nCerca das expectativas (crédito medio): Hai algúns elementos que faltan e/ou imprecisos. Hai algúns problemas co formato.\nNon cumpre as expectativas (sen crédito): Faltan os elementos principais. O traballo non está perfectamente formateado e non presentaría nun look profesional.",
+    "objectID": "project-tips-resources.html#esmérate-na-presentación-dos-gráficos.",
+    "href": "project-tips-resources.html#esmérate-na-presentación-dos-gráficos.",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Esmérate na presentación dos gráficos.",
+    "text": "Esmérate na presentación dos gráficos.\n\nUse títulos informativos, non nomes de variables, para títulos e etiquetas do eixe.\n\nTítulo informativo e etiquetas do eixe\n\nQue os nomes sexan lexibles\n\nNomes capitalizados\n\nOpcional:\n\nUsa un esquema de cores coordinado en todo o documento ou presentación.\n\nAplicado un tema, usa o mesmo tema en todo o documento ou presentación.\n\n\n\nDirectrices para comunicar resultados\n\nNon use nomes variables na túa narración: usa termos descritivos, polo que o lector entende a súa narración sen depender do dicionario de datos.\n\nCoñece a túa audiencia: O teu traballo debería estar escrito para un público xeral pero que comprenda as simulacións os conceptos principais da enxeñaría química.\n\n** Evite a xerga de temas: ** Non supoña que a audiencia coñeza toda a terminoloxía específica relacionada coa súa materia.\nSe debes usar a xerga, inclúe unha breve definición a primeira vez que introduce un termo.\n\n** Diga o “Entón”: ** O seu informe e presentación debería ser máis que unha lista de interpretacións e definicións técnicas. Concéntrate no que significan os resultados, é dicir, o que queres que a audiencia saiba sobre o teu tema despois de ler o teu informe ou ver a túa presentación.\n\n** Conta unha historia: ** Todas as visualizacións, táboas, saída do modelo e narrativa deberían contar unha historia cohesionada.",
     "crumbs": [
       "Proxecto",
-      "Instrucións"
+      "Tips + recusos"
     ]
   },
   {
-    "objectID": "project-description.html#draft-report",
-    "href": "project-description.html#draft-report",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Borrador de informe",
-    "text": "Borrador de informe\nO propósito do borrador é darche a oportunidade de obter comentarios anticipados sobre a túa simulación. Polo tanto, o borrador e centraranse principalmente nunha análise exploratoria da simulación, modelado de datos e interpretacións iniciais do obxectivo.\nEscribe o borrador no ficheiro informe-escrito no repo do seu proxecto ou engrégao en MOOVI.\nA continuación móstrase unha breve descrición das seccións para centrarse no borrador:\n\nIntrodución e datos\nEsta sección inclúe unha introdución á motivación da simulación, datos implicado e obxecto d mesma. Describe os datos e definicións de variables clave. Tamén debe incluír algunha análise exploratorios do proceso.\n\n\nMetodoloxía\nEsta sección inclúe unha breve descrición do seu proceso de modelado.\n\nExplica o razoamento do tipo de modelo que estás encaixando, as variables de predición consideradas para o modelo incluíndo calquera interacción.\n\nAmosa como chegas ós requeriments finais que lle pos á túa simulación, describindo o proceso de selección de modelos, calquera transformacións variables (se é necesario) e calquera outra consideración relevante que formaron parte ds mesma.\n\nExplica tamén a linguaxe de programacion que vas a usa e cáles son as rzóns da túa elección.\n\n\n\nResultados\nNesta sección, presenta os resultados que se poidan tirar da simulación e inclúe unha breve discusión sobre os aspectos mais relevantes que ti considreres.\nEsta sección tamén inclúe interpretacións iniciais e conclusións extraídas do modelo así como a interfaces que vas a presentar ó usuario.",
+    "objectID": "project-tips-resources.html#recursos-adicionais-",
+    "href": "project-tips-resources.html#recursos-adicionais-",
+    "title": "Consellos sobre o proxecto e recursos",
+    "section": "Recursos adicionais-",
+    "text": "Recursos adicionais-\n\n[Jup]yter Notebook](https://docs.jupyter.org/en/latest/)\nVisualización de datos\n\nMatplotlib\nPlotly\nGuía de visualización de datos",
     "crumbs": [
       "Proxecto",
-      "Instrucións"
-    ]
-  },
-  {
-    "objectID": "project-description.html#written-report",
-    "href": "project-description.html#written-report",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Informe escrito",
-    "text": "Informe escrito\nO teu informe escrito debe completarse no ficheiro informe-escrito e debe estar en formato pdf ou odt. Antes de finalizar a súa escritura, asegúrese de que a impresión de anacos de código está desactivada e o códiga resaltado, ben indicado.\n\nO PDF que envíes debe coincidir cos ficheiros de entrega (repositorio GitHub, ficheiro .zip ou disco compartido) exactamente.\n\nOs compoñentes obrigatorios do informe están numeradas mais adiante no texto, inda que eres libre de engadir seccións adicionais segundo sexa necesario.\n\nO informe, incluídas as visualizacións, debería ser non máis de 10 páxinas de longo.\nNon hai requerimento dun número mínimo de páxina, non obstante, debes abordar de xeito exhaustivo toda a análise e informe.\n\n\nSe selectivo no que inclúe na súa redacción final. O obxectivo é escribir unha narración cohesionada que demostre unha análise completa e completa en vez de explicar cada paso da análise.\nSerá valorada a inclusión dun apéndice con traballo adicional ao final do documento de informe escrito, non obstante, a cualificación basearase en gran medida no contido do corpo principal do informe.\n\nDebes asumir que o material do apéndice non se consultará a menos que o solicite no corpo principal de texto do informe.\n\nO apéndice debe estar formateado e ser fácil de navegar por el.\nNon está incluído no límite de 10 páxinas.\n\n\nO informe escrito vale 40 puntos, descomprimido do seguinte xeito:\n\n\n\nTotal\n100 ptos\n\n\n\n\nIntrodución\n10 ptos\n\n\nMetodoloxía\n25 ptos\n\n\nResultados\n15 pts\n\n\nDiscusión + Descrición + Conclusións\n20 ptos\n\n\nOrganización + Formato + Interface\n20 ptos\n\n\n\nClica aquí para obter un PDF descritivo da rúbrica da avaliación do proxecto.\n\nIntrodución e datos\nEsta sección inclúe unha introdución dos datos que manipulas na simulación.\n\nDescribe os datos e definicións de variables clave.\nTamén debe incluír algunha análise exploratoria de datos (valores guess, por exemplo).\nAlgunhas outras deas sobre as variables e relacións interesantes na simulación.\n\n\nCriterio de avaliación\n\nO obxectivo da simulación debe están claramente indicado na introdución, incluíndo a bibliografía consultada, as fontes de datos e calquera investigación externa.\nDescrebe claramente os datos, incluída unha descrición sobre como se recollían orixinalmente os datos e unha definición concisa das variables relevantes para comprender os resultados da simulación.\nDescrebe tamén o proceso de “limpeza de datos”, incluíndo as decisións tomadas no proceso (por exemplo, creando novas variables, eliminando observacións, consideranto variables constantes nun intervalo etc.) A análise de datos explicativa axuda ao lector a comprender mellor as observacións nos datos xunto con relacións interesantes e relevantes entre ovariables.\nIncorpora tantas gráficas como consideres oprtuno.\nNo caso de incluir unha interface, descrebe a sús funcioinalidades.\n\n\n\n\nMetodoloxía\nEsta sección inclúe unha breve descrición do teu proceso de modelado.\n\nExplica razoadamente o tipo de modelo que estás usando, as variables que consideras e as súas interaccións.\nDescrebe como chegas ó modelo final: proceso de selección de modelos, as interaccións consideradas, as transformacións de variables (se é necesario), a avaliación de condicións e diagnósticos e calquera outra consideración relevante que formaron parte do proceso de montaxe da simulación.\n\n\nCriterios de avaliación\nEn xeral, se che terán en conta os seguintes conceptos para a acaliación do proxecto (inda que mais adiante podes ver a rúbrica). - Os pasos de análise son apropiados para a simulación. - O enfoque é minucioso e coidadoso para seleccionar o modelo final. - O enfoque descríbese claramente no informe. - O proceso de selección de modelos tivo en conta os potenciais efectos de interacción e abordou calquera violación nas condicións do modelo. - As condicións do modelo e os diagnósticos son avaliadas a fondo e con precisión para a utilidade da simulación\n\n\n\nResultados\nAquí é onde debes de valorizar a túa simulación.\n\nDescribe os resultados clave da simulación.\nO obxectivo non é interpretar todas as variables, senón demostrar que és competente no uso da saídas da simulación para explicar as súas funcionalidades, empregando as interpretacións para apoiar as túas conclusións.\nConcéntrate nas variables claves da simulación, e en todo aquelo que proporcione un contexto relevante para o usuario da mesma.\n\n\nCriterios de avaliación\n\nO modelo usad axústase ós requerimentos da simulación e é describe claramente os resultados.\n\nAs interpretacións dos resultados úsanse para demostrar ou facilitar o tema obxecto da siuacionapoiar, as conclusións clave, en lugar de simplemente enumerar a interpretación de todos os coeficientes do moesmo.\n\nSe o principal obxectivo de modelado é a predición ou o cálculo, avalíase a fondo o poder predictivo do modelo ou a presicisón do cálculo.\n\n\n\n\nDiscussion + Conclusion\n\nNesta sección incluirás un resumo do que aprendiches facenso a túa simulación, xunto con argumentos estatísticos que apoien as túas conclusións.\nAdemais, discute as limitacións da memsa e proporciona suxestións sobre formas de mellorala.\nTamén se deben discutir calquera problema potencial relacionado coa fiabilidade e validez dos resultados ue se poidan extraer da mesma.\nPor último, esta sección incluirá ideas para o traballo futuro.\n\n\nCriterios de avaliación\n\nDescríbe claramente a funcionalidade da túa simulación. Análiza os resultados do modelo que propós no contexto máis amplo do tema e da cuestión de investigación orixinal.\nFai unha consideración reflexiva das posibles limitacións dos datos e/ou análises, e as ideas para o traballo futuro.\nExplica a utilidade do teu modelo (simulación, dimensionamento de equipos, docencia…) e valora a súa aplicación e ralci´on directa ca materia.\n\n\n\n\nOrganización e formato\nA continuación se describe información sobre a avaliación e o formato do informe escrito.\n\nCriterios de avaliación\n\nO informe debe estar ordeado e organizado coas correspondentes cabeceiras das seccións e figuras de tamaño axecuado coas correspondentes textos informativos.\nOs resultados numéricos denrán estar formatados cun número razoable de díxitos e todas as gráficas tamén, con título, títulos de eixos, lenfas de datos, e demais.\nTodas as citas e ligazóns deben estár correctamente formatadas.\nSe hai un apéndice que resuma todos os datos, mellor. debe estar razoablemente organizado e ser fácil de ler útil para atopar información relevante.\nNo código de programa debes suprimír avisos, códigos de erro e mensaxes. O corpo principal do informe escrito (sen incluír o apéndice) non é superior a 10 páxinas.",
-    "crumbs": [
-      "Proxecto",
-      "Instrucións"
-    ]
-  },
-  {
-    "objectID": "project-description.html#video-presentation-slides",
-    "href": "project-description.html#video-presentation-slides",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Video presentation + slides",
-    "text": "Video presentation + slides\n\nDiapositivas\n\nAdemais do informe escrito, o debes creará diapositivas de presentación e grabar unha presentación de vídeo que resuma e mostrará o teu proxecto. Poderemos pedirche que a expoñas na aula.\nFai unha introdución da túa simulación, conxunto de datos, representacións gráficas, utilidade, e discute as conclusións pricipais do teu traballo.\nEstas diapositivas deben servir como un breve complemento visual ó teu informe escrito e terán un certo peso na nota final do proxecto.\nPara a subir a presentación, converte estas diapositivas a un documento .pdf oy .html e entrégao en MOOVI.\nA presentación de diapositivas non debe ter máis de 10 diapositivas de contido + 1 diapositiva de título.\nAquí tes unha suxestión, a modo de esquema, de como deben ser as diapositivas:\n\nDiapositiva do título Diapositiva 1: Introducir o tema e a motivación Diapositiva 2: Marco teórico Diapositiva 3: Modelo lóxico Diapositiva 4: Modelo matemático Diapositiva 5: Ferramentas de software Diapositiva 6: Interface de usuario ou variables axustables Diapositiva 7: Exemplo de uso Diapositiva 8: Discusión dos aspectos reevantes Diapositiva 9: Conclusións + Diapositiva 10: traballo futuro (melloras)\n\n\nPresentación en Vídeo\n\nPara a presentación de vídeo, podes falar sobre as túas de diapositivas, como nas conferencias.\nA presentación de vídeo non debe ser superior a 5 minutos.\nPodes usar pode usar calquera plataforma dee soporte de vídeo ou subir a grabación en formato mp4 ou mkv a MOOVI.\nA continuación móstranse algúns recursos na gravación de vídeos:\n[Ferramentas de grabación de pantalla de balde:\n\nCamstudio\n\nSimple Screen Recorder\n\nOBS Studiohttps://obsproject.com/\n\n[Apple QuickTime para a gravación de pantalla] (https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac)\n[Funcionalidade de gravación de pantalla incorporada de Windows 10] (https://www.youtube.com/watch?v=ofpBr1mrduo)",
-    "crumbs": [
-      "Proxecto",
-      "Instrucións"
-    ]
-  },
-  {
-    "objectID": "project-description.html#reproducibilidade-organización",
-    "href": "project-description.html#reproducibilidade-organización",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Reproducibilidade + organización",
-    "text": "Reproducibilidade + organización\nTodo o traballo escrito (con excepción das diapositivas de presentación) debe ser reproducible e o directorio compartido ou ficheiro .zip debería estar ben organizado. Debería ter a seguinte estrutura:\n\nREADME: descrición curta do proxecto.\n\ninforme-escrito: informe final escrito en formato pdf ou odt.\n\nCartafol Datos: cartafol que contén o conxunto de datos para o proxecto final.\nCartafol Preparación: cartafol que contén os ficheiros ideas e proposta-de-proxecto.\nCartafol Presentación: cartafol coas diapositivas da presentación.\n\nSe as diapositivas de presentación están en liña, podes poñer unha ligazón ás diapositivas nun ficheiro readme no cartafol Presentación.\n\nCartadfol Vídeo: cartafol co vídeo.\n\nSe o vídeo están en liña, podes poñer unha ligazón nun ficheiro readme no cartafol Vídeo.\n\nOs puntos para a reproducibilidade e organización estarán baseados na reproducibilidade do informe escrito e na organización do ficheiro ou disco de entrega.\nO repo, disco ou .zip debe estar organizado perfectamente como se describe anteriormente, non debería haber ficheiros alleos, todo o texto no README debe ser facilmente lexible.\n\n\nA nosa recomendación é que crees un espazo de traballo en Github, é de balde par auso persoal e podes aprender bastante en cano a gardar o teu traballo de xeito seguro e organizado, incluindo o control de versións, tan importante á hora de eleborar código.",
-    "crumbs": [
-      "Proxecto",
-      "Instrucións"
-    ]
-  },
-  {
-    "objectID": "project-description.html#puntuación-final",
-    "href": "project-description.html#puntuación-final",
-    "title": "Descrición do Proxecto da Asignatura",
-    "section": "Puntuación final",
-    "text": "Puntuación final\nA rúbrica de avaliación de do proxecto da asignatura é a seguinte:\n\n\n\nTotal\n100 pts\n\n\n\n\nIdeas e orixinallidade\n5 pts\n\n\nProposta de proxecto\n10 pts\n\n\nrevisión bibliográfica\n10 pts\n\n\nInforme escrito\n40 pts\n\n\nDiapositivas e preosentación\n25 pts\n\n\nReproducibilidade e organización\n5 pts\n\n\nVídeo\n5 pts\n\n\n\n\n\n\n\n\n\nAviso\n\n\n\nNote: Non se aceptarán entregas fóra de prazo.\n\n\n\nResumo da avaliación\nA valoración final do proxecto terá en conta o seguinte:\n\nContido - Cal é a calidade da simulación e a relevancia dos cálculos?.\nCorrección: Os procedementos matemáticos realízanse e explícanse correctamente?.\nEscritura e presentación: A calidade da presentación estatística, a escritura e as explicacións son boas?.\nCreatividade e pensamento crítico: Está ben pensada e é útila?. Ten limitacións importantes?.\nDedicación: O tempo e o esforzo encaixan na planificación de dedicación de traballo pèrsoal da guía docnete da materia?.\n\nUn desglose xeral da puntuación é o seguinte:\n\n90%-100%: Esforzo intenso. O estudante entende como aplicar todos os conceptos teóricos e praćticos, pode poñer os resultados en valor, pode identificar debilidades do traballo e pode comunicar claramente os resultados.\n80%-89%: Bo esforzo. O estudante entende a maioría dos conceptos teóricos, pode poñer a meirande parte dos resultados en valor, pode identificar as debilidades importantes do traballo e pode comunicar razoablemente os resultados.\n70%-79%: Esforzo mediocre. O estudante ten unha incomprensión de conceptos teóricos en áreas, ten algúns problemas para argumentar os resultados, e a comunicación dos mesmos ás veces non está clara.\n60%-69%: Esforzo insuficinte: O estudante fixo pouco esforzo, ten carencias na comprensión do modelo e é incapaz de xustificar a validez da súa simulación. A comunicación de resultados non está clara.\npor baixo do 60% : o alumno non fixo un esforzo suficiente.\n\n\n\nPolítica de entregas de última hora\nSalvo que medie algunha xustificación por razońs de forza maior, debidamente acreditada,Non se aceptaránm entregas fora de prazo.",
-    "crumbs": [
-      "Proxecto",
-      "Instrucións"
+      "Tips + recusos"
     ]
   },
   {
     "objectID": "qmd/Diagramas_Pxy_Txy.html",
     "href": "qmd/Diagramas_Pxy_Txy.html",
-    "title": "Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano.",
+    "title": "Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano",
     "section": "",
     "text": "import numpy as np\n# Parámetros de Antoine\n\n# heptano\nA_heptano = 4.02832\nB_heptano = 1268.636\nC_heptano = -56.199\n\n#Octano\nA_octano=4.04867\nB_octano=1355.126\nC_octano=-63.633\n\n# Alternativa\n# A = [A_heptano, A_octano]\n# B=[B_heptano, B_octano]\n# A[0] = A del heptano\n\n# Dato: temperatura\nT = 115 + 273.15 # K"
   },
   {
     "objectID": "qmd/Diagramas_Pxy_Txy.html#aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada",
     "href": "qmd/Diagramas_Pxy_Txy.html#aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada",
-    "title": "Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano.",
+    "title": "Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano",
     "section": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada",
-    "text": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada\n\nfrom scipy.optimize import fsolve\n\n\n#Datos do exercicio\n\nP_t = 1.5 #bar\nx_heptano = np.linspace(0,1,11)\n\n# Suponse unha temperatura de partida\n\nT_guess=396\n\n# Créanse dúas listas nas que se almacenarán os datos de temperatura e fraccións molares do heptano, para cada valor de x\n\nlista_temperatura=[]\nlista_y=[]\n\n# Definiranse as funcións para obter as presións de saturación do heptano e o octano\n\ndef p_sat_heptano(T):\n    return 10  ** ( A_heptano - B_heptano / ( T + C_heptano ) )\n\ndef p_sat_octano(T):\n    return 10 ** ( A_octano - B_octano / ( T + C_octano ) )\n\n# Créase un lazo que devolve o valor da temperatura e a fracción molar do vapor para cada valor de x\n\nfor i in x_heptano:\n    def fmin(T):\n        return i*p_sat_heptano(T)/P_t+(1-i)*p_sat_octano(T)/P_t-1\n    solucion=fsolve(fmin,T_guess)\n    lista_temperatura.append(solucion[0])\n    y_heptano=i*p_sat_heptano(solucion)/P_t\n    lista_y.append(y_heptano[0])\n\nprint(lista_temperatura) # valores de temperatura calculados\nprint(lista_y) # valores de y calculados\n\n[413.5615852273091, 409.77113336473025, 406.2684364969948, 403.0216612183846, 400.00305716655544, 397.18844969691617, 394.55676804690006, 392.0896214256247, 389.77092633460484, 387.58658343897787, 385.52419985536085]\n[0.0, 0.1837276326189331, 0.33830109800891695, 0.4693199994809487, 0.581154434977709, 0.6772413410638028, 0.7603047808262194, 0.832520410718438, 0.895638942399593, 0.9510793956603304, 1.0000000000003693]\n\n\n\n# Representación do diagrama T-xy\n\nimport matplotlib.pyplot as plt\nplt.plot(x_heptano, lista_temperatura, 'ko-', lista_y, lista_temperatura, 'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y (heptano)')\nplt.ylabel('Temperatura (K)')\nplt.title('Diagrama T-x,y')\n\nText(0.5, 1.0, 'Diagrama T-x,y')\n\n\n\n\n\n\n\n\n\n\n#También se puede realizar con fsolve aplicado a la ecuación de Antoine, y no al sumatorio de y - 1\nz=np.linspace(0,1, num=11) #composición inicial\n\n# Funciónes para determinar as presións de saturación dos dous compoñentes\n\ndef Psat1(T):\n    return 10**(A_heptano-B_heptano/(T+C_heptano))\ndef Psat2(T):\n    return 10**(A_octano-B_octano/(T+C_octano))\n\n#Datos do enunciado\ny=z\nP = 1.5 #bar\nfrom scipy.optimize import fsolve\n\n\ndef fun1(T):\n    return P - 10**(A_heptano-B_heptano/(T+C_heptano)) # a qué temperatura P externa es igual al otro término\nTinf=fsolve(fun1, 350) # 350K valor inicial suposto\n                       # Tinf = temperatura de fervura do heptano\n\ndef fun2(T):\n    return P - 10**(A_octano-B_octano/(T+C_octano))\nTsup=fsolve(fun2, 373) # Tsup = temperatura de fervura do octano\n\nprint('A temperatura á que hierve o heptano á presión externa é {:5.2f} K.'.format(Tinf[0]))\nprint('A temperatura á que hierve o octano  á presión externa é {:5.2f} K.'.format(Tsup[0]))\n\nA temperatura á que hierve o heptano á presión externa é 385.52 K.\nA temperatura á que hierve o octano  á presión externa é 413.56 K.\n\n\n\nT=np.linspace(Tinf,Tsup, num=11)\nx = (P-Psat2(T))/(Psat1(T)-Psat2(T))\ny=x*Psat1(T)/P\nplt.plot(x, T,'ko-', y,T,'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y')\nplt.ylabel('T')\nplt.title('Diagrama T-x, y')\n\nText(0.5, 1.0, 'Diagrama T-x, y')"
+    "text": "Aparatdo 2 . Diagrama T-xy a partires da presión total dada\n\nfrom scipy.optimize import fsolve\n\n\n#Datos do exercicio\n\nP_t = 1.5 #bar\nx_heptano = np.linspace(0,1,11)\n\n# Suponse unha temperatura de partida\n\nT_guess=396\n\n# Créanse dúas listas nas que se almacenarán os datos de temperatura e fraccións molares do heptano, para cada valor de x\n\nlista_temperatura=[]\nlista_y=[]\n\n# Definiranse as funcións para obter as presións de saturación do heptano e o octano\n\ndef p_sat_heptano(T):\n    return 10  ** ( A_heptano - B_heptano / ( T + C_heptano ) )\n\ndef p_sat_octano(T):\n    return 10 ** ( A_octano - B_octano / ( T + C_octano ) )\n\n# Créase un lazo que devolve o valor da temperatura e a fracción molar do vapor para cada valor de x\n\nfor i in x_heptano:\n    def fmin(T):\n        return i*p_sat_heptano(T)/P_t+(1-i)*p_sat_octano(T)/P_t-1\n    solucion=fsolve(fmin,T_guess)\n    lista_temperatura.append(solucion[0])\n    y_heptano=i*p_sat_heptano(solucion)/P_t\n    lista_y.append(y_heptano[0])\n\nprint(lista_temperatura) # valores de temperatura calculados\nprint(lista_y) # valores de y calculados\n\n[np.float64(413.5615852273091), np.float64(409.77113336473025), np.float64(406.2684364969948), np.float64(403.0216612183846), np.float64(400.00305716655544), np.float64(397.18844969691617), np.float64(394.55676804690006), np.float64(392.0896214256247), np.float64(389.77092633460484), np.float64(387.58658343897787), np.float64(385.52419985536085)]\n[np.float64(0.0), np.float64(0.1837276326189331), np.float64(0.33830109800891695), np.float64(0.4693199994809487), np.float64(0.581154434977709), np.float64(0.6772413410638028), np.float64(0.7603047808262194), np.float64(0.832520410718438), np.float64(0.895638942399593), np.float64(0.9510793956603304), np.float64(1.0000000000003693)]\n\n\n\n# Representación do diagrama T-xy\n\nimport matplotlib.pyplot as plt\nplt.plot(x_heptano, lista_temperatura, 'ko-', lista_y, lista_temperatura, 'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y (heptano)')\nplt.ylabel('Temperatura (K)')\nplt.title('Diagrama T-x,y')\n\nText(0.5, 1.0, 'Diagrama T-x,y')\n\n\n\n\n\n\n\n\n\n\n#También se puede realizar con fsolve aplicado a la ecuación de Antoine, y no al sumatorio de y - 1\nz=np.linspace(0,1, num=11) #composición inicial\n\n# Funciónes para determinar as presións de saturación dos dous compoñentes\n\ndef Psat1(T):\n    return 10**(A_heptano-B_heptano/(T+C_heptano))\ndef Psat2(T):\n    return 10**(A_octano-B_octano/(T+C_octano))\n\n#Datos do enunciado\ny=z\nP = 1.5 #bar\nfrom scipy.optimize import fsolve\n\n\ndef fun1(T):\n    return P - 10**(A_heptano-B_heptano/(T+C_heptano)) # a qué temperatura P externa es igual al otro término\nTinf=fsolve(fun1, 350) # 350K valor inicial suposto\n                       # Tinf = temperatura de fervura do heptano\n\ndef fun2(T):\n    return P - 10**(A_octano-B_octano/(T+C_octano))\nTsup=fsolve(fun2, 373) # Tsup = temperatura de fervura do octano\n\nprint('A temperatura á que hierve o heptano á presión externa é {:5.2f} K.'.format(Tinf[0]))\nprint('A temperatura á que hierve o octano  á presión externa é {:5.2f} K.'.format(Tsup[0]))\n\nA temperatura á que hierve o heptano á presión externa é 385.52 K.\nA temperatura á que hierve o octano  á presión externa é 413.56 K.\n\n\n\nT=np.linspace(Tinf,Tsup, num=11)\nx = (P-Psat2(T))/(Psat1(T)-Psat2(T))\ny=x*Psat1(T)/P\nplt.plot(x, T,'ko-', y,T,'ro-')\nplt.xlim(0,1)\nplt.xlabel('x, y')\nplt.ylabel('T')\nplt.title('Diagrama T-x, y')\n\nText(0.5, 1.0, 'Diagrama T-x, y')"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
-    "href": "simulacion-de-procesos-gl.html#resumo-das-clases-teóricas",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Resumo das clases teóricas",
-    "text": "Resumo das clases teóricas\n\n\n\n\n\n\n\nConceptos\nNivel\n\n\n\n\nFundamentos da simulación de procesos\nBásico\n\n\nIntrodución á simulación de procesos\nBásico\n\n\nRexistro de novos compoñentes\nBásico\n\n\nEstimación de propiedades físicas para simulación de procesos\nBásico\n\n\nSimulación de correntes de reciclado\nBásico"
+    "objectID": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
+    "href": "slides/tema-01.html#introdución-ó-modelado-e-a-simulación-contidos",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Introdución ó modelado e a simulación: contidos",
+    "text": "Introdución ó modelado e a simulación: contidos\n\nModelado de sistemas físicos\n\nSimulación estacionaria\n\nSimulación dinámica\n\nSistemas de parámetros distribuidos\n\nsistemas híbridos"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simulación-de-procesos",
-    "href": "simulacion-de-procesos-gl.html#simulación-de-procesos",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simulación de procesos",
-    "text": "Simulación de procesos\n A simulación de procesos é unha técnica computacional empregada en varias industrias para:\n- Modelar\n- Analizar e\n- Optimizar procesos complexos.\n - Implica a creación dunha representación ou modelo dixital dun sistema ou proceso real para simular o seu comportamento en diferentes condicións."
+    "objectID": "slides/tema-01.html#qué-é-un-sistema.",
+    "href": "slides/tema-01.html#qué-é-un-sistema.",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Qué é un sistema.",
+    "text": "Qué é un sistema.\n– Según (B. Ziegler) : “Un sistema é unha fonte potencial de datos” - É un conxunto de compoñentes, pezas ou obxectos, que interactúan entre si dentro dos límites para producir un determinado patrón de comportamento - “A system is defined by its boundary” Según (B. Gaines) : “Un sistema é o que se distingue como sistema”\nA definición completa de sistema mediante o seu contorno implica ter en conta: - As especificación da fronteira\n- Os canais do contorno a través dos cuais o sistema interacciona co entorno (entradas e saídas)\n- A estructura interna e o comportamento do sistema"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
-    "href": "simulacion-de-procesos-gl.html#qué-implica-a-simulación-de-procesos",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Qué implica a simulación de procesos?",
-    "text": "Qué implica a simulación de procesos?\nA simulación de procesos consiste en varias operacións ou tarefas como se mostra no seguinte gráfico\n\n\n\n\n\nflowchart TD\n  A[Inicio] --&gt; B[Modelado]\n  B --&gt; C[Entrada de Datos]\n  C --&gt; D[Simulación]\n  D --&gt; E[Visualización]\n  E --&gt; F[Análise]\n  F --&gt; G[Optimización]\n  G --&gt; H[Aplicación]\n  H --&gt; I[Fin]"
+    "objectID": "slides/tema-01.html#o-sistema-e-o-seu-entorno",
+    "href": "slides/tema-01.html#o-sistema-e-o-seu-entorno",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "O sistema e o seu entorno",
+    "text": "O sistema e o seu entorno\nTipos de variables\n- Entrada: denota o efecto do entorno sobre o proceso\n- Manipuladas: o seus valores pódense axustar libremente por un operador ou unha acción de control\n- Perturbacións: os seus valores non son axustables\n- Saída: denota o efecto do proceso sobre o entorno\n- Medidas: os seus valores son coñecidos polos sistemas de medida\n- Nom medidas: os seus valores non se poden medir de forma directa\n- Internas: Son variables propias do sistema\n- De estado: definen o estado do sistema e necesitan coñecer a historia do mesmo para ser definidas. É o conxunto mínimo de variables internas que define o estado do sistema."
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#modelado",
-    "href": "simulacion-de-procesos-gl.html#modelado",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Modelado",
-    "text": "Modelado\n A simulación de procesos comeza coa creación dun modelo matemático ou computacional que representa:\n - Os compoñentes\n- As variables e\n- As interaccións clave dun proceso físico.\n Este modelo pode basearse en:\n- Ecuacións matemáticas\n- Datos empíricos\n Ou unha combinación de ambos."
+    "objectID": "slides/tema-01.html#tipos-de-sistemas-relacións-co-entorno",
+    "href": "slides/tema-01.html#tipos-de-sistemas-relacións-co-entorno",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Tipos de sistemas (relacións co entorno)",
+    "text": "Tipos de sistemas (relacións co entorno)\n\nAillado: non intercambia nin materia nin enerxía co entorno\n\nReactor batch adiabático\n\n\nPechado: non intercambia materia pero sí enerxía coentorno\n\nReactor batch no adiabático\n\n\nAberto: intercambia materia e enerxía co entorno\n\nReactor CSTR"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simulación",
-    "href": "simulacion-de-procesos-gl.html#simulación",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simulación",
-    "text": "Simulación\nUnha vez que o modelo se desenvolve, impleméntase no software de simulación. O software usa algoritmos para: - Realizar cálculos numéricos - Resolver ecuacións para simular o comportamento do proceso ao longo do tempo."
+    "objectID": "slides/tema-01.html#modeloss",
+    "href": "slides/tema-01.html#modeloss",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Modeloss",
+    "text": "Modeloss"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
-    "href": "simulacion-de-procesos-gl.html#parámetros-de-entrada",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Parámetros de entrada",
-    "text": "Parámetros de entrada\nOs usuarios poden introducir varios parámetros: - Condicións de funcionamento - Especificacións de equipos - Variables de proceso, etc.  \npara explorar diferentes escenarios e estudar como os cambios afectan o proceso."
+    "objectID": "slides/tema-01.html#multiscale",
+    "href": "slides/tema-01.html#multiscale",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Multiscale",
+    "text": "Multiscale"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#visualización",
-    "href": "simulacion-de-procesos-gl.html#visualización",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Visualización",
-    "text": "Visualización\nO software de simulación de procesos adoita proporcionar representacións visuais de: - O proceso simulado, incluíndo - gráficos - animacións.  Isto permite aos usuarios obter información sobre o rendemento e o comportamento do sistema."
+    "objectID": "slides/tema-01.html#modeling",
+    "href": "slides/tema-01.html#modeling",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "modeling",
+    "text": "modeling"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#análise",
-    "href": "simulacion-de-procesos-gl.html#análise",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Análise",
-    "text": "Análise\nOs usuarios poden analizar os resultados da simulación para avaliar: - A eficiencia - O rendemento - A seguridade do proceso.  Esta análise axuda a: - Identificar posibles bloqueos de botella - Optimizar o uso de recursos - Mellorar o deseño xeral do proceso."
+    "objectID": "slides/tema-01.html#model-reduction",
+    "href": "slides/tema-01.html#model-reduction",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Model reduction",
+    "text": "Model reduction"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#optimización",
-    "href": "simulacion-de-procesos-gl.html#optimización",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Optimización",
-    "text": "Optimización\nA simulación de procesos pódese usar para atopar o conxunto óptimo de: - parámetros ou -condicións  que leven ao resultado desexado, tales como: - Maximizar o rendemento da produción ou - Minimizar o consumo de enerxía. ## Aplicacións:\nA simulación de procesos se utiliza en diversas industrias, incluyendo la ingeniería química, la manufactura, el petróleo y el gas, la farmacéutica y el transporte, para modelar y mejorar procesos como reacciones químicas, líneas de producción, cadenas de suministro, entre otros."
+    "objectID": "slides/tema-01.html#minimal-models",
+    "href": "slides/tema-01.html#minimal-models",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Minimal models",
+    "text": "Minimal models"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#beneficios",
-    "href": "simulacion-de-procesos-gl.html#beneficios",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Beneficios:",
-    "text": "Beneficios:\n A simulación de procesos pode levar a:\n- Un aforro de custos\n- Unha mellor calidade do produto\n- Unha redución de riscos\n- Unha maior seguridade de produción\n permitindo probas virtuais e optimización antes de implementar cambios nos procesos do mundo real."
+    "objectID": "slides/tema-01.html#model-nature",
+    "href": "slides/tema-01.html#model-nature",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Model nature",
+    "text": "Model nature"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#fluxogramas",
-    "href": "simulacion-de-procesos-gl.html#fluxogramas",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Fluxogramas",
-    "text": "Fluxogramas\nAlexander C. Dimian (2003)  \n\nO diagrama de fluxo é unha descrición sistémica de fluxos de materiais e enerxía en a planta de proceso mediante simulación informática co ámbito de proxectar unha nova planta ou mellorar o rendemento dunha planta existente. \nO diagrama de fluxo pode usarse como axuda para implementar un control en toda a planta estratexia, así como para xestionar o funcionamento da planta."
+    "objectID": "slides/tema-01.html#functional-models",
+    "href": "slides/tema-01.html#functional-models",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Functional models",
+    "text": "Functional models"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
-    "href": "simulacion-de-procesos-gl.html#simulación---deseño---optimización-e-síntese-de-procesos-químicos",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos",
-    "text": "Simulación - Deseño - Optimización e Síntese de Procesos Químicos\n\nModelo de Linnhoff"
+    "objectID": "slides/tema-01.html#logical-models",
+    "href": "slides/tema-01.html#logical-models",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Logical models",
+    "text": "Logical models"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
-    "href": "simulacion-de-procesos-gl.html#modelo-de-deseño-de-capas-da-cebola-linnhoff",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Modelo de deseño de capas da cebola (Linnhoff)",
-    "text": "Modelo de deseño de capas da cebola (Linnhoff)\n\nModelo de Linnhoff[Modelo de capa d]\n\nDentro da síntese de procesos, un dos modelos importantes para guiar o fluxo a síntese é o modelo de cebola informado por primeira vez en Linnhoff et al. (1982). Como se mostra na figura 1.3, o exercicio de deseño de procesos comeza desde o núcleo do proceso e móvese cara a fóra. No centro da cebola, deseñase primeiro o sistema do reactor. O deseño do reactor inflúe nas estruturas de separación e reciclaxe segunda capa da cebola. A continuación, as estruturas do reactor e do separador ditan o requisitos xerais de calefacción e refrixeración do proceso. Polo tanto, o sistema de recuperación de calor deséñase a continuación, na terceira capa. Un sistema de utilidade no cuarto A continuación deséñase a capa para proporcionar requisitos adicionais de calefacción e refrixeración, que non se poden satisfacer mediante un sistema de recuperación de calor. Na capa final, o O sistema de tratamento de residuos está deseñado para xestionar varias emisións/efluentes o proceso, previo á descarga ambiental final. Nunha sección posterior deste capítulo, empregarase o modelo de cebola para guiar a simulación do fluxo integrado de procesos químicos."
+    "objectID": "slides/tema-01.html#bioinspired-models",
+    "href": "slides/tema-01.html#bioinspired-models",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Bioinspired models",
+    "text": "Bioinspired models"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#resumo",
-    "href": "simulacion-de-procesos-gl.html#resumo",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Resumo",
-    "text": "Resumo\nA simulación de procesos é unha poderosa ferramenta que permite a proba virtual e a análise de procesos complexos, facilitando a decisión e a optimización nunha ampla gama de industrias."
+    "objectID": "slides/tema-01.html#model-assumptions-model-use",
+    "href": "slides/tema-01.html#model-assumptions-model-use",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Model assumptions Model use",
+    "text": "Model assumptions Model use"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
-    "href": "simulacion-de-procesos-gl.html#arquitectura-de-simuladores-de-proceso",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Arquitectura de simuladores de proceso",
-    "text": "Arquitectura de simuladores de proceso\n\nModular secuencial\n\nBaseado no concepto de modularidade, que estende o concepto da enxeñaría de operación unitaria a un cálculo da unidades de operación mediante un o código informático responsable do cálculo das unidades de proceso.\n\nO cálculo de todo o fluxograma se fai unidade a unidade seguindo unha secuencia de cálculo.\n\n\nO orientado á ecuacións (Simultáneameo - Non modular)\n\nO modelo completo do fluxograma exprésase en forma dun gran sistema disperso de ecuacións alxébricas non lineais, que se solucionan simultaneamente para todas as incógnitas.\n\nModular Simultáneo Combinación de secuencial-modular e orientado á ecuación enfoques"
+    "objectID": "slides/tema-01.html#model-implementation",
+    "href": "slides/tema-01.html#model-implementation",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Model implementation",
+    "text": "Model implementation"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
-    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
-    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nSequenciais – Modulares\n\nAspen Plus\nAspen Hysys\nChemCAD\nPRO II\nUniSim"
+    "objectID": "slides/tema-01.html#model-languages-empirical-models",
+    "href": "slides/tema-01.html#model-languages-empirical-models",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Model languages Empirical models",
+    "text": "Model languages Empirical models"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
-    "href": "simulacion-de-procesos-gl.html#simuladores-de-procesos-comerciais-para-estado-estacionario-1",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Simuladores de procesos Comerciais para Estado Estacionario",
-    "text": "Simuladores de procesos Comerciais para Estado Estacionario\n\nOrientados a Ecuación\n\ngProms\nVMGSim\nAspen Plus in EO\nAspen Custom Modeler"
+    "objectID": "slides/tema-01.html#qualitative-models",
+    "href": "slides/tema-01.html#qualitative-models",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Qualitative models",
+    "text": "Qualitative models"
   },
   {
-    "objectID": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
-    "href": "simulacion-de-procesos-gl.html#servizos-de-propiedades-físicas",
-    "title": "Introdución á Simulación de Procesos",
-    "section": "Servizos de propiedades físicas",
-    "text": "Servizos de propiedades físicas\n\nSubministran estimacións para varias propiedades físicas diferentes mentres a simulación está funcionando.\nO equilibrio de fase representa unha das propiedades físicas máis importantes, xa que moitas simulacións de procesos químicos implican destilación, separación, evaporación ou separación líquido - líquidos.\nResolven os balances de masa e enerxía para estas operacións que require a predicción:\n\nVapor - Equilibrio líquido (VLE)\nLíquido - Equilibrio líquido (LLE)\n\n\n\n\n\n\n\n\nNote\n\n\n\nA estimación de propiedades físicas pode consumir ata o 90% do tempo de computación dunha simulación. Os paquetes de propiedades úsanse para predecir o equilibrio de fase e o comportamento de compoñentes puros e sistemas de mestura"
+    "objectID": "slides/tema-01.html#modeling-hierarchy-model-integration",
+    "href": "slides/tema-01.html#modeling-hierarchy-model-integration",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Modeling hierarchy Model integration",
+    "text": "Modeling hierarchy Model integration"
+  },
+  {
+    "objectID": "slides/tema-01.html#goals-in-models",
+    "href": "slides/tema-01.html#goals-in-models",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Goals in models",
+    "text": "Goals in models"
+  },
+  {
+    "objectID": "slides/tema-01.html#i-have-been-and-remain-entirely",
+    "href": "slides/tema-01.html#i-have-been-and-remain-entirely",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "! “I have been, and remain, entirely",
+    "text": "! “I have been, and remain, entirely"
+  },
+  {
+    "objectID": "slides/tema-01.html#committed-to-the-idea-that-modeling-is-the",
+    "href": "slides/tema-01.html#committed-to-the-idea-that-modeling-is-the",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "committed to the idea that modeling is the",
+    "text": "committed to the idea that modeling is the"
+  },
+  {
+    "objectID": "slides/tema-01.html#essence-of-science-and-the-habitat-of-all",
+    "href": "slides/tema-01.html#essence-of-science-and-the-habitat-of-all",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "essence of science and the habitat of all",
+    "text": "essence of science and the habitat of all"
+  },
+  {
+    "objectID": "slides/tema-01.html#epistemology.",
+    "href": "slides/tema-01.html#epistemology.",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "epistemology.”",
+    "text": "epistemology.”"
+  },
+  {
+    "objectID": "slides/tema-01.html#robert-rosen-essays-on",
+    "href": "slides/tema-01.html#robert-rosen-essays-on",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "- Robert Rosen, Essays on",
+    "text": "- Robert Rosen, Essays on"
+  },
+  {
+    "objectID": "slides/tema-01.html#life-itself",
+    "href": "slides/tema-01.html#life-itself",
+    "title": "Modelización e simulación de procesos químicos",
+    "section": "Life Itself",
+    "text": "Life Itself"
   }
 ]

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="A. Sánchez">
 
-<title>Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano. – SOPQ-2425</title>
+<title>Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano – SOPQ-2425</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano.</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -273,13 +274,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano.</h1>
+<h1 class="title">Obtención do diagrama P-x para unha temperatura de 115 ºC para unha mestura de hepano e octano</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>A. Sánchez </p>
+          </div>
+  </div>
     
   
     
@@ -290,10 +297,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="79053635" class="cell" data-execution_count="19">
+<div id="678376b2" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="szkD3qe23I90" class="cell" data-execution_count="20">
+<div id="75c3e797" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Parámetros de Antoine</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># heptano</span></span>
@@ -316,7 +323,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="cálculo-da-presión-de-vapor-dos-compoñentes-puros-ecuación-de-antoine" class="level1">
 <h1>Cálculo da presión de vapor dos compoñentes puros (ecuación de Antoine)</h1>
-<div id="2e4357f3" class="cell" data-outputid="b5664cac-21bb-439c-8df9-1581f81c91f4" data-execution_count="21">
+<div id="2c4b10c4" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pv_heptano <span class="op">=</span> <span class="dv">10</span> <span class="op">**</span> ( A_heptano <span class="op">-</span> B_heptano <span class="op">/</span> ( T <span class="op">+</span> C_heptano ) ) <span class="co"># bar</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pv_octano  <span class="op">=</span> <span class="dv">10</span> <span class="op">**</span> ( A_octano  <span class="op">-</span> B_octano  <span class="op">/</span> ( T <span class="op">+</span> C_octano  ) ) <span class="co"># bar</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'A presión de vapor do heptano puro é de </span><span class="sc">{</span>pv_heptano<span class="sc">:6.4f}</span><span class="ss"> bar.'</span>) <span class="co"># compoñente mais volátil, maior presión de vapor</span></span>
@@ -328,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 A presión de vapor do heptano puro é de 0.7462 bar.</code></pre>
 </div>
 </div>
-<div id="067753b1" class="cell" data-outputid="1f4c28f1-f196-4e4a-d51a-9da3dc20fcc4" data-execution_count="22">
+<div id="6563f870" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector de valores de x</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>x_heptano <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">11</span>)</span>
@@ -351,23 +358,23 @@ A presión de vapor do heptano puro é de 0.7462 bar.</code></pre>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x, y (heptano)'</span>)</span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Presión (bar)'</span>)</span>
 <span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Diagrama P-x,y'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="22">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>Text(0.5, 1.0, 'Diagrama P-x,y')</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-5-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-5-output-2.png" width="600" height="449" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <section id="aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada" class="level2">
 <h2 class="anchored" data-anchor-id="aparatdo-2-.-diagrama-t-xy-a-partires-da-presión-total-dada">Aparatdo 2 . Diagrama T-xy a partires da presión total dada</h2>
-<div id="af1700d8" class="cell" data-execution_count="23">
+<div id="f594cd4d" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> fsolve</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="A16huIJD3YQR" class="cell" data-outputid="ea9582ef-6443-47e3-ff95-080837297ecf" data-execution_count="24">
+<div id="f8af02e6" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Datos do exercicio</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>P_t <span class="op">=</span> <span class="fl">1.5</span> <span class="co">#bar</span></span>
@@ -403,11 +410,11 @@ A presión de vapor do heptano puro é de 0.7462 bar.</code></pre>
 <span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lista_temperatura) <span class="co"># valores de temperatura calculados</span></span>
 <span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lista_y) <span class="co"># valores de y calculados</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[413.5615852273091, 409.77113336473025, 406.2684364969948, 403.0216612183846, 400.00305716655544, 397.18844969691617, 394.55676804690006, 392.0896214256247, 389.77092633460484, 387.58658343897787, 385.52419985536085]
-[0.0, 0.1837276326189331, 0.33830109800891695, 0.4693199994809487, 0.581154434977709, 0.6772413410638028, 0.7603047808262194, 0.832520410718438, 0.895638942399593, 0.9510793956603304, 1.0000000000003693]</code></pre>
+<pre><code>[np.float64(413.5615852273091), np.float64(409.77113336473025), np.float64(406.2684364969948), np.float64(403.0216612183846), np.float64(400.00305716655544), np.float64(397.18844969691617), np.float64(394.55676804690006), np.float64(392.0896214256247), np.float64(389.77092633460484), np.float64(387.58658343897787), np.float64(385.52419985536085)]
+[np.float64(0.0), np.float64(0.1837276326189331), np.float64(0.33830109800891695), np.float64(0.4693199994809487), np.float64(0.581154434977709), np.float64(0.6772413410638028), np.float64(0.7603047808262194), np.float64(0.832520410718438), np.float64(0.895638942399593), np.float64(0.9510793956603304), np.float64(1.0000000000003693)]</code></pre>
 </div>
 </div>
-<div id="94d94b43" class="cell" data-outputid="9ad39563-eb5a-49dc-f72c-b0f43f5e0954" data-execution_count="25">
+<div id="271d66e7" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Representación do diagrama T-xy</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -416,18 +423,18 @@ A presión de vapor do heptano puro é de 0.7462 bar.</code></pre>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x, y (heptano)'</span>)</span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Temperatura (K)'</span>)</span>
 <span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Diagrama T-x,y'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="25">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>Text(0.5, 1.0, 'Diagrama T-x,y')</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-8-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-8-output-2.png" width="604" height="449" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="f40483b5" class="cell" data-outputid="20a1b2a1-4c31-415f-fea6-0967f6ad307f" data-execution_count="26">
+<div id="14e59033" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#También se puede realizar con fsolve aplicado a la ecuación de Antoine, y no al sumatorio de y - 1</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>z<span class="op">=</span>np.linspace(<span class="dv">0</span>,<span class="dv">1</span>, num<span class="op">=</span><span class="dv">11</span>) <span class="co">#composición inicial</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -460,7 +467,7 @@ A presión de vapor do heptano puro é de 0.7462 bar.</code></pre>
 A temperatura á que hierve o octano  á presión externa é 413.56 K.</code></pre>
 </div>
 </div>
-<div id="88368e4d" class="cell" data-outputid="f76130b8-b984-48bd-d60b-3155f994f3c3" data-execution_count="27">
+<div id="93fb2699" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>T<span class="op">=</span>np.linspace(Tinf,Tsup, num<span class="op">=</span><span class="dv">11</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> (P<span class="op">-</span>Psat2(T))<span class="op">/</span>(Psat1(T)<span class="op">-</span>Psat2(T))</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>y<span class="op">=</span>x<span class="op">*</span>Psat1(T)<span class="op">/</span>P</span>
@@ -469,13 +476,13 @@ A temperatura á que hierve o octano  á presión externa é 413.56 K.</code></p
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x, y'</span>)</span>
 <span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'T'</span>)</span>
 <span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Diagrama T-x, y'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="27">
+<div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>Text(0.5, 1.0, 'Diagrama T-x, y')</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-10-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="Diagramas_Pxy_Txy_files/figure-html/cell-10-output-2.png" width="604" height="449" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1055,7 +1062,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.dev/anxosanchez/SOPQ-2324/blob/main/qmd/Diagramas_Pxy_Txy.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/anxosanchez/SOPQ-2324/edit/main/qmd/Diagramas_Pxy_Txy.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/anxosanchez/SOPQ-2324/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Este site está inspirado no site STA 210, deseñado por Mine Çetinkaya-Rundel</p>
 </div>
