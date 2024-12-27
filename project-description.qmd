@@ -154,7 +154,7 @@ O informe escrito vale 40 puntos, descomprimido do seguinte xeito:
 | Discusión + Descrición + Conclusións | 20 ptos |
 | Organización + Formato + Interface | 20 ptos |
 
-[Rúbrica do proxecto](https://github.com/anxosanchez/SOPQ2425/blob/main/project-report-rubric.pdf") para obter un PDF descritivo da rúbrica da avaliación do proxecto.
+[Rúbrica](https://github.com/anxosanchez/SOPQ2425/blob/main/project-report-rubric.pdf") para obter un PDF descritivo da rúbrica da avaliación do proxecto.
 
 ### Introdución e datos
 
