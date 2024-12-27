@@ -73,5 +73,11 @@
   },
   "notebooks/simulacion-deposito-gravedade.quarto.ipynb": {
     "simulacion-deposito-gravedade.quarto.html": "e80c3433"
+  },
+  "qmd/Diagramas_Pxy_Txy.qmd": {
+    "Diagramas_Pxy_Txy.html": "04faeae4"
+  },
+  "rubrica.qmd": {
+    "rubrica.html": "ff6b525e"
   }
 }

@@ -1,5 +1,5 @@
 ---
-title: "SOPQ 23-24: Simulación e Optimización de Procesos Químicos"
+title: "SOPQ 24-25: Simulación e Optimización de Procesos Químicos"
 tbl-colwidths: [5,10,30,5,5,5,5,5,5,5]
 #navbar: false
 ---

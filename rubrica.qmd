@@ -1,6 +1,8 @@
 ---
 title: "Rúbrica da avaliación do proxecto da asignatura"
-format: full
+format: 
+  html:
+    page-layout: full
 ---
 
 ### Proxecto SOPQ 
