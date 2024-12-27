@@ -12,16 +12,16 @@ execute:
 
 website:
   page-navigation: true
-  title: "SOPQ-2425"
+  title: "SOPQ2425"
   description: "Web da asignatrua Simulación e Optimización de Procesos Químicos"
-  site-url: https://anxosanchez.github.io/SOPQ-2324
-  repo-url: https://github.com/anxosanchez/SOPQ-2324
+  site-url: https://anxosanchez.github.io/SOPQ2425
+  repo-url: https://github.com/anxosanchez/SOPQ2425
   repo-actions: [edit, issue]
   
   page-footer:
     background: "#242424" # "#000002"  "#7eb7c2" primary "#D9E3E4"
     left: |
-      &copy; Copyright 2023, Anxo Sánchez
+      &copy; Copyright 2024-2025, Anxo Sánchez
     right: |
       Este site está inspirado no site STA 210, deseñado por Mine Çetinkaya-Rundel
 
@@ -31,7 +31,7 @@ website:
     align: center
     tools: 
       - icon: github
-        href: https://github.com/anxosanchez/SOPQ-2324
+        href: https://github.com/anxosanchez/SOPQ2425
         text: "GitHub"
       - icon: linkedin
         href: https://www.linkedin.com/in/anxo-s%C3%A1nchez-berm%C3%BAdez-79086321/
